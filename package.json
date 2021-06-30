@@ -8,6 +8,11 @@
   },
   "dependencies": {
     "@gridsome/vue-remark": "^0.2.6",
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "gridsome-plugin-remark-shiki": "^0.6.0"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "sass-loader": "^10.1.1"
   }
 }

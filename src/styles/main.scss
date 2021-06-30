@@ -1,0 +1,28 @@
+// fonts
+@font-face {
+    font-family: Gilroy;
+    src: url("../../static/fonts/gilroy/Gilroy-Light.ttf");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span,
+label {
+    font-family: Gilroy;
+}
+
+.shiki {
+    padding: 1rem;
+    border-radius: 0.25rem;
+
+    span{
+        font-family: monospace !important;
+    }
+}

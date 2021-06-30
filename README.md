@@ -1,14 +1,14 @@
 # Default starter for Gridsome
 
-This is the project you get when you run `gridsome create new-project`.
+TVC notes will contain 3 types of content
 
-### 1. Install Gridsome CLI tool if you don't have
+## Blogs
+Any kind of technical blogs, articles, notes, tutorials etc.
+All assets goes inside /static with folder name same as **blog title**.
 
-`npm install --global @gridsome/cli`
+## Case Studies
+Case study of projects or any kind of problems/situation faced during a project. Note: The case study should be realistic (production based)
+All assets goes inside /static with folder name same as **case study title**.
 
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+## Code Snippets
+Short, self explanatory code snippets used repeatedly during development.

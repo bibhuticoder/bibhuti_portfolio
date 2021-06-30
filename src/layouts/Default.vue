@@ -6,9 +6,8 @@
       </strong>
       <nav class="nav">
         <g-link class="nav__link" to="/blog">Blogs</g-link>
-        <g-link class="nav__link" to="/tip/">Tips</g-link>
-        <g-link class="nav__link" to="/cs/">Code Snips</g-link>
-        <g-link class="nav__link" to="/ps/">Problem-Solution</g-link>
+        <g-link class="nav__link" to="/snip/">Code Snippets</g-link>
+        <g-link class="nav__link" to="/cs/">Case Study</g-link>
       </nav>
     </header>
     <slot/>
