@@ -1,9 +1,9 @@
 
 module.exports = {
-  siteName: 'TVC Notes',
+  siteName: 'BibhutiPoudyal',
   plugins: [
   ]
-    .concat(['Blog', 'Snip', 'CS'].map(item => {
+    .concat(['Blog', 'Snip'].map(item => {
       return {
         use: '@gridsome/vue-remark',
         options: {

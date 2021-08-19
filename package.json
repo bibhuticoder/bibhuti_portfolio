@@ -1,5 +1,5 @@
 {
-  "name": "my-gridsome-site",
+  "name": "notebook",
   "private": true,
   "scripts": {
     "develop": "gridsome develop",
