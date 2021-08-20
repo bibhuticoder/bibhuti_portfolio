@@ -1,14 +1,14 @@
 <template>
   <Layout>
-    <h1>Code Snippets</h1>
-    <p>
-      This page will serve as homepage for Code Snippets;
-    </p>
+    <div class="container">
+      <h1>Code Snippets</h1>
+      <p>This page will serve as homepage for Code Snippets;</p>
 
-     <h3>Recent Snippets</h3>
+      <h3>Recent Snippets</h3>
 
-    <div v-for="edge in $page.snips.edges" :key="edge.node.id">
-      <g-link :to="edge.node.path">{{edge.node.title}}</g-link>
+      <div v-for="edge in $page.snips.edges" :key="edge.node.id">
+        <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+      </div>
     </div>
   </Layout>
 </template>
@@ -32,8 +32,8 @@ query Snip{
 <script>
 export default {
   metaInfo: {
-    title: 'Blog'
-  }
-}
+    title: "Blog",
+  },
+};
 </script>
 ux4617

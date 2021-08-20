@@ -1,28 +1,46 @@
-// fonts
-@font-face {
-    font-family: Gilroy;
-    src: url("../../static/fonts/gilroy/Gilroy-Light.ttf");
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-div,
-span,
-label {
-    font-family: Gilroy;
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 
-.shiki {
-    padding: 1rem;
-    border-radius: 0.25rem;
+@layer base {
+    body {
+        /* font-family: "Nunito", sans-serif; */
+        @apply font-Nunito;
+        @apply text-black;
+        @apply bg-white;
+    }
 
-    span{
-        font-family: monospace !important;
+    h1 {
+        @apply text-3xl;
+        @apply font-bold;
+    }
+    h2 {
+        @apply text-2xl;
+        @apply font-bold;
+    }
+
+    .highlight,
+    a.active--exact {
+        &::after {
+            display: block;
+            content: "";
+            margin-top: -0.2rem;
+            width: 110%;
+            margin-left: -5%;
+            height: 0.2rem;
+            @apply bg-green;
+        }
+    }
+
+    // code
+    .shiki {
+        padding: 1rem;
+        border-radius: 0.25rem;
+
+        span {
+            font-family: monospace !important;
+        }
     }
 }

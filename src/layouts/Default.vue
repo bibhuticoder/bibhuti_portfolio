@@ -1,15 +1,19 @@
 <template>
-  <div class="layout">
-    <header class="header">
-      <strong>
-        <g-link to="/">{{ $static.metadata.siteName }}</g-link>
-      </strong>
-      <nav class="nav">
-        <g-link class="nav__link" to="/blog">Blogs</g-link>
-        <g-link class="nav__link" to="/snip/">Code Snippets</g-link>
-      </nav>
-    </header>
-    <slot/>
+  <div>
+    <nav class="nav">
+      <div class="container m-5 mx-auto flex justify-between">
+        <div class="logo">
+          <g-link to="/" class="font-bold"> &lt;bibhutiPoudyal/&gt; </g-link>
+        </div>
+        <div class="flex">
+          <g-link class="nav__link mx-4" to="/blog">Blogs</g-link>
+          <g-link class="nav__link mx-4" to="/snip/">Snips</g-link>
+          <g-link class="nav__link mx-4" to="/about/">About Me</g-link>
+        </div>
+      </div>
+    </nav>
+
+    <slot />
   </div>
 </template>
 
@@ -21,30 +25,6 @@ query {
 }
 </static-query>
 
-<style>
-body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin:0;
-  padding:0;
-  line-height: 1.5;
-}
+<style lang="scss">
 
-.layout {
-  max-width: 760px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-  height: 80px;
-}
-
-.nav__link {
-  margin-left: 20px;
-}
 </style>

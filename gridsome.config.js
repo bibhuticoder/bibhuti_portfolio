@@ -2,6 +2,15 @@
 module.exports = {
   siteName: 'BibhutiPoudyal',
   plugins: [
+    {
+      use: "gridsome-plugin-tailwindcss",
+      options: {
+        tailwindConfig: './tailwind.config.js',
+        presetEnvConfig: {},
+        shouldImport: false,
+        shouldTimeTravel: false
+      }
+    }
   ]
     .concat(['Blog', 'Snip'].map(item => {
       return {
@@ -19,13 +28,5 @@ module.exports = {
           ],
         }
       }
-    })),
-
-  // transformers: {
-  //   remark: {
-  //     plugins: [
-  //       ['gridsome-plugin-remark-shiki', { theme: 'nord', skipInline: true }]
-  //     ]
-  //   }
-  // }
+    }))
 }
