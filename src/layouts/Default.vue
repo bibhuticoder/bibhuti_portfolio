@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="flex flex-col h-full">
     <nav class="nav">
       <div class="container m-5 mx-auto flex justify-between">
         <div class="logo">
           <g-link to="/" class="font-bold"> &lt;bibhutiPoudyal/&gt; </g-link>
         </div>
-        <div class="flex">
+        <div class="hidden md:flex">
           <g-link class="nav__link mx-4" to="/blog">Blogs</g-link>
           <g-link class="nav__link mx-4" to="/snip/">Snips</g-link>
           <g-link class="nav__link mx-4" to="/about/">About Me</g-link>
@@ -13,7 +13,18 @@
       </div>
     </nav>
 
-    <slot />
+    <div class="flex-grow">
+      <slot />
+    </div>
+
+    <footer class="py-2 text-center bg-green text-white text-sm">
+      2021. All Rights Reserved. Made with
+      <span class="text-heart mx-1 mt-1">
+        <font-awesome-icon :icon="['fas', 'heart']"
+      /></span>
+
+      by Bibhuti Poudyal
+    </footer>
   </div>
 </template>
 
@@ -26,5 +37,4 @@ query {
 </static-query>
 
 <style lang="scss">
-
 </style>

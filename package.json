@@ -9,10 +9,13 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "@gridsome/vue-remark": "^0.2.6",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-remark-shiki": "^0.6.0"
+    "gridsome-plugin-remark-shiki": "^0.6.0",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",

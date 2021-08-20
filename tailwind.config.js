@@ -7,7 +7,7 @@ module.exports = {
         'green': "#82B540",
         "black": "#373737",
         "heart": "#F44336",
-        "white": "#Fafafa",
+        "app-white": "#Fafafa",
       },
 
       textColor: {
@@ -24,6 +24,8 @@ module.exports = {
       padding: "1rem"
     },
     screens: {
+      "sm": "768px",
+      "md": "992px",
       "lg": "1124px",
       "xl": "1124px",
       "2xl": "1124px",
