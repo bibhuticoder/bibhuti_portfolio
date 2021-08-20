@@ -1,15 +1,16 @@
 <template>
   <Layout>
-    <div class="container pt-10">
+    <div class="container pt-20">
       <!-- Intro -->
       <div class="flex justify-between" id="intro">
         <div class="md:w-11/12">
           <h1 class="text-center md:text-left mb-5">Bibhuti Poudyal</h1>
           <p class="text-center md:text-left md:mr-20 mb-10">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
-            doloremque omnis animi, eligendi magni a voluptatum, vitae,
-            consequuntur rerum illum odit fugit assumenda rem dolores inventore
-            iste reprehenderit maxime! Iusto.
+            Hi! I am a software developer based in Kathmandu. I work mostly with Javascript.
+            <br>
+            I believe building successful software requires not only tech skills but also positive emotions &amp; empathy. That's what we do at our software agency.
+            <br>
+            I spend my free time mostly on open source, reading &amp; cycling.
           </p>
 
           <p class="text-center md:text-left">
@@ -21,44 +22,44 @@
             MSc CS Graduate @ Pokhara University
           </p>
 
-          <div class="flex justify-center md:justify-start mt-3">
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mr-4 text-xl"
-              title="Github"
-            >
-              <font-awesome-icon :icon="['fab', 'github']" />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mr-4 text-xl"
-              title="LinkedIn"
-            >
-              <font-awesome-icon :icon="['fab', 'linkedin']" />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mr-4 text-xl"
-              title="Medium"
-            >
-              <font-awesome-icon :icon="['fab', 'medium-m']" />
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="mr-4 text-xl"
-              title="Medium"
-            >
-              <font-awesome-icon :icon="['fas', 'envelope']" />
-            </a>
-          </div>
+            <div class="flex justify-center md:justify-start mt-3">
+              <a
+                href="https://github.com/bibhuticoder"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mr-4 text-xl"
+                title="Github"
+              >
+                <font-awesome-icon :icon="['fab', 'github']" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/bibhuti-poudyal-4883aa116/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mr-4 text-xl"
+                title="LinkedIn"
+              >
+                <font-awesome-icon :icon="['fab', 'linkedin']" />
+              </a>
+              <a
+                href="https://bibhuticoder.medium.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mr-4 text-xl"
+                title="Medium"
+              >
+                <font-awesome-icon :icon="['fab', 'medium-m']" />
+              </a>
+              <a
+                href="mailto:bibhutipd@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="mr-4 text-xl"
+                title="Medium"
+              >
+                <font-awesome-icon :icon="['fas', 'envelope']" />
+              </a>
+            </div>
         </div>
 
         <div class="hidden md:block">
@@ -67,7 +68,7 @@
       </div>
 
       <!-- Open Source -->
-      <div id="open-source" class="mt-20">
+      <div id="open-source" class="mt-36">
         <div class="flex flex-wrap md:flex-nowrap">
           <div class="md:w-4/12">
             <h1 class="text-center md:text-left mb-5">
@@ -170,7 +171,7 @@
       </div>
 
       <!-- Blogs -->
-      <div id="blogs" class="mt-20">
+      <div id="blogs" class="mt-36 mb-20">
         <h1 class="text-center md:text-left mb-5">Blogs</h1>
 
         <div class="flex flex-wrap">
@@ -245,21 +246,14 @@
     </svg>
 
     <!-- Contact -->
-    <div id="contact" class="bg-white mt-20 md:-mt-8 md:relative">
-      <g-image
-        alt="lamp"
-        src="/lamp.svg"
-        class="w-16 h-auto hidden md:block"
-        style="position: absolute; right: 50%; bottom: 0"
-      />
-
+    <div id="contact" class="md:bg-white mt-20 md:-mt-8 md:relative">
       <div class="container">
         <h1 class="text-center md:text-left mb-5">Contact Me</h1>
 
         <div class="flex">
           <div class="text-center md:w-1/2 md:text-left">
             <p class="mb-2">
-              I am Co-founder &amp; CTO at
+              I am Co-founder at
               <a
                 href="https://thevaluecrew.com/"
                 target="_blank"
@@ -272,7 +266,7 @@
             <p class="mb-2">
               Connect me on
               <a
-                href="https://thevaluecrew.com/"
+                href="https://www.linkedin.com/in/bibhuti-poudyal-4883aa116/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="highlight w-16 inline-block"
@@ -284,7 +278,7 @@
               Star my Open Source works at
 
               <a
-                href="https://thevaluecrew.com/"
+                href="https://github.com/bibhuticoder"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="highlight w-12 inline-block"
@@ -296,7 +290,7 @@
               Send me an email at
 
               <a
-                href="https://thevaluecrew.com/"
+                href="mailto:bibhutipd@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="highlight w-40 inline-block"
@@ -306,7 +300,7 @@
 
             <div class="flex justify-center md:justify-start mt-3 mb-4">
               <a
-                href="#"
+                href="https://github.com/bibhuticoder"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="mr-4 text-xl"
@@ -315,7 +309,7 @@
                 <font-awesome-icon :icon="['fab', 'github']" />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/bibhuti-poudyal-4883aa116/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="mr-4 text-xl"
@@ -324,7 +318,7 @@
                 <font-awesome-icon :icon="['fab', 'linkedin']" />
               </a>
               <a
-                href="#"
+                href="https://bibhuticoder.medium.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="mr-4 text-xl"
@@ -333,7 +327,7 @@
                 <font-awesome-icon :icon="['fab', 'medium-m']" />
               </a>
               <a
-                href="#"
+                href="mailto:bibhutipd@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="mr-4 text-xl"
@@ -341,6 +335,37 @@
               >
                 <font-awesome-icon :icon="['fas', 'envelope']" />
               </a>
+            </div>
+          </div>
+
+          <div class="w-1/2 justify-end hidden md:flex">
+            <div class="flex flex-col w-96">
+              <div class="flex justify-center">
+                <g-image
+                  class="w-36 mr-4 rounded"
+                  src="https://lh3.googleusercontent.com/YFIuxWZPFDZRFXDZioC8Lz7b_HIZmve_m9sjGRhpbFhsT-jdKSK2dkeU8WCzO-ykjRHOY_7CfjFVg13VVGoUzfWBLmU=w640-h400-e365-rj-sc0x00ffffff"
+                ></g-image>
+
+                <g-image
+                  class="w-36 rounded"
+                  src="https://lh3.googleusercontent.com/gPxAbWbNrQyDZ7cZ2pyQlMYAB2NnIr4JEsZMrF11w_YQUxmzEBSGUSDMxNICUstx2dyI0_yCIrRgfqRz1VJ33evpVe0=w640-h400-e365-rj-sc0x00ffffff"
+                ></g-image>
+              </div>
+
+              <p class="text-sm mt-2 text-center">
+                Friendly personal dashboard featuring Nepali calendar, daily
+                Nepali quotes & Nepali wallpapers.
+                <br />
+
+                <a
+                  href="https://bibhuticoder.github.io/samaya/"
+                  target="_blank"
+                  to="/blog"
+                  class="inline-block highlight"
+                >
+                  Get Extension
+                </a>
+              </p>
             </div>
           </div>
         </div>
@@ -380,37 +405,37 @@ export default {
         {
           title: "RamroCode",
           desc: "✨ Beautiful screenshot of your code snippets",
-          tryLink: "",
-          codeLink: "",
+          tryLink: "https://ramrocode.netlify.app/",
+          codeLink: "https://github.com/the-value-crew/ramroCode",
           showPhone: true,
         },
 
         {
           title: "vue-file-uploader",
           desc: "Easy File upload component for Vue 2",
-          tryLink: "",
-          codeLink: "",
+          tryLink: "https://www.npmjs.com/package/vue-easy-multi-file-upload",
+          codeLink: "https://github.com/the-value-crew/vue-easy-multi-file-uploader",
           showPhone: false,
         },
 
         {
           title: "num-to-nep-words",
           desc: "Convert Arabic numerals into Nepali words. Both in Nepali and English language.",
-          tryLink: "",
-          codeLink: "",
+          tryLink: "https://the-value-crew.github.io/num-to-nepali-words-demo/",
+          codeLink: "https://github.com/the-value-crew/num-to-nepali-words",
           showPhone: false,
         },
         {
           title: "Samaya",
           desc: "Samaya is a productivity focused chrome extension highly inspired by Momentum",
-          tryLink: "",
-          codeLink: "",
+          tryLink: "https://bibhuticoder.github.io/samaya/",
+          codeLink: "https://github.com/bibhuticoder/samaya",
           showPhone: true,
         },
         {
           title: "samaya-quotes-api",
           desc: "Collection of quotes in Nepali language. Built for samaya chrome extension.",
-          tryLink: "",
+          tryLink: "https://bibhuticoder.github.io/samaya-quotes-api/",
           codeLink: "https://github.com/bibhuticoder/samaya-quotes-api",
           showPhone: true,
         },
@@ -418,7 +443,7 @@ export default {
           title: "find-emoji",
           desc: "Search for emojis,instantly 🧐",
           codeLink: "https://github.com/bibhuticoder/find-emoji",
-          tryLink: "",
+          tryLink: "https://bibhuticoder.github.io/find-emoji/",
           showPhone: true,
         },
       ],

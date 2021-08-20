@@ -17,12 +17,11 @@
       <slot />
     </div>
 
-    <footer class="py-2 text-center bg-green text-white text-sm">
-      2021. All Rights Reserved. Made with
+    <footer class="py-2 text-center bg-white text-black text-sm">
+      Copyright © {{ year }} - Made with
       <span class="text-heart mx-1 mt-1">
         <font-awesome-icon :icon="['fas', 'heart']"
       /></span>
-
       by Bibhuti Poudyal
     </footer>
   </div>
@@ -36,5 +35,12 @@ query {
 }
 </static-query>
 
-<style lang="scss">
-</style>
+<script>
+export default {
+  data() {
+    return {
+      year: new Date().getFullYear(),
+    };
+  },
+};
+</script>
