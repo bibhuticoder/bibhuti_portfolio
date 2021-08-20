@@ -15,7 +15,8 @@
     "@gridsome/vue-remark": "^0.2.6",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.6.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",

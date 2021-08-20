@@ -1,13 +1,28 @@
 <template>
   <Layout>
-    <div class="container">
-      <h1>Blogs</h1>
-      <p>This page will serve as homepage for blog posts.</p>
+    <div class="container pt-20">
+      <h1>Blog</h1>
 
-      <h3>Recent Blogs</h3>
+      <div class="blogs-list flex flex-col">
+        <div v-for="post in blogPosts" :key="post.id">
+          <g-link :to="post.path">
+            <div
+              class="blogs-list-item bg-white shadow-md rounded px-4 py-3 my-2"
+            >
+              <p class="font-bold text-center md:text-left">
+                {{ post.title }}
+              </p>
+              <p class="text-xs mb-2">
+                <font-awesome-icon :icon="['fas', 'calendar-alt']" />
+                {{ post.createdAt }}
+              </p>
 
-      <div v-for="edge in $page.blogs.edges" :key="edge.node.id">
-        <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+              <p class="text-sm text-center md:text-left">
+                {{ post.excerpt }}
+              </p>
+            </div>
+          </g-link>
+        </div>
       </div>
     </div>
   </Layout>
@@ -31,10 +46,22 @@ query Blog {
 </page-query>
 
 <script>
+import moment from "moment";
+
 export default {
   metaInfo: {
     title: "Blog",
   },
+
+  computed: {
+    blogPosts() {
+      return this.$page.blogs.edges.map((edge) => {
+        return {
+          ...edge.node,
+          createdAt: moment(edge.node.createdAt).format("YYYY-MM-DD"),
+        };
+      });
+    },
+  },
 };
 </script>
-ux4617

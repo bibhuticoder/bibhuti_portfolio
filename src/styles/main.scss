@@ -22,7 +22,7 @@
     }
 
     .highlight,
-    a.active--exact {
+    a.active {
         &::after {
             display: block;
             content: "";
@@ -31,6 +31,12 @@
             // margin-left: -5%;
             height: 0.2rem;
             @apply bg-green;
+        }
+
+        &.--no-highlight {
+            &::after {
+                display: none;
+            }
         }
     }
 
@@ -41,6 +47,23 @@
 
         span {
             font-family: monospace !important;
+        }
+    }
+
+    // blog post
+    .blogPost {
+        .shiki {
+            padding: 1rem;
+            border-radius: 0.25rem;
+        }
+
+        p {
+            @apply mb-8;
+        }
+
+        img {
+            @apply mx-auto;
+            @apply my-4;
         }
     }
 }

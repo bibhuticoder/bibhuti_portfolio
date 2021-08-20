@@ -1,11 +1,9 @@
 <template>
   <Layout>
 
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <!-- <g-image alt="Example image" src="~/favicon.png" width="135" /> -->
+    <div class="container pt-20">
 
-    <h1>Hello</h1>
-
+  
     <p>
       This platform serves as a notebook.
 
@@ -18,6 +16,8 @@
       Like the contents ?
       Subscribe to the mailing list. I will occassionally send awesome stuffs to your email. 
     </p>
+
+    </div>
 
   </Layout>
 </template>

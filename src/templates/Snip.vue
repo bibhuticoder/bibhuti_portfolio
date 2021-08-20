@@ -1,8 +1,10 @@
 <template>
   <Layout>
-    <h1>{{ $page.snip.title }}</h1>
-    <p class="intro">{{ $page.snip.excerpt }}</p>
-    <VueRemarkContent />
+    <div class="container pt-20">
+      <h1>{{ $page.snip.title }}</h1>
+      <p class="intro">{{ $page.snip.excerpt }}</p>
+      <VueRemarkContent />
+    </div>
   </Layout>
 </template>
 

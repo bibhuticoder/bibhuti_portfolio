@@ -1,8 +1,10 @@
 <template>
   <Layout>
-    <h1>{{ $page.blog.title }}</h1>
-    <p class="intro">{{ $page.blog.createdAt }}</p>
-    <VueRemarkContent />
+    <div class="container pt-20 blogPost">
+      <h1>{{ $page.blog.title }}</h1>
+      <p class="intro">{{ $page.blog.createdAt }}</p>
+      <VueRemarkContent />
+    </div>
   </Layout>
 </template>
 
@@ -16,9 +18,6 @@ query Blog ($id: ID!) {
 }
 </page-query>
 
-<style>
-.shiki {
-  padding: 1rem;
-  border-radius: 0.25rem;
-}
+<style lang="scss" scoped>
+
 </style>

@@ -1,13 +1,24 @@
 <template>
   <Layout>
-    <div class="container">
+    <div class="container pt-20">
       <h1>Code Snippets</h1>
-      <p>This page will serve as homepage for Code Snippets;</p>
 
-      <h3>Recent Snippets</h3>
+            <div class="blogs-list flex flex-col">
+        <div v-for="snip in snips" :key="snip.id">
+          <g-link :to="snip.path">
+            <div
+              class="blogs-list-item bg-white shadow-md rounded px-4 py-3 my-2"
+            >
+              <p class="font-bold text-center md:text-left">
+                {{ snip.title }}
+              </p>
 
-      <div v-for="edge in $page.snips.edges" :key="edge.node.id">
-        <g-link :to="edge.node.path">{{ edge.node.title }}</g-link>
+                <p class="text-sm text-center md:text-left">
+                {{ snip.excerpt }}
+              </p>
+            </div>
+          </g-link>
+        </div>
       </div>
     </div>
   </Layout>
@@ -33,6 +44,14 @@ query Snip{
 export default {
   metaInfo: {
     title: "Blog",
+  },
+
+  computed: {
+    snips() {
+      return this.$page.snips.edges.map((edge) => {
+        return edge.node;
+      });
+    },
   },
 };
 </script>
