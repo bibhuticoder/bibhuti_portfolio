@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="container pt-20">
-      <h1>Blog</h1>
+      <h1 class="text-center mb-5 md:text-left">Blog</h1>
 
       <div class="blogs-list flex flex-col">
         <div v-for="post in blogPosts" :key="post.id">

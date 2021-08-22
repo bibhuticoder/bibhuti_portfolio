@@ -1,6 +1,6 @@
 ---
 title: Random number generation
-excerpt: Generate random number within a range in JavaScript
+excerpt: Generate random number within a range
 createdAt: 2021-06-25
 tags: JavaScript
 ---

@@ -1,19 +1,35 @@
 <template>
   <Layout>
     <div class="container pt-20">
-      <h1>Code Snippets</h1>
+      <h1 class="text-center mb-5 md:text-left">Code Snippets</h1>
 
-            <div class="blogs-list flex flex-col">
-        <div v-for="snip in snips" :key="snip.id">
+      <div class="snips-list flex flex-wrap justify-center md:justify-start">
+        <div v-for="snip in snips" :key="snip.id" class="self-center">
           <g-link :to="snip.path">
             <div
-              class="blogs-list-item bg-white shadow-md rounded px-4 py-3 my-2"
+              class="
+                snip
+                bg-white
+                shadow-md
+                rounded
+                px-3
+                py-3
+                m-3
+                pb-6
+                w-36
+                md:w-40
+              "
             >
-              <p class="font-bold text-center md:text-left">
+              <p class="font-bold text-center text-sm md:text-left leading-4 mb-2">
                 {{ snip.title }}
               </p>
 
-                <p class="text-sm text-center md:text-left">
+               <div class="ribbon-bottom">
+                 <span class="tag ml-2">{{snip.tags}}</span>
+               </div>
+               <div class="hole"></div>
+
+              <p class="text-sm text-center text-gray-600 mt-3 md:text-left">
                 {{ snip.excerpt }}
               </p>
             </div>
@@ -31,6 +47,7 @@ query Snip{
     edges{
       node{
         title
+        tags
         path
         excerpt
         createdAt
@@ -55,4 +72,3 @@ export default {
   },
 };
 </script>
-ux4617
