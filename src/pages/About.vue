@@ -8,9 +8,10 @@
           <p class="text-center md:text-left md:mr-20 mb-10">
             Hi! I am a software developer based in Kathmandu. I work mostly with Javascript.
             <br>
-            I believe building successful software requires not only tech skills but also positive emotions &amp; empathy. That's what we do at our software agency.
+            I believe building successful software requires not only tech skills but also positive emotions &amp; empathy. 
+            That's what we do at <a href="https://thevaluecrew.com/works/" target="_blank" rel="noopener noreferrer" class="highlight inline-block">work</a>.
             <br>
-            I spend my free time mostly on open source, reading &amp; cycling.
+            I spend my free time on open source, reading &amp; cycling.
           </p>
 
           <p class="text-center md:text-left">
@@ -143,7 +144,7 @@
               v-for="(oss, index2) in ossList"
               :key="index2"
             >
-              <p class="title font-bold mb-5">{{ oss.title }}</p>
+              <p class="title font-medium font-Poppins text-sm mb-5">{{ oss.title }}</p>
               <div class="description text-sm flex-grow">
                 {{ oss.desc }}
               </div>
@@ -190,7 +191,7 @@
                       my-2
                     "
                   >
-                    <p class="font-bold mb-2 text-center md:text-left">
+                    <p class="font-medium font-Poppins mb-2 text-center md:text-left">
                       {{ edge.node.title }}
                     </p>
 
@@ -377,7 +378,7 @@
 <page-query>
 
 query Blog {
-  blogs: allBlog {
+  blogs: allBlog(perPage: 4, page: 1) {
     edges {
       node {
         title

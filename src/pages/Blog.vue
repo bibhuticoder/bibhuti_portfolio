@@ -5,23 +5,13 @@
 
       <div class="blogs-list flex flex-col">
         <div v-for="post in blogPosts" :key="post.id">
-          <g-link :to="post.path">
-            <div
-              class="blogs-list-item bg-white shadow-md rounded px-4 py-3 my-2"
-            >
-              <p class="font-bold text-center md:text-left">
-                {{ post.title }}
-              </p>
-              <p class="text-xs mb-2">
-                <font-awesome-icon :icon="['fas', 'calendar-alt']" />
-                {{ post.createdAt }}
-              </p>
-
-              <p class="text-sm text-center md:text-left">
-                {{ post.excerpt }}
-              </p>
-            </div>
-          </g-link>
+          <BlogItem
+            :title="post.title"
+            :tags="post.tags"
+            :excerpt="post.excerpt"
+            :path="post.path"
+            :createdAt="post.createdAt"
+          />
         </div>
       </div>
     </div>
@@ -47,8 +37,10 @@ query Blog {
 
 <script>
 import moment from "moment";
+import BlogItem from "@/components/BlogItem";
 
 export default {
+  components: { BlogItem },
   metaInfo: {
     title: "Blog",
   },

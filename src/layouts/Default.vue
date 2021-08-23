@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col h-full">
-    <nav class="nav">
+    <nav class="nav bg-white shadow-sm">
       <div class="container m-5 mx-auto flex justify-between">
         <div class="logo">
           <g-link to="/" class="font-bold --no-highlight"> &lt;bibhutiPoudyal/&gt; </g-link>
