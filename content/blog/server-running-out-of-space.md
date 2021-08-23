@@ -18,10 +18,13 @@ If you are stuck in similar case, this post may help to get your server running 
 What to do next
 First thing is to check how much space is left. Like you can view CPU load, disk I/O etc. at cloud service providers’ dashboard, you won’t be able to view remaining space. You need to ssh into the server itself and run df command.
 # view space
+```bash
 df -h
+```
 # view partitions
 lsblk
 The next step would be to identify which files/folders are occupying your server’s space.
+
 Start by running this as root or with sudo:
 du -cha --max-depth=1 / | grep -E "M|G"
 So for example, if /var was the biggest you could do it like this next & so on until you identify the big fish.
