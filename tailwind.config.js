@@ -1,4 +1,5 @@
 module.exports = {
+  prefix: "t-",
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {

@@ -53,7 +53,5 @@ When request is sent to the web server with JWT token attached on header, it goe
 - User role: decoded from token
 - Resource name: identified from request URL
 
-https://gist.github.com/bibhuticoder/1928a16f9306cd0effdc060212ce4829#file-decode_jwt-js
 
-
-asds
+https://gist.github.com/bibhuticoder/1928a16f9306cd0effdc060212ce4829#decode_jwt.js

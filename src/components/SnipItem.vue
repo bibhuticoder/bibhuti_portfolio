@@ -3,20 +3,20 @@
     <div
       class="
         snip
-        bg-white
-        shadow-md
-        rounded
-        px-3
-        py-3
-        m-2
-        mb-3
-        pb-6
-        w-36
-        md:w-40
+        t-bg-white
+        t-shadow-md
+        t-rounded
+        t-px-3
+        t-py-3
+        t-m-2
+        t-mb-3
+        t-pb-6
+        t-w-36
+        md:t-w-40
       "
       :class="{ 'left-tilt': index % 2 == 0, 'right-tilt': index % 2 != 0 }"
     >
-      <p class="font-Poppins font-medium text-center text-sm md:text-left leading-4 mb-2">
+      <p class="t-font-Poppins t-font-medium t-text-center t-text-sm md:t-text-left leading-4 t-mb-2">
         {{ title }}
       </p>
 
@@ -25,7 +25,7 @@
       </div>
       <div class="hole"></div>
 
-      <p class="text-sm text-center text-gray-600 mt-3 md:text-left">
+      <p class="t-text-sm t-text-center t-text-gray-500 t-mt-3 md:t-text-left">
         {{ excerpt }}
       </p>
     </div>
@@ -82,12 +82,12 @@ export default {
         border-bottom: $width solid $background-color;
         border-right: $height solid $foreground-color;
       }
-    } @else if ($direction == up-right) or ($direction == up-left) {
+    } @else if ($direction == ut-p-right) or ($direction == ut-p-left) {
       border-top: $height solid $foreground-color;
 
-      @if $direction == up-right {
+      @if $direction == ut-p-right {
         border-left: $width solid $background-color;
-      } @else if $direction == up-left {
+      } @else if $direction == ut-p-left {
         border-right: $width solid $background-color;
       }
     } @else if ($direction == down-right) or ($direction == down-left) {
@@ -133,9 +133,9 @@ export default {
   }
 
   .hole {
-    @apply absolute;
-    @apply bg-app-white;
-    @apply shadow-inner;
+    @apply t-absolute;
+    @apply t-bg-white;
+    @apply t-shadow-inner;
     position: absolute;
     top: 0.25rem;
     right: 0.25rem;
@@ -150,11 +150,11 @@ export default {
 
     width: auto;
     height: 1rem;
-    @apply bg-green;
+    @apply t-bg-green;
     left: -8px;
-    @apply text-white;
-    // @apply text-sm;
-    @apply text-xs;
+    @apply t-text-white;
+    // @apply t-text-sm;
+    @apply t-text-xs;
     &:before {
       @include triangle(0.5rem, darken(#82b540, 15%), down-right);
       top: -0.5rem;
@@ -171,7 +171,7 @@ export default {
 
   &:hover {
     span.tag {
-      @apply mr-2;
+      @apply t-mr-2;
     }
   }
 

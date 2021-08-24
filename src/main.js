@@ -19,6 +19,11 @@ library.add(faRocket);
 library.add(faCalendarAlt);
 
 export default function (Vue, { router, head, isClient }) {
+  head.link.push({
+    rel: 'stylesheet',
+    href: 'https://github.githubassets.com/assets/gist-embed-d89dc96f3ab6372bb73ee45cafdd0711.css'
+  })
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('font-awesome-icon', FontAwesomeIcon)

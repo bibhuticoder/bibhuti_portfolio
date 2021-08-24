@@ -1,16 +1,16 @@
 <template>
   <Layout>
-    <div class="container pt-20">
-      <h1 class="text-center mb-5 md:text-left">Code Snippets</h1>
-      <p class="mb-5">
+    <div class="t-container t-pt-20">
+      <h1 class="t-text-center t-mb-5 md:t-text-left">Code Snippets</h1>
+      <p class="t-mb-5">
         Frequently used stuffs which I have collected throughout my works.
         Having to google same info repeatedly is tedious; hence this collection serves
         as a faster mechanism.
       </p>
 
-      <div class="toolbar flex mt-2">
+      <div class="toolbar t-flex t-mt-2">
         <select
-          class="text-black outline-none p-2 rounded-l shadow-sm"
+          class="t-text-black t-outline-none t-p-2 t-rounded-l t-shadow-sm"
           v-model="selectedTag"
         >
           <option value="All">All</option>
@@ -21,14 +21,14 @@
 
         <input
           type="text"
-          class="flex-grow p-2 outline-none shadow-sm rounded-r"
+          class="t-flex-grow t-p-2 t-outline-none t-shadow-sm t-rounded-r"
           placeholder="Search for snippets"
           v-model="searchKeyword"
         />
       </div>
 
-      <div class="snips-list flex flex-wrap justify-center">
-        <div v-for="(snip, index) in snips" :key="snip.id" class="self-center">
+      <div class="snips-list t-flex t-flex-wrap t-justify-center">
+        <div v-for="(snip, index) in snips" :key="snip.id" class="t-self-center">
           <SnipItem
             :index="index"
             :title="snip.title"

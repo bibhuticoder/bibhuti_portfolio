@@ -1,15 +1,15 @@
 <template>
   <g-link :to="path">
-    <div class="blogs-list-item bg-white shadow-md rounded px-4 py-3 my-2">
-      <p class="font-Poppins font-medium">
+    <div class="blogs-list-item t-bg-white t-shadow-md t-rounded t-px-4 t-py-3 t-my-2">
+      <p class="t-font-Poppins t-font-medium">
         {{ title }}
       </p>
-      <p class="text-xs mb-2 text-gray-500">
+      <p class="t-text-xs t-mb-2 t-text-gray-500">
         <!-- <font-awesome-icon :icon="['fas', 'calendar-alt']" /> -->
         {{ createdAtTransformed }} - {{'5'}} min read
       </p>
 
-      <p class="text-sm text-gray-500">
+      <p class="t-text-sm t-text-gray-500">
         {{ excerpt }}
       </p>
     </div>

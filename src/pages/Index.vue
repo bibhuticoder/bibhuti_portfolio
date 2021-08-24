@@ -1,40 +1,40 @@
 <template>
   <Layout>
-    <div class="container pt-10 md:pt-20">
-      <div class="flex flex-wrap">
-        <div class="md:w-2/3">
-          <!-- <h1 class="text-center mb-5 md:text-left">Recent Blogs</h1> -->
+    <div class="t-container t-pt-10 md:t-pt-20">
+      <div class="t-flex t-flex-wrap">
+        <div class="md:t-w-2/3">
+          <!-- <h1 class="t-text-center t-mb-5 md:t-text-left">Recent Blogs</h1> -->
 
-          <div class="flex justify-between md:justify-between mb-4 md:mr-4">
+          <div class="t-flex t-justify-between md:t-justify-between t-mb-4 md:t-mr-4">
             <div
               v-for="(post, index) in featuredPosts"
               :key="post.id"
-              class="md:block w-1/2 md:w-auto"
-              :class="{ hidden: index == 2, 'mr-2 md:mr-0': index == 0 }"
+              class="md:t-block t-w-1/2 md:t-w-auto"
+              :class="{ 't-hidden': index == 2, 't-mr-2 md:t-mr-0': index == 0 }"
             >
               <g-link :to="post.path">
                 <div
                   class="
                     blogs-list-item
-                    bg-white
-                    shadow-md
-                    rounded
-                    h-auto
-                    md:w-56
-                    md:h-full
+                    t-bg-white
+                    t-shadow-md
+                    t-rounded
+                    t-h-auto
+                    md:t-w-56
+                    md:t-h-full
                   "
                 >
                   <g-image
                     :src="post.thumbnail"
-                    class="rounded-tr rounded-tl h-32 w-full"
+                    class="t-rounded-tr t-rounded-tl t-h-32 t-w-full"
                   />
 
-                  <div class="content p-2">
-                    <p class="font-Poppins font-medium mb-3">
+                  <div class="content t-p-2">
+                    <p class="t-font-Poppins t-font-medium t-mb-3">
                       {{ post.title }}
                     </p>
 
-                    <p class="text-sm text-gray-500">
+                    <p class="t-text-sm t-text-gray-500">
                       {{ post.excerpt.substr(0, 50) + "..." }}
                     </p>
                   </div>
@@ -43,7 +43,7 @@
             </div>
           </div>
 
-          <div class="blogs-list flex flex-col md:mr-4">
+          <div class="blogs-list t-flex t-flex-col md:t-mr-4">
             <div v-for="post in otherPosts" :key="post.id">
               <BlogItem
                 :title="post.title"
@@ -56,15 +56,15 @@
           </div>
         </div>
 
-        <div class="md:w-1/3">
-          <!-- <h1 class="text-center mb-8 mt-10 md:mt-0 md:text-left">Recent Snippets</h1> -->
+        <div class="md:t-w-1/3">
+          <!-- <h1 class="t-text-center t-mb-8 t-mt-10 md:t-mt-0 md:t-text-left">Recent Snippets</h1> -->
           <div
-            class="snips-list flex flex-wrap justify-center md:justify-start"
+            class="snips-list t-flex t-flex-wrap t-justify-center md:t-justify-start"
           >
             <div
               v-for="(snip, index) in snips"
               :key="snip.id"
-              class="self-center"
+              class="t-self-center"
             >
               <SnipItem
                 :index="index"

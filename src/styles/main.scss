@@ -3,72 +3,72 @@
 // @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 @layer base {
     body {
         /* font-family: "Nunito", sans-serif; */
-        @apply font-Nunito;
-        @apply text-black;
-        @apply bg-app-white;
+        @apply t-font-Nunito;
+        @apply t-text-black;
+        @apply t-bg-app-white;
     }
 
     h1 {
-        @apply text-3xl;
-        @apply font-medium;
-        @apply font-Poppins;
-        @apply text-black;
+        @apply t-text-3xl;
+        @apply t-font-medium;
+        @apply t-font-Poppins;
+        @apply t-text-black;
     }
     h2 {
-        @apply text-2xl;
-        @apply font-medium;
-        @apply font-Poppins;
-        @apply text-black;
+        @apply t-text-2xl;
+        @apply t-font-medium;
+        @apply t-font-Poppins;
+        @apply t-text-black;
+    }
+}
+
+span.highlight, a.highlight,
+a.active {
+    &::after {
+        display: block;
+        content: "";
+        margin-top: -0.4rem;
+        width: 100%;
+        // margin-left: -5%;
+        height: 0.2rem;
+        @apply t-bg-green;
     }
 
-    .highlight,
-    a.active {
+    &.--no-highlight {
         &::after {
-            display: block;
-            content: "";
-            margin-top: -0.4rem;
-            width: 100%;
-            // margin-left: -5%;
-            height: 0.2rem;
-            @apply bg-green;
-        }
-
-        &.--no-highlight {
-            &::after {
-                display: none;
-            }
+            display: none;
         }
     }
+}
 
-    // code
+// code
+.shiki {
+    padding: 1rem;
+    border-radius: 0.25rem;
+
+    span {
+        font-family: monospace !important;
+    }
+}
+
+// blog post
+.blogPost {
     .shiki {
         padding: 1rem;
         border-radius: 0.25rem;
-
-        span {
-            font-family: monospace !important;
-        }
     }
 
-    // blog post
-    .blogPost {
-        .shiki {
-            padding: 1rem;
-            border-radius: 0.25rem;
-        }
+    p {
+        @apply t-my-4;
+    }
 
-        p {
-            @apply my-4;
-        }
-
-        img {
-            @apply mx-auto;
-            @apply my-4;
-        }
+    img {
+        @apply t-mx-auto;
+        @apply t-my-4;
     }
 }
