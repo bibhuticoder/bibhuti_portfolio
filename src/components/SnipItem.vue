@@ -21,7 +21,7 @@
       </p>
 
       <div class="ribbon-bottom">
-        <span class="tag ml-2">{{ tags }}</span>
+        <span class="tag t-mx-2">{{ tags }}</span>
       </div>
       <div class="hole"></div>
 
@@ -171,7 +171,7 @@ export default {
 
   &:hover {
     span.tag {
-      @apply t-mr-2;
+      @apply t-mr-4;
     }
   }
 

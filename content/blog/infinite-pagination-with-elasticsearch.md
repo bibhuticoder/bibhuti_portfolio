@@ -4,16 +4,18 @@ excerpt: Elastic Search always returns top 10 results by default. To get large v
 createdAt: 2021-06-25
 tags: ElasticSearch, JavaScript
 thumbnail: https://miro.medium.com/max/1400/1*eoZR94lBVHYUvFuhUcaX2Q.jpeg 
+time: 1
 ---
 
-<g-image src="https://miro.medium.com/max/1400/1*eoZR94lBVHYUvFuhUcaX2Q.jpeg" />
-
 Elastic Search always returns top 10 results by default. To get large volume of results, we need to user Search API.
-The Search API provides from and size parameters that can be used to retrieve predefined amount of data. But using from and size should be avoided to request very large volume at once. Reason: Search request works with multiple shards storing its requested hits into memory which leads into high memory + CPU usage.
 
-Moreover Elastic Search has set the maximum limit of 10,000 hits to paginate using size and from parameters. It's actually a safeguard mechanism of ES. More info can be found on ES-docs.
+The Search API provides `from` and `size` parameters that can be used to retrieve predefined amount of data. But using from and size should be avoided to request very large volume at once. Reason: Search request works with multiple shards storing its requested hits into memory which leads into high memory + CPU usage.
 
-A scenario can exist where we need to paginate through ES and retrieve very large set of data. In such case search_after parameter can be used.
+Moreover Elastic Search has set the maximum limit of 10,000 hits to paginate using `size` and `from` parameters. It's actually a safeguard mechanism of ES. More info can be found on [ES-docs](https://www.elastic.co/guide/en/elasticsearch/reference/current/paginate-search-results.html).
+
+---
+
+A scenario can exist where we need to paginate through ES and retrieve very large set of data. In such case `search_after` parameter can be used.
 The code below shows retrieving data infinitely via elastic search JavaScript API
 
 ```javascript
@@ -43,6 +45,5 @@ try {
    
   // you get your results on "data" array
 ```
-
 
 This approach requests for data until there is none left. This seems to be the most easier way to get all the data chunks by chunks. The most important thing to consider here is: Make sure you know how much data you are paginating through.

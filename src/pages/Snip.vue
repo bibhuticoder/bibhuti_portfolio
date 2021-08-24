@@ -17,6 +17,8 @@
           <option value="Server">Server</option>
           <option value="JavaScript">JavaScript</option>
           <option value="Database">Database</option>
+          <option value="CSS">CSS</option>
+          <option value="GithubAction">Github Action</option>
         </select>
 
         <input
