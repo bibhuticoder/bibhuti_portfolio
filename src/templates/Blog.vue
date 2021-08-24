@@ -3,13 +3,19 @@
     <div class="t-container t-pt-20 md:t-pt-40 blogPost t-max-w-xl">
       <h1>{{ $page.blog.title }}</h1>
       <p class="t-text-xs t-text-gray-500">
-        {{ createdAtTransformed }} - {{$page.blog.time}} min read
+        {{ createdAtTransformed }} - {{ $page.blog.time }} min read
       </p>
       <g-image :src="$page.blog.thumbnail" class="t-my-4" />
-      <div class="t-pb-8 t-text-gray-500 t-italic t-text-sm t-text-center" v-html="$page.blog.caption">
-
-      </div>
+      <div
+        class="t-pb-8 t-text-gray-500 t-italic t-text-sm t-text-center"
+        v-html="$page.blog.caption"
+      ></div>
       <VueRemarkContent />
+
+      <Disqus
+        shortname="bibhutipoudyal-com-np.disqus.com"
+        :pageConfig="{ title: $page.blog.title }"
+      />
     </div>
   </Layout>
 </template>
@@ -29,8 +35,10 @@ query Blog ($id: ID!) {
 
 <script>
 import moment from "moment";
+import { Disqus } from "vue-disqus";
 
 export default {
+  components: { Disqus },
   updated() {
     gtag("event", "page_view", {
       page_title: this.$page.blog.title,
