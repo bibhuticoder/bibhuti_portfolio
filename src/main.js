@@ -30,7 +30,6 @@ export default function (Vue, { router, head, isClient }) {
     async: true
   })
 
-
   if (process.isClient) {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }

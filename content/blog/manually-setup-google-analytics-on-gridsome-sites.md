@@ -47,6 +47,7 @@ export default function (Vue, { router, head, isClient }) {
     //------
 }
 ```
+> Note: check for **window.isClient** is needed because **window** won't work during build.
 
 Reload your site and you should see increase in "Active users" on google Analytics dashboard.
 
