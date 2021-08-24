@@ -12,9 +12,10 @@
       ></div>
       <VueRemarkContent />
 
+      <hr class="t-my-10">
       <Disqus
-        shortname="bibhutipoudyal-com-np.disqus.com"
-        :pageConfig="{ title: $page.blog.title }"
+        shortname="bibhutipoudyal-com-np"
+        :identifier="$page.blog.path"
       />
     </div>
   </Layout>
@@ -35,10 +36,9 @@ query Blog ($id: ID!) {
 
 <script>
 import moment from "moment";
-import { Disqus } from "vue-disqus";
 
 export default {
-  components: { Disqus },
+  components: { },
   updated() {
     gtag("event", "page_view", {
       page_title: this.$page.blog.title,
