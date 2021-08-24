@@ -88,7 +88,7 @@ export default {
 
 <style lang="scss" scoped>
 .sidenav {
-  position: absolute;
+  position: fixed;
   top: 48px;
   left: 0;
   background-color: white;
@@ -105,7 +105,7 @@ export default {
 .sidenav-overlay {
   background-color: black;
   opacity: 0.5;
-  position: absolute;
+  position: fixed;
   top: 48px;
   left: 0;
   width: 100vw;

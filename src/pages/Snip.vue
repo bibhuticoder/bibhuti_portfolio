@@ -8,9 +8,9 @@
         as a faster mechanism.
       </p>
 
-      <div class="toolbar t-flex t-mt-2">
+      <div class="toolbar t-flex t-mt-2 t-mb-4">
         <select
-          class="t-text-black t-outline-none t-p-2 t-rounded-l t-shadow-sm"
+          class="t-text-black t-outline-none t-p-2 t-rounded-l t-shadow-sm t-min-w-0"
           v-model="selectedTag"
         >
           <option value="All">All</option>
@@ -23,13 +23,13 @@
 
         <input
           type="text"
-          class="t-flex-grow t-p-2 t-outline-none t-shadow-sm t-rounded-r"
+          class="t-flex-grow t-p-2 t-outline-none t-shadow-sm t-rounded-r t-min-w-0"
           placeholder="Search for snippets"
           v-model="searchKeyword"
         />
       </div>
 
-      <div class="snips-list t-flex t-flex-wrap t-justify-center">
+      <div class="snips-list t-flex t-flex-wrap t-justify-center t-mb-64">
         <div v-for="(snip, index) in snips" :key="snip.id" class="t-self-center">
           <SnipItem
             :index="index"
