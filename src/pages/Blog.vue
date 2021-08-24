@@ -4,7 +4,7 @@
       <h1 class="t-text-center t-mb-5 md:t-text-left">Blog</h1>
 
       <p class="t-mb-5">
-        It's easy to find getting-started tutorials; once you go to production complexity
+        It's easy to find getting-started tutorials; but once you go to production complexity
         is at different level. Almost all the information found here are
         battle tested; being used on live projects.
       </p>

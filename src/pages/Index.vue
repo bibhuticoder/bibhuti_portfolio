@@ -19,9 +19,8 @@
                     t-bg-white
                     t-shadow-md
                     t-rounded
-                    t-h-auto
+                    t-h-full
                     md:t-w-56
-                    md:t-h-full
                   "
                 >
                   <g-image
@@ -84,7 +83,7 @@
 <page-query>
 
 query Blog {
-  blogs: allBlog(sortBy: "createdAt", order: DESC) {
+  blogs: allBlog(sortBy: "createdAt", order: DESC, perPage: 8, page: 1) {
     edges {
       node {
         title
@@ -96,7 +95,7 @@ query Blog {
     }
   }
 
-  snips: allSnip(sortBy: "createdAt", order: DESC) {
+  snips: allSnip(sortBy: "createdAt", order: DESC, perPage: 8, page: 1) {
     edges {
       node {
         title
