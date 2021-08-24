@@ -29,12 +29,13 @@ export default function (Vue, { router, head, isClient }) {
     src: 'https://www.googletagmanager.com/gtag/js?id=UA-97437577-6',
     async: true
   })
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'UA-97437577-6');
+
 
   if (process.isClient) {
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-97437577-6');
     window.gtag = gtag;
   }
 
