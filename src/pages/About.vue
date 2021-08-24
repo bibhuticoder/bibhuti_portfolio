@@ -16,7 +16,7 @@
 
           <p class="text-center md:text-left">
             Co-Founder @
-            <a href="#" target="_blank" class="highlight inline-block"
+            <a href="https://thevaluecrew.com/" target="_blank" class="highlight inline-block"
               >TheValueCrew</a
             >
             <br />

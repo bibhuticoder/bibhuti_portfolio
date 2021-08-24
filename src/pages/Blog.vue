@@ -5,7 +5,7 @@
 
       <p class="mb-5">
         It's easy to find getting-started tutorials; once you go to production complexity
-        is at different level. Almost All the information found here are
+        is at different level. Almost all the information found here are
         battle tested; being used on live projects.
       </p>
 
@@ -27,7 +27,7 @@
 <page-query>
 
 query Blog {
-  blogs: allBlog {
+  blogs: allBlog(sortBy: "createdAt", order: DESC) {
     edges {
       node {
         title

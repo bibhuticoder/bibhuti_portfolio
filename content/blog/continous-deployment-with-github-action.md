@@ -3,6 +3,7 @@ title: Continuous deployment with GitHub Action
 excerpt: This article demonstrates a straightforward approach to Continuous deployment using GitHub Actions..
 createdAt: 2021-06-25
 tags: GithubAction, Vuejs, Nodejs
+thumbnail: https://miro.medium.com/max/560/1*WMSpLyBw-DKqSvbtKbtkaQ.jpeg
 ---
 
 <g-image alt="Example image" src="https://miro.medium.com/max/560/1*WMSpLyBw-DKqSvbtKbtkaQ.jpeg" />

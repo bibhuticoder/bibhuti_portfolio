@@ -1,8 +1,9 @@
 ---
-title: How to Integrate Instagram Basic Display API with Node.js
+title: Integrate Instagram Basic Display API with Node.js
 excerpt: This article will demonstrate how Instagram can be integrated with your system. Specifically, it explores a mechanism to show users’ Instagram posts...
 createdAt: 2021-06-25
 tags: Instagram, JavaScript
+thumbnail: https://miro.medium.com/max/1400/1*gs0GEdGBdSSoLVNMpCIUXA.png
 ---
 
 <g-image alt="Example image" src="https://miro.medium.com/max/1400/1*gs0GEdGBdSSoLVNMpCIUXA.png" />

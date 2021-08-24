@@ -3,6 +3,7 @@ title: OTP Vefification with Vonage
 excerpt: OTP verification has become a common feature of modern web and mobile applications..
 createdAt: 2021-06-25
 tags: JavaScript, Server
+thumbnail: https://miro.medium.com/max/1400/1*LomylmIzuMa3eo9hwkcxqQ.jpeg
 ---
 
 <g-image src="https://miro.medium.com/max/1400/1*LomylmIzuMa3eo9hwkcxqQ.jpeg" />

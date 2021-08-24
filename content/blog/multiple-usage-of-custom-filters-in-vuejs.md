@@ -3,6 +3,7 @@ title: Multiple usage of custom filters in Vue.js
 excerpt: A Vue.js filter is simply a function that takes an input, processes it and gives an output...
 createdAt: 2021-06-25
 tags: VueJs
+thumbnail: https://miro.medium.com/max/1400/1*x8NzrnRLNmIeSEa9SbgFLg.png
 ---
 
 <g-image src="https://miro.medium.com/max/1400/1*x8NzrnRLNmIeSEa9SbgFLg.png" />

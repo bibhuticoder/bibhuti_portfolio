@@ -3,6 +3,7 @@ title: Migrate vue-i18n to poeditor
 excerpt: A Vue.js filter is simply a function that takes an input, processes it and gives an output...
 createdAt: 2020-09-23
 tags: VueJs
+thumbnail: https://miro.medium.com/max/560/1*PtHOZdErZMOnUTeAI61DJQ.png
 ---
 
 <g-image src="https://miro.medium.com/max/560/1*PtHOZdErZMOnUTeAI61DJQ.png" />

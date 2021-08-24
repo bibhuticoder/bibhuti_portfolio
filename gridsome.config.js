@@ -25,6 +25,13 @@ module.exports = {
               'gridsome-plugin-remark-shiki',
               { theme: 'nord', skipInline: true },
             ],
+
+            ['@noxify/gridsome-plugin-remark-embed', {
+              'enabledProviders': ['Youtube', 'Twitter', 'Gist'],
+              'Gist': {
+                secureConnection: true
+              }
+            }]
           ],
         }
       }

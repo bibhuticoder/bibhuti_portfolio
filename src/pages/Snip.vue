@@ -4,7 +4,7 @@
       <h1 class="text-center mb-5 md:text-left">Code Snippets</h1>
       <p class="mb-5">
         Frequently used stuffs which I have collected throughout my works.
-        Having to google same info repeatedly is tedious. This collection serves
+        Having to google same info repeatedly is tedious; hence this collection serves
         as a faster mechanism.
       </p>
 
