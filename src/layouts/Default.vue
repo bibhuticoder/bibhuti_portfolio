@@ -1,6 +1,6 @@
 <template>
   <div class="t-flex t-flex-col t-t-h-full">
-    <nav class="nav t-bg-white t-shadow-sm">
+    <nav class="nav t-fixed t-w-full t-bg-white t-shadow-sm t-z-50">
       <div
         class="t-container t-my-3 md:t-my-5 t-mx-auto t-flex t-justify-between"
       >

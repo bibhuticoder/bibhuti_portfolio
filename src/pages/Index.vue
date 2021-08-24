@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-10 md:t-pt-20">
+    <div class="t-container t-pt-20 md:t-pt-40">
       <div class="t-flex t-flex-wrap">
         <div class="md:t-w-2/3">
           <!-- <h1 class="t-text-center t-mb-5 md:t-text-left">Recent Blogs</h1> -->

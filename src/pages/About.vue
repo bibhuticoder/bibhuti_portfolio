@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-20">
+        <div class="t-container t-pt-20 md:t-pt-40">
       <!-- Intro -->
       <div class="t-flex t-justify-between" id="intro">
         <div class="md:t-w-11/12">
