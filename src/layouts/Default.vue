@@ -5,7 +5,7 @@
         class="t-container t-my-3 md:t-my-5 t-mx-auto t-flex t-justify-between"
       >
         <div class="logo">
-          <g-link to="/" class="font-bold --no-highlight">
+          <g-link to="/" class="t-font-bold --no-highlight">
             &lt;bibhutiPoudyal/&gt;
           </g-link>
         </div>
@@ -46,7 +46,7 @@
       <slot />
     </div>
 
-    <footer class="t-py-2 t-text-center t-bg-white t-text-black t-text-sm">
+    <footer class="t-py-2 t-mt-16 t-text-center  t-text-black t-text-sm">
       Copyright © {{ year }} - Made with
       <span class="t-text-heart t-mx-1 t-mt-1">
         <font-awesome-icon :icon="['fas', 'heart']"

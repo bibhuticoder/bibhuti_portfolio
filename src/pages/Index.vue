@@ -3,42 +3,50 @@
     <div class="t-container t-pt-20 md:t-pt-40">
       <div class="t-flex t-flex-wrap">
         <div class="md:t-w-2/3">
-          <!-- <h1 class="t-text-center t-mb-5 md:t-text-left">Recent Blogs</h1> -->
+          <!-- Site Intro -->
+          <div class="t-w-3/4">
+            <h2 class="t-mb-4">Hi 👋</h2>
+            <p class="t-mb-5">
+              I am Bibhuti Poudyal, software developer from Kathmandu.
+              <br />
+              I use this site to manage everything I have learnt at
+              <a
+                href="https://thevaluecrew.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="t-inline-block highlight"
+                >work</a
+              >
 
-          <div class="t-flex t-justify-between md:t-justify-between t-mb-4 md:t-mr-4">
+              . Stuffs found here are meant to be a self reference for myself or
+              other fellow developers in need.
+            </p>
+          </div>
+
+          <div
+            class="
+              t-flex t-justify-between
+              md:t-justify-between
+              t-mb-4
+              md:t-mr-4
+            "
+          >
             <div
               v-for="(post, index) in featuredPosts"
               :key="post.id"
               class="md:t-block t-w-1/2 md:t-w-auto"
-              :class="{ 't-hidden': index == 2, 't-mr-2 md:t-mr-0': index == 0 }"
+              :class="{
+                't-hidden': index == 2,
+                't-mr-2 md:t-mr-0': index == 0,
+              }"
             >
-              <g-link :to="post.path">
-                <div
-                  class="
-                    blogs-list-item
-                    t-bg-white
-                    t-shadow-md
-                    t-rounded
-                    t-h-full
-                    md:t-w-56
-                  "
-                >
-                  <g-image
-                    :src="post.thumbnail"
-                    class="t-rounded-tr t-rounded-tl t-h-32 t-w-full"
-                  />
-
-                  <div class="content t-p-2">
-                    <p class="t-font-Poppins t-font-medium t-mb-3">
-                      {{ post.title }}
-                    </p>
-
-                    <p class="t-text-sm t-text-gray-500">
-                      {{ post.excerpt.substr(0, 50) + "..." }}
-                    </p>
-                  </div>
-                </div>
-              </g-link>
+              <BlogItemImage
+                :title="post.title"
+                :thumbnail="post.thumbnail"
+                :excerpt="post.excerpt"
+                :path="post.path"
+                :createdAt="post.createdAt"
+              />
             </div>
           </div>
 
@@ -55,10 +63,17 @@
           </div>
         </div>
 
-        <div class="md:t-w-1/3">
-          <!-- <h1 class="t-text-center t-mb-8 t-mt-10 md:t-mt-0 md:t-text-left">Recent Snippets</h1> -->
+        <div class="md:t-w-1/3 md:t-mt-40">
+          <p class="t-ml-2">
+            📃 Collection of snippets - instructions, code, commands etc. View
+            <g-link to="/snip" class="highlight t-inline-block">more</g-link>.
+          </p>
           <div
-            class="snips-list t-flex t-flex-wrap t-justify-center md:t-justify-start"
+            class="
+              snips-list
+              t-flex t-flex-wrap t-justify-center
+              md:t-justify-start
+            "
           >
             <div
               v-for="(snip, index) in snips"
@@ -112,9 +127,10 @@ query Blog {
 <script>
 import SnipItem from "@/components/SnipItem";
 import BlogItem from "@/components/BlogItem";
+import BlogItemImage from "@/components/BlogItemImage";
 
 export default {
-  components: { SnipItem, BlogItem },
+  components: { SnipItem, BlogItem, BlogItemImage },
   metaInfo: {
     title: "Bibhuti",
   },
