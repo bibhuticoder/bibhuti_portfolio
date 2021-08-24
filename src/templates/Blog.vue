@@ -15,6 +15,7 @@
 query Blog ($id: ID!) {
   blog(id: $id) {
     title,
+    path,
     createdAt
   }
 }
@@ -24,6 +25,14 @@ query Blog ($id: ID!) {
 import moment from "moment";
 
 export default {
+  updated() {
+    gtag("event", "page_view", {
+      page_title: this.$page.blog.title,
+      page_path: this.$page.blog.path,
+      send_to: "UA-97437577-6",
+    });
+  },
+
   computed: {
     createdAtTransformed() {
       let year = moment(this.$page.blog.createdAt).year();

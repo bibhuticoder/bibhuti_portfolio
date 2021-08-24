@@ -24,6 +24,16 @@ export default function (Vue, { router, head, isClient }) {
     href: 'https://github.githubassets.com/assets/gist-embed-d89dc96f3ab6372bb73ee45cafdd0711.css'
   })
 
+  head.script.push({
+    src: 'https://www.googletagmanager.com/gtag/js?id=UA-97437577-6',
+    async: true
+  })
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'UA-97437577-6');
+  window.gtag = gtag;
+
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
   Vue.component('font-awesome-icon', FontAwesomeIcon)
