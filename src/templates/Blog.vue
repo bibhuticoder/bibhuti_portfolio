@@ -6,7 +6,9 @@
         {{ createdAtTransformed }} - {{$page.blog.time}} min read
       </p>
       <g-image :src="$page.blog.thumbnail" class="t-my-4" />
-      <div class="t-py-4"></div>
+      <div class="t-pb-8 t-text-gray-500 t-italic t-text-sm t-text-center" v-html="$page.blog.caption">
+
+      </div>
       <VueRemarkContent />
     </div>
   </Layout>
@@ -19,6 +21,7 @@ query Blog ($id: ID!) {
     path,
     time,
     thumbnail,
+    caption,
     createdAt
   }
 }

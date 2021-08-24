@@ -1,66 +1,77 @@
 <template>
   <Layout>
-        <div class="t-container t-pt-20 md:t-pt-40">
+    <div class="t-container t-pt-20 md:t-pt-32">
       <!-- Intro -->
       <div class="t-flex t-justify-between" id="intro">
         <div class="md:t-w-11/12">
           <h1 class="t-text-center md:t-text-left t-mb-5">Bibhuti Poudyal</h1>
           <p class="t-text-center md:t-text-left md:t-mr-20 t-mb-10">
-            Hi! I am a software developer based in Kathmandu. I work mostly with Javascript.
-            <br>
-            I believe building successful software requires not only tech skills but also positive emotions &amp; empathy. 
-            That's what we do at <a href="https://thevaluecrew.com/works/" target="_blank" rel="noopener noreferrer" class="highlight t-inline-block">work</a>.
-            <br>
+            Hi! I am a software developer from Kathmandu.
+            <br />
+            I believe building successful software requires not only tech skills
+            <br />
+            but also positive emotions &amp; empathy. That's what we do at
+            <a
+              href="https://thevaluecrew.com/works/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="highlight t-inline-block"
+              >work</a
+            >.
+            <br />
             I spend my free time on open source, reading &amp; cycling.
           </p>
 
           <p class="t-text-center md:t-text-left">
             Co-Founder @
-            <a href="https://thevaluecrew.com/" target="_blank" class="highlight t-inline-block"
+            <a
+              href="https://thevaluecrew.com/"
+              target="_blank"
+              class="highlight t-inline-block"
               >TheValueCrew</a
             >
             <br />
             MSc CS Graduate @ Pokhara University
           </p>
 
-            <div class="t-flex t-justify-center md:t-justify-start t-mt-3">
-              <a
-                href="https://github.com/bibhuticoder"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="t-mr-4 t-text-xl"
-                title="Github"
-              >
-                <font-awesome-icon :icon="['fab', 'github']" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/bibhuti-poudyal-4883aa116/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="t-mr-4 t-text-xl"
-                title="LinkedIn"
-              >
-                <font-awesome-icon :icon="['fab', 'linkedin']" />
-              </a>
-              <a
-                href="https://bibhuticoder.medium.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="t-mr-4 t-text-xl"
-                title="Medium"
-              >
-                <font-awesome-icon :icon="['fab', 'medium-m']" />
-              </a>
-              <a
-                href="mailto:bibhutipd@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="t-mr-4 t-text-xl"
-                title="Medium"
-              >
-                <font-awesome-icon :icon="['fas', 'envelope']" />
-              </a>
-            </div>
+          <div class="t-flex t-justify-center md:t-justify-start t-mt-3">
+            <a
+              href="https://github.com/bibhuticoder"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="t-mr-4 t-text-xl"
+              title="Github"
+            >
+              <font-awesome-icon :icon="['fab', 'github']" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/bibhuti-poudyal-4883aa116/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="t-mr-4 t-text-xl"
+              title="LinkedIn"
+            >
+              <font-awesome-icon :icon="['fab', 'linkedin']" />
+            </a>
+            <a
+              href="https://bibhuticoder.medium.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="t-mr-4 t-text-xl"
+              title="Medium"
+            >
+              <font-awesome-icon :icon="['fab', 'medium-m']" />
+            </a>
+            <a
+              href="mailto:bibhutipd@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="t-mr-4 t-text-xl"
+              title="Medium"
+            >
+              <font-awesome-icon :icon="['fas', 'envelope']" />
+            </a>
+          </div>
         </div>
 
         <div class="t-hidden md:t-block">
@@ -127,7 +138,8 @@
             <div
               class="
                 project
-                t-flex t-flex-col
+                t-flex
+                t-flex-col
                 t-bg-white
                 t-w-40
                 t-p-3
@@ -136,15 +148,15 @@
                 t-rounded
                 t-text-center
                 t-mb-4
-                md:t-w-48
-                md:t-p-4
-                md:t-flex
+                md:t-w-48 md:t-p-4 md:t-flex
               "
-              :class="{'t-hidden': !oss.showPhone }"
+              :class="{ 't-hidden': !oss.showPhone }"
               v-for="(oss, index2) in ossList"
               :key="index2"
             >
-              <p class="title t-font-medium t-font-Poppins t-text-sm t-mb-5">{{ oss.title }}</p>
+              <p class="title t-font-medium t-font-Poppins t-text-sm t-mb-5">
+                {{ oss.title }}
+              </p>
               <div class="description t-text-sm t-flex-grow">
                 {{ oss.desc }}
               </div>
@@ -183,15 +195,15 @@
                   <div
                     class="
                       blogs-list-item
-                      t-bg-white
-                      t-shadow-md
-                      t-rounded
-                      t-px-4
-                      t-py-3
-                      t-my-2
+                      t-bg-white t-shadow-md t-rounded t-px-4 t-py-3 t-my-2
                     "
                   >
-                    <p class="t-font-medium t-font-Poppins t-mb-2 t-text-center md:t-text-left">
+                    <p
+                      class="
+                        t-font-medium t-font-Poppins t-mb-2 t-text-center
+                        md:t-text-left
+                      "
+                    >
                       {{ edge.node.title }}
                     </p>
 
@@ -299,7 +311,9 @@
               >
             </p>
 
-            <div class="t-flex t-justify-center md:t-justify-start t-mt-3 t-mb-4">
+            <div
+              class="t-flex t-justify-center md:t-justify-start t-mt-3 t-mb-4"
+            >
               <a
                 href="https://github.com/bibhuticoder"
                 target="_blank"
@@ -415,7 +429,8 @@ export default {
           title: "vue-file-uploader",
           desc: "Easy File upload component for Vue 2",
           tryLink: "https://www.npmjs.com/package/vue-easy-multi-file-upload",
-          codeLink: "https://github.com/the-value-crew/vue-easy-multi-file-uploader",
+          codeLink:
+            "https://github.com/the-value-crew/vue-easy-multi-file-uploader",
           showPhone: false,
         },
 

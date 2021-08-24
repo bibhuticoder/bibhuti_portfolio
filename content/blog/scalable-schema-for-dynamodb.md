@@ -1,9 +1,10 @@
 ---
 title: Scalable schema for DynamoDB
-excerpt: If your job involves maintaining server, you are likely to stumble onto this issue sooner or later. Unlike CPU load, high traffic etc..
+excerpt: DynamoDB is a NoSql database and models data in Table-Items-Attributes structure. It allows data-item to be...
 createdAt: 2020-08-17
 tags: Database, NodeJs, DynamoDB
 thumbnail: https://miro.medium.com/max/1400/1*9b6sArK5hvFUr141t4JLKg.jpeg
+caption: Photo by <a href="https://unsplash.com/@hiteshchoudhary">Hitesh Choudhary</a> on Unsplash
 time: 3
 ---
 

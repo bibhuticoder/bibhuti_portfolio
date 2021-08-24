@@ -1,9 +1,10 @@
 ---
 title: Beware of Dynamodb TTL
-excerpt: If your job involves maintaining server, you are likely to stumble onto this issue sooner or later. Unlike CPU load, high traffic etc..
+excerpt: Its a very basic requirement for applications to delete data item from the database after...
 createdAt: 2020-08-16
 tags: Database, NodeJs, DynamoDB
 thumbnail: https://miro.medium.com/max/1400/1*TM-OOipO0Dz7MMDt0bQ_AQ.jpeg
+caption: Photo by <a href="https://unsplash.com/@pgreen1983">Paul Green</a> on Unsplash
 time: 2
 ---
 

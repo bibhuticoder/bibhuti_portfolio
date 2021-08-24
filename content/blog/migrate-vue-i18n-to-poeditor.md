@@ -1,6 +1,6 @@
 ---
 title: Migrate vue-i18n to poeditor
-excerpt: A Vue.js filter is simply a function that takes an input, processes it and gives an output...
+excerpt: Internationalization is a basic feature for web apps having users from different corners...
 createdAt: 2020-09-23
 tags: VueJs
 thumbnail: https://miro.medium.com/max/560/1*PtHOZdErZMOnUTeAI61DJQ.png

@@ -4,6 +4,7 @@ excerpt: As we all know analytics is an essential part of any website. Google an
 createdAt: 2021-08-24
 tags: JavaScript, Gridsome, GoogleAnalytics, VueJs
 thumbnail: https://miro.medium.com/max/1400/1*eVj9bCkqK2hX08hI_xsqUg.jpeg
+caption: Photo by <a href="https://unsplash.com/@markuswinkler">Markus Winkler</a> on Unsplash
 time: 2
 ---
 
@@ -34,17 +35,20 @@ Go to main.js file and paste the following code. Make sure you include your trac
 ```javascript
 export default function (Vue, { router, head, isClient }) {	
 	//----
-	head.script.push({
-        src: 'https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID',
-        async: true
-    })
+	
+  head.script.push({
+    src: 'https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID',
+    async: true
+  })
 
+  if (process.isClient) {
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
     gtag('config', 'YOUR_TRACKING_ID');
+  }
 
-    //------
+  //------
 }
 ```
 > Note: check for **window.isClient** is needed because **window** won't work during build.

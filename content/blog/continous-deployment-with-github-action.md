@@ -4,6 +4,7 @@ excerpt: This article demonstrates a straightforward approach to Continuous depl
 createdAt: 2021-06-25
 tags: GithubAction, Vuejs, Nodejs
 thumbnail: https://miro.medium.com/max/560/1*WMSpLyBw-DKqSvbtKbtkaQ.jpeg
+caption: Photo by <a href="https://unsplash.com/@andyadcon">De an Sun</a> on Unsplash
 time: 2
 ---
 

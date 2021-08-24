@@ -4,6 +4,7 @@ excerpt: OTP verification has become a common feature of modern web and mobile a
 createdAt: 2021-05-30
 tags: JavaScript, Server, OTP
 thumbnail: https://miro.medium.com/max/1400/1*LomylmIzuMa3eo9hwkcxqQ.jpeg
+caption: Photo by <a href="https://unsplash.com/@firmbee">Firmbee.com</a> on Unsplash
 ---
 
 OTP verification has become a common feature of modern web and mobile applications. Whether it be user registration, multi-factor authentication or password change mechanism, OTP verification seems to be the perfect choice. Also, SMS or phone call verifications are considered more secure & reliable than email links.

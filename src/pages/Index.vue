@@ -1,15 +1,15 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-20 md:t-pt-40">
+    <div class="t-container t-pt-20 md:t-pt-32">
       <div class="t-flex t-flex-wrap">
         <div class="md:t-w-2/3">
           <!-- Site Intro -->
-          <div class="t-w-3/4">
-            <h2 class="t-mb-4">Hi 👋</h2>
-            <p class="t-mb-5">
+          <div class="md:t-w-3/4">
+            <h2 class="t-mb-4 t-text-center md:t-text-left">Hi 👋</h2>
+            <p class="t-mb-5 t-text-center md:t-text-left">
               I am Bibhuti Poudyal, software developer from Kathmandu.
               <br />
-              I use this site to manage everything I have learnt at
+              This site is a journal; mostly related to
               <a
                 href="https://thevaluecrew.com/"
                 target="_blank"
@@ -18,7 +18,7 @@
                 >work</a
               >
 
-              . Stuffs found here are meant to be a self reference for myself or
+              and personal Open Source projects. Information found here are meant to be a self reference for myself and
               other fellow developers in need.
             </p>
           </div>
@@ -64,7 +64,7 @@
         </div>
 
         <div class="md:t-w-1/3 md:t-mt-40">
-          <p class="t-ml-2">
+          <p class="t-ml-2 t-mt-8 md:t-mt-0 t-text-center md:t-text-left">
             📃 Collection of snippets - instructions, code, commands etc. View
             <g-link to="/snip" class="highlight t-inline-block">more</g-link>.
           </p>

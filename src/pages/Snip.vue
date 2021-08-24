@@ -1,6 +1,6 @@
 <template>
   <Layout>
-       <div class="t-container t-pt-20 md:t-pt-40">
+       <div class="t-container t-pt-20 md:t-pt-32">
       <h1 class="t-text-center t-mb-5 md:t-text-left">Code Snippets</h1>
       <p class="t-mb-5">
         Frequently used stuffs which I have collected throughout my works.
