@@ -1,5 +1,5 @@
 ---
-title: Deploy Vuejs to AWs
+title: Deploy Vuejs to AWS
 excerpt: Github Action to deploy Vuejs to AWS S3 & invalidate Cloudfront cache
 createdAt: 2021-08-24
 tags: GithubAction

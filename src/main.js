@@ -33,7 +33,10 @@ export default function (Vue, { router, head, isClient }) {
   function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
   gtag('config', 'UA-97437577-6');
-  window.gtag = gtag;
+
+  if (process.isClient) {
+    window.gtag = gtag;
+  }
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
