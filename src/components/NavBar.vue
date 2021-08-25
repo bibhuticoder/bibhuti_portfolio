@@ -31,7 +31,7 @@
       :class="{ '--hidden': !sidenav }"
       @click="toggleNav"
     >
-      <div class="t-flex t-flex-col t-flex-grow t-justify-center">
+      <div class="t-flex t-flex-col t-flex-grow t-mt-48">
         <h2
           class="t-mb-8 t-text-center"
           v-for="navLink in navLinks"
