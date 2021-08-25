@@ -77,7 +77,7 @@ export default {
 <style lang="scss" scoped>
 .sidenav {
   position: fixed;
-  top: 48px;
+  top: 60px;
   left: 0;
   background-color: white;
   width: 100%;
