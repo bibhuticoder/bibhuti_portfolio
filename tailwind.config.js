@@ -8,7 +8,7 @@ module.exports = {
         'green': "#82B540",
         "black": "#373737",
         "heart": "#F44336",
-        "app-white": "#Fafafa",
+        "app-white": "#f6f8fa",
       },
 
       textColor: {
