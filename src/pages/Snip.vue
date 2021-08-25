@@ -29,7 +29,7 @@
         />
       </div>
 
-      <div class="snips-list t-flex t-flex-wrap t-justify-center t-mb-64">
+      <div class="snips-list t-flex t-flex-wrap t-justify-between md:t-justify-center t-mb-64">
         <div v-for="(snip, index) in snips" :key="snip.id" class="t-self-center">
           <SnipItem
             :index="index"
@@ -67,7 +67,7 @@ import SnipItem from "@/components/SnipItem";
 export default {
   components: { SnipItem },
   metaInfo: {
-    title: "Blog",
+    title: "Snippets",
   },
 
   data() {

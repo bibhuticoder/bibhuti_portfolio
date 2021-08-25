@@ -61,6 +61,8 @@ a.active {
 .blogPost {
     p {
         @apply t-my-4;
+        @apply t-whitespace-pre-wrap;
+        @apply t-break-words;
     }
 
     img {

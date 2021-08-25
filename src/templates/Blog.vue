@@ -1,8 +1,8 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-20 md:t-pt-40 blogPost t-max-w-xl">
-      <h1>{{ $page.blog.title }}</h1>
-      <p class="t-text-xs t-text-gray-500">
+    <div class="t-container t-pt-20 md:t-pt-32 t-max-w-xl">
+      <h1 class="t-mb-4">{{ $page.blog.title }}</h1>
+      <p class="t-text-xs t-text-gray-500 t-mb-4">
         {{ createdAtTransformed }} - {{ $page.blog.time }} min read
       </p>
       <g-image :src="$page.blog.thumbnail" class="t-my-4" />
@@ -10,13 +10,13 @@
         class="t-pb-8 t-text-gray-500 t-italic t-text-sm t-text-center"
         v-html="$page.blog.caption"
       ></div>
-      <VueRemarkContent />
 
-      <hr class="t-my-10">
-      <Disqus
-        shortname="bibhutipoudyal-com-np"
-        :identifier="$page.blog.path"
-      />
+      <div class="blogPost">
+        <VueRemarkContent />
+      </div>
+
+      <hr class="t-my-10" />
+      <Disqus shortname="bibhutipoudyal-com-np" :identifier="$page.blog.path" />
     </div>
   </Layout>
 </template>
@@ -38,7 +38,7 @@ query Blog ($id: ID!) {
 import moment from "moment";
 
 export default {
-  components: { },
+  components: {},
   updated() {
     gtag("event", "page_view", {
       page_title: this.$page.blog.title,

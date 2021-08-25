@@ -51,7 +51,7 @@ export default function (Vue, { router, head, isClient }) {
   //------
 }
 ```
-> Note: check for **window.isClient** is needed because **window** won't work during build.
+> Note: check for **process.isClient** is needed because **window** won't work during build.
 
 Reload your site and you should see increase in "Active users" on google Analytics dashboard.
 
@@ -63,7 +63,7 @@ gtag('event', 'page_view', {
   page_title: '<Page Title>',
   page_location: '<Page Location>',
   page_path: '<Page Path>',
-  send_to: '<GA_MEASUREMENT_ID>'
+  send_to: '<TRACKING_ID>'
 })
 ```
 

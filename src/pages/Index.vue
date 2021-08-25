@@ -6,8 +6,8 @@
           <!-- Site Intro -->
           <div class="md:t-w-3/4">
             <h2 class="t-mb-4 t-text-center md:t-text-left">Hi 👋</h2>
-            <p class="t-mb-5 t-text-center md:t-text-left">
-              I am Bibhuti Poudyal, software developer from Kathmandu.
+            <p class="t-mb-5 t-text-center md:t-text-left t-text-black">
+              I am Bibhuti. I build softwares for a living.
               <br />
               This site is a journal; mostly related to
               <a
@@ -18,8 +18,8 @@
                 >work</a
               >
 
-              and personal Open Source projects. Information found here are meant to be a self reference for myself and
-              other fellow developers in need.
+              and Open Source projects; kept as a self reference for myself and
+              other fellow developers interested.
             </p>
           </div>
 
@@ -63,15 +63,15 @@
           </div>
         </div>
 
-        <div class="md:t-w-1/3 md:t-mt-40">
-          <p class="t-ml-2 t-mt-8 md:t-mt-0 t-text-center md:t-text-left">
+        <div class="md:t-w-1/3 md:t-mt-32">
+          <p class="t-ml-2 t-mt-8 md:t-mt-0 t-mb-4 t-text-center md:t-text-left">
             📃 Collection of snippets - instructions, code, commands etc. View
             <g-link to="/snip" class="highlight t-inline-block">more</g-link>.
           </p>
           <div
             class="
               snips-list
-              t-flex t-flex-wrap t-justify-center
+              t-flex t-flex-wrap t-justify-between
               md:t-justify-start
             "
           >
@@ -132,7 +132,7 @@ import BlogItemImage from "@/components/BlogItemImage";
 export default {
   components: { SnipItem, BlogItem, BlogItemImage },
   metaInfo: {
-    title: "Bibhuti",
+    title: "Home",
   },
 
   computed: {

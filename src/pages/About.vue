@@ -249,7 +249,7 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
-      class="t-hidden md:t-block -t-mt-32"
+      class="t-hidden md:t-block t--mt-32"
     >
       <path
         fill="#ffffff"
@@ -259,7 +259,7 @@
     </svg>
 
     <!-- Contact -->
-    <div id="contact" class="md:t-bg-white t-mt-20 md:t--mt-8 md:relative">
+    <div id="contact" class="md:t-bg-white t-mt-20 md:t--mt-8 md:t-relative">
       <div class="t-container">
         <h1 class="t-text-center md:t-text-left t-mb-5">Contact Me</h1>
 

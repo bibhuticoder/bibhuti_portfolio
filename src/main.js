@@ -8,7 +8,7 @@ import VueDisqus from 'vue-disqus'
 // font awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedin, faMediumM } from '@fortawesome/free-brands-svg-icons'
-import { faHeart, faEnvelope, faCode, faRocket, faCalendarAlt, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faEnvelope, faCode, faRocket, faCalendarAlt, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 library.add(faGithub);
 library.add(faLinkedin);
@@ -19,6 +19,7 @@ library.add(faCode);
 library.add(faRocket);
 library.add(faCalendarAlt);
 library.add(faBars);
+library.add(faTimes);
 
 export default function (Vue, { router, head, isClient }) {
   head.link.push({

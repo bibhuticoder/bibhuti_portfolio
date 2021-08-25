@@ -1,6 +1,6 @@
 ---
-title: Serverless - Useful comamnds
-excerpt: Useful command for serevrless framework
+title: Serverless - Useful commands
+excerpt: Useful command for serverless framework
 createdAt: 2021-08-24
 tags: Serverless
 ---

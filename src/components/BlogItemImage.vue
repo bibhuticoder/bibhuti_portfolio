@@ -13,11 +13,11 @@
                   />
 
                   <div class="content t-p-2">
-                    <p class="t-font-Poppins t-font-medium t-mb-3">
+                    <p class="t-font-Poppins t-font-medium t-mb-3 t-text-center md:t-text-left">
                       {{ title }}
                     </p>
 
-                    <p class="t-text-sm t-text-gray-500">
+                    <p class="t-text-sm t-text-gray-500 t-hidden md:t-block">
                       {{ excerpt.substr(0, 50) + "..." }}
                     </p>
                   </div>
