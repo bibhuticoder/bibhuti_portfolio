@@ -53,7 +53,7 @@ a.active {
     border-radius: 0.25rem;
     @apply t-relative;
 
-    code{
+    code {
         @apply t-block;
         @apply t-w-full;
         @apply t-overflow-auto;
@@ -63,11 +63,12 @@ a.active {
         font-family: monospace !important;
     }
 
-    span.copy{
+    span.copy {
         @apply t-text-app-white;
         @apply t-text-xs;
         @apply t-absolute;
         @apply t-cursor-pointer;
+        @apply t-select-none;
         top: 0.5rem;
         right: 0.5rem;
     }
@@ -130,5 +131,11 @@ a.active {
             background-color: inherit;
         }
         overflow: auto;
+    }
+}
+
+.image-caption {
+    a {
+        @apply t-underline;
     }
 }

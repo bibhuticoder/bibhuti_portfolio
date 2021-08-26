@@ -15,6 +15,6 @@ export default function (Vue, { router, head, isClient }) {
   Vue.component('Layout', DefaultLayout)
   Vue.use(Ga, { trackingId: 'UA-97437577-6', isClient, head, router })
   Vue.use(VueDisqus);
-  Vue.use(CopyPlugin, { router });
+  Vue.use(CopyPlugin);
   Vue.use(FwPlugin);
 }

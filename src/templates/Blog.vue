@@ -7,7 +7,7 @@
       </p>
       <g-image :src="$page.blog.thumbnail" class="t-my-4" />
       <div
-        class="t-pb-8 t-text-gray-500 t-italic t-text-sm t-text-center"
+        class="t-pb-8 t-text-gray-500 t-italic t-text-sm t-text-center image-caption"
         v-html="$page.blog.caption"
       ></div>
 

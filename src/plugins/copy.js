@@ -1,13 +1,13 @@
 const CopyPlugin = {
-    install: function (Vue, options) {
-
-        options.router.afterEach((to, from) => {
-            setTimeout(() => {
-                document.querySelectorAll("pre.shiki").forEach(node => {
+    install: function (Vue) {
+        Vue.mixin({
+            mounted: function () {
+                document.querySelectorAll("pre.shiki:not(.--copy)").forEach(node => {
                     let icon = document.createElement("span");
                     icon.innerText = "Copy";
                     icon.classList.add("copy");
                     node.appendChild(icon);
+                    node.classList.add("--copy");
 
                     icon.addEventListener("click", async () => {
 
@@ -16,12 +16,10 @@ const CopyPlugin = {
                             await navigator.clipboard.writeText(node.querySelector("code").innerText);
                         }
                         icon.innerText = "Copied";
-                        setTimeout(() => {
-                            icon.innerText = "Copy";
-                        }, 5000);
+                        setTimeout(() => icon.innerText = "Copy", 2000);
                     })
                 })
-            }, 1000);
+            }
         })
     }
 }

@@ -5,7 +5,7 @@
       <p class="t-mb-5">
         Frequently used stuffs which I have collected throughout my works.
         Having to google same info repeatedly is tedious; hence this collection serves
-        as a faster mechanism.
+        as a faster approach 🚀
       </p>
 
       <div class="toolbar t-flex t-mt-2 t-mb-4">
