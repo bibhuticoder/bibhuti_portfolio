@@ -1,7 +1,7 @@
 <template>
   <div class="illustration t-relative">
     <div class="obj-container" v-for="n in objS" :key="n" :style="randAnim(n)">
-      <g-image :src="'/obj_' + n + '.png'" class="obj" />
+      <g-image :src="'/obj_' + objS[n - 1] + '.png'" class="obj" />
     </div>
     <g-image alt="Bibhuti" src="/illus_man.png" class="main-image t-absolute" />
   </div>

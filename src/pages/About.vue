@@ -439,7 +439,7 @@ export default {
         },
 
         {
-          title: "num-to-net-p-words",
+          title: "num-to-nep-words",
           desc: "Convert Arabic numerals into Nepali words. Both in Nepali and English language.",
           tryLink: "https://the-value-crew.github.io/num-to-nepali-words-demo/",
           codeLink: "https://github.com/the-value-crew/num-to-nepali-words",
