@@ -1,6 +1,6 @@
 <template>
   <div class="illustration t-relative">
-    <div class="obj-container" v-for="n in 8" :key="n" :style="randAnim(n)">
+    <div class="obj-container" v-for="n in objS" :key="n" :style="randAnim(n)">
       <g-image :src="'/obj_' + n + '.png'" class="obj" />
     </div>
     <g-image alt="Bibhuti" src="/illus_man.png" class="main-image t-absolute" />
@@ -11,18 +11,19 @@
 export default {
   name: "AboutIllus",
 
+  data() {
+    return {
+      objS: [1, 2, 3, 4, 5, 6, 7, 8].sort(() => 0.5 - Math.random()),
+    };
+  },
+
   methods: {
     randAnim(n) {
       return {
         animation: "revolve-" + n,
         animationDuration: n * 10 + "s",
         animationIterationCount: "infinite",
-        // animationDirection: "alternate"
       };
-    },
-
-    random(min, max) {
-      return Math.floor(Math.random() * (max - min + 1)) + min;
     },
   },
 };
@@ -44,7 +45,7 @@ export default {
   }
 
   .obj-container {
-    width: 25rem;
+    width: 23rem;
     height: 1rem;
     position: absolute;
     left: 0;
@@ -72,10 +73,10 @@ export default {
 @for $i from 1 through 8 {
   @keyframes revolve-#{$i} {
     from {
-      transform: rotate(#{360 / ($i + 1)}deg);
+      transform: rotate(#{360 / (($i) + 1)}deg);
     }
     to {
-      transform: rotate(#{360 + (360 / ($i + 1))}deg);
+      transform: rotate(#{360 + (360 / (($i) + 1))}deg);
     }
   }
 }
