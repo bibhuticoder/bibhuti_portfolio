@@ -10,7 +10,13 @@ module.exports = {
         shouldImport: false,
         shouldTimeTravel: false
       }
+    },
+
+    {
+      use: 'gridsome-plugin-seo'
     }
+
+    // Add plugins here ^
   ]
     .concat(['Blog', 'Snip'].map(item => {
       return {

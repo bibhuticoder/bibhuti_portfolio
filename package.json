@@ -16,6 +16,7 @@
     "@noxify/gridsome-plugin-remark-embed": "^1.3.1",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.6.0",
+    "gridsome-plugin-seo": "^1.0.2",
     "lodash": "^4.17.21",
     "moment": "^2.29.1",
     "vue-disqus": "^4.0.1"

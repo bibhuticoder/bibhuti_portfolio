@@ -29,6 +29,8 @@ query Blog ($id: ID!) {
     time,
     thumbnail,
     caption,
+    excerpt,
+    tags,
     createdAt
   }
 }
@@ -38,6 +40,22 @@ query Blog ($id: ID!) {
 import moment from "moment";
 
 export default {
+  metaInfo() {
+    return this.$seo({
+      title: this.$page.blog.title,
+      description: this.$page.blog.excerpt,
+      keywords: this.$page.blog.tags,
+      openGraph: {
+        title: this.$page.blog.title,
+        type: "website",
+      },
+      twitter: {
+        title: this.$page.blog.title,
+        type: "summary",
+      },
+    });
+  },
+
   components: {},
   updated() {
     gtag("event", "page_view", {
