@@ -75,7 +75,8 @@
         </div>
 
         <div class="t-hidden md:t-block">
-          <g-image alt="Bibhuti" src="/illustration.png" />
+          <AboutIllus />
+          <!-- <g-image alt="Bibhuti" src="/illustration.png" /> -->
         </div>
       </div>
 
@@ -408,11 +409,14 @@ query Blog {
 
 <script>
 import _ from "lodash";
+import AboutIllus from "@/components/AboutIllus";
 
 export default {
   metaInfo: {
     title: "About",
   },
+
+  components: { AboutIllus },
 
   data() {
     return {
