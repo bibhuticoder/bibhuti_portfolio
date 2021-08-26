@@ -12,15 +12,14 @@ const Ga = {
       gtag('js', new Date());
       gtag('config', options.trackingId);
       window.gtag = gtag;
+      options.router.beforeEach((to, from, next) => {
+        gtag("event", "page_view", {
+          page_path: location.href,
+          send_to: options.trackingId,
+        });
+        next();
+      })
     }
-
-    options.router.beforeEach((to, from, next) => {
-      gtag("event", "page_view", {
-        page_path: location.href,
-        send_to: options.trackingId,
-      });
-      next();
-    })
   }
 }
 
