@@ -1,13 +1,13 @@
 ---
 title: Copy text to clipboard
-excerpt: Only works on HTTPS
+excerpt: Copy data from webpahe to clipboard
 createdAt: 2021-08-26
 tags: JavaScript
 ---
 ```javascript 
-async copyText(text){
+async copyText(text) {
     if (navigator.clipboard) {
-        await navigator.clipboard.writeText(node.querySelector("code").innerText);
+        await navigator.clipboard.writeText("THIS TEXT IS COPIED");
         alert("Copied");
     } else alert("Copy not supported");
 }

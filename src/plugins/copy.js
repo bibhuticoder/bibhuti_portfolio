@@ -10,8 +10,6 @@ const CopyPlugin = {
                     node.classList.add("--copy");
 
                     icon.addEventListener("click", async () => {
-
-                        // copy to clipboard
                         if (navigator.clipboard) {
                             await navigator.clipboard.writeText(node.querySelector("code").innerText);
                         }

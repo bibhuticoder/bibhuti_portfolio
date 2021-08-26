@@ -1,11 +1,11 @@
 ---
-title: Add "Copy to clipboard" button to any HTML element
+title: Add "Copy to clipboard" button on any HTML element
 excerpt: It will work for all of type of frontend frameworks(including SSR and JAM-stack)...
 createdAt: 2021-08-26
 tags: VueJS, JavaScript
 thumbnail: https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80
 caption: Photo by <a href="https://unsplash.com/@markuswinkler>Markus Winkler</a> on Unsplash 
-time: 4
+time: 3
 ---
 
 This post will guide to add "Copy" button to a html element. It will work for all of type of frontend frameworks(including SSR and JAM-stack);
@@ -19,7 +19,7 @@ const copy = async (text) => await navigator.clipboard.writeText(text);
 
 That's it !
 
-This 1-liner will copy any piece of text from a webpage to clipboard. Its not limited to text though, you can copy any arbitrarydata eg. images to clipboard. More info along with its limitations & browser support can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard).
+This 1-liner will copy any piece of text from a webpage to clipboard. Its not limited to text though, you can copy any arbitrary data eg. images to clipboard. More info along with its limitations & browser support can be found [here](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard).
 
 Lets look at some of the use cases on how this 1-liner can be used on real world scenarios.
 

@@ -4,8 +4,7 @@ import { faHeart, faEnvelope, faCode, faRocket, faCalendarAlt, faBars, faTimes, 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 const FwPlugin = {
-    install: function (Vue, options) {
-
+    install: function (Vue) {
         library.add(faGithub);
         library.add(faLinkedin);
         library.add(faMediumM);

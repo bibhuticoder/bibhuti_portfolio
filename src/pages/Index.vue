@@ -57,6 +57,7 @@
                 :tags="post.tags"
                 :excerpt="post.excerpt"
                 :path="post.path"
+                :time="post.time"
                 :createdAt="post.createdAt"
               />
             </div>
@@ -105,6 +106,7 @@ query Blog {
         path
         excerpt
         createdAt
+        time
         thumbnail
       }
     }
