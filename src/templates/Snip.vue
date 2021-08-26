@@ -20,12 +20,5 @@ query Snip ($id: ID!) {
 
 <script>
 export default {
-  updated() {
-    gtag("event", "page_view", {
-      page_title: this.$page.snip.title,
-      page_path: this.$page.snip.path,
-      send_to: "UA-97437577-6",
-    });
-  },
 };
 </script>

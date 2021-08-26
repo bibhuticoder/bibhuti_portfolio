@@ -51,9 +51,25 @@ a.active {
 .shiki {
     padding: 1rem;
     border-radius: 0.25rem;
+    @apply t-relative;
+
+    code{
+        @apply t-block;
+        @apply t-w-full;
+        @apply t-overflow-auto;
+    }
 
     span {
         font-family: monospace !important;
+    }
+
+    span.copy{
+        @apply t-text-app-white;
+        @apply t-text-xs;
+        @apply t-absolute;
+        @apply t-cursor-pointer;
+        top: 0.5rem;
+        right: 0.5rem;
     }
 }
 

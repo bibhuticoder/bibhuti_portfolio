@@ -38,7 +38,6 @@ query Blog ($id: ID!) {
 
 <script>
 import moment from "moment";
-
 export default {
   metaInfo() {
     return this.$seo({
@@ -53,15 +52,6 @@ export default {
         title: this.$page.blog.title,
         type: "summary",
       },
-    });
-  },
-
-  components: {},
-  updated() {
-    gtag("event", "page_view", {
-      page_title: this.$page.blog.title,
-      page_path: this.$page.blog.path,
-      send_to: "UA-97437577-6",
     });
   },
 
