@@ -4,7 +4,7 @@ excerpt: It will work for all of type of frontend frameworks(including SSR and J
 createdAt: 2021-08-26
 tags: VueJS, JavaScript
 thumbnail: https://images.unsplash.com/photo-1586281380117-5a60ae2050cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1350&q=80
-caption: Photo by <a href="https://unsplash.com/@markuswinkler>Markus Winkler</a> on Unsplash 
+caption: Photo by <a href="https://unsplash.com/@markuswinkler">Markus Winkler</a> on Unsplash 
 time: 3
 ---
 
