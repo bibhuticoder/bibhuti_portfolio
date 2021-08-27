@@ -1,16 +1,14 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-20 md:t-pt-32">
+    <div class="t-container t-pt-28 md:t-pt-32">
       <!-- Intro -->
       <div class="t-flex t-justify-center md:t-justify-between" id="intro">
         <div class="md:t-w-11/12">
           <h1 class="t-text-center md:t-text-left t-mb-5">Bibhuti Poudyal</h1>
           <p class="t-text-center md:t-text-left md:t-mr-20 t-mb-10">
-            Hi! I am a software developer from Kathmandu.
-            <br />
-            I believe building successful software requires not only tech skills
-            <br />
-            but also positive emotions &amp; empathy. That's what we do at
+            I am a software developer from Kathmandu. I believe building
+            successful software requires not only tech skills but also positive
+            emotions &amp; empathy. That's what we do at
             <a
               href="https://thevaluecrew.com/works/"
               target="_blank"
@@ -81,7 +79,7 @@
       </div>
 
       <!-- Open Source -->
-      <div id="open-source" class="t-mt-36">
+      <div id="open-source" class="t-mt-24 md:t-mt-36">
         <div class="t-flex t-flex-wrap md:t-flex-nowrap">
           <div class="md:t-w-4/12">
             <h1 class="t-text-center md:t-text-left t-mb-5">
@@ -92,15 +90,16 @@
               OPEN SOURCE
             </h1>
 
-            <p class="t-mt-16 t-text-center md:t-text-left">
+            <p class="t-mt-8 t-text-center md:t-mt-16 md:t-text-left">
               I strongly believe
               <span class="font-bold">sharing what you have in abundance </span>
               is a way to make life meaningful.
             </p>
 
-            <p class="t-mt-6 t-mb-12 t-text-center md:t-text-left">
+            <p class="t-mt-3 t-mb-12 t-text-center md:t-mt-6 md:t-text-left">
               In my free time I maintain few open source projects &amp; tools.
-              These are my favourites <span class="t-hidden md:inline">👉</span>
+              These are my favourites
+              <span class="t-hidden md:t-inline"> 👉🏻 </span>
             </p>
 
             <a
@@ -185,7 +184,7 @@
       </div>
 
       <!-- Blogs -->
-      <div id="blogs" class="t-mt-36 t-mb-20">
+      <div id="blogs" class="t-mt-24 md:t-mt-36 t-mb-20">
         <h1 class="t-text-center md:t-text-left t-mb-5">Blogs</h1>
 
         <div class="t-flex t-flex-wrap">
@@ -260,7 +259,7 @@
     </svg>
 
     <!-- Contact -->
-    <div id="contact" class="md:t-bg-white t-mt-20 md:t--mt-8 md:t-relative">
+    <div id="contact" class="md:t-bg-white md:t-relative">
       <div class="t-container">
         <h1 class="t-text-center md:t-text-left t-mb-5">Contact Me</h1>
 
@@ -319,7 +318,7 @@
                 href="https://github.com/bibhuticoder"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="t-mr-4 t-text-xl"
+                class="t-mr-2 t-ml-2 t-text-xl"
                 title="Github"
               >
                 <font-awesome-icon :icon="['fab', 'github']" />
@@ -328,7 +327,7 @@
                 href="https://www.linkedin.com/in/bibhuti-poudyal-4883aa116/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="t-mr-4 t-text-xl"
+                class="t-mr-2 t-ml-2 t-text-xl"
                 title="LinkedIn"
               >
                 <font-awesome-icon :icon="['fab', 'linkedin']" />
@@ -337,7 +336,7 @@
                 href="https://bibhuticoder.medium.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="t-mr-4 t-text-xl"
+                class="t-mr-2 t-ml-2 t-text-xl"
                 title="Medium"
               >
                 <font-awesome-icon :icon="['fab', 'medium-m']" />
@@ -346,7 +345,7 @@
                 href="mailto:bibhutipd@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="t-mr-4 t-text-xl"
+                class="t-mr-2 t-ml-2 t-text-xl"
                 title="Medium"
               >
                 <font-awesome-icon :icon="['fas', 'envelope']" />

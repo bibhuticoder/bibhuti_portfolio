@@ -3,7 +3,7 @@
     <nav class="nav t-fixed t-w-full t-bg-white t-shadow-sm t-z-50">
       <div class="t-container t-my-4 t-mx-auto t-flex t-justify-between">
         <div class="logo t-text-lg">
-          <g-link to="/" class="t-font-bold --no-highlight">
+          <g-link to="/" class="t-font-bold --no-highlight t-select-none">
             &lt;bibhutiPoudyal/&gt;
           </g-link>
         </div>
@@ -11,7 +11,7 @@
           <g-link
             v-for="navLink in navLinks"
             :key="navLink.path"
-            class="nav__link t-mx-4"
+            class="nav__link t-mx-4 t-select-none"
             :to="navLink.path"
             >{{ navLink.name }}</g-link
           >

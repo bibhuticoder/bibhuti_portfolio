@@ -58,7 +58,7 @@ export default {
     width: 2.5rem;
     height: auto;
     border-radius: 50%;
-    animation: meditate 5s infinite;
+    animation: revolve-4 25s infinite;
   }
 }
 

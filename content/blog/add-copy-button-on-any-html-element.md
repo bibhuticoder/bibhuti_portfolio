@@ -77,7 +77,7 @@ Regardless of which tool/library/framework you use, this approach will work.
 
 Since I come from VueJs background, I will implement the same logic as a VueJS plugin. Core logic will be same but the best way to implement may be different. In case of VueJS we can make use of plugins and lifecycle hooks to ease the process.
 
-This is the case where [shiki](https://shiki.matsu.io/) has been used for code highlighting. It doesn't come with "copy code" feature though. The way it wraps code is
+This is the case where [Shiki](https://shiki.matsu.io/) has been used for code highlighting. It doesn't come with "copy code" feature though. The way it wraps code is
 
 ```html
 <pre class="shiki">
@@ -127,4 +127,4 @@ This will do the job. Only extra stuff on this approach is wrapping the core log
 
 This approch can be further extended to copy text of any HTML tag. And the text can be dynamic(from server) too. 
 
-The blog post you are reading right now is highlighted with Shiki & **copy** button is placed by a Vuejs plugin.
+The blog post you are reading right now is highlighted with [Shiki](https://shiki.matsu.io/) & **copy** button is placed by the same Vuejs-plugin code mentioned above ☝🏻
