@@ -21,7 +21,7 @@ export default {
     randAnim(n) {
       return {
         animation: "revolve-" + n,
-        animationDuration: n * 10 + "s",
+        animationDuration: 25 + "s",
         animationIterationCount: "infinite",
       };
     },
@@ -31,10 +31,11 @@ export default {
 
 <style lang="scss">
 .illustration {
-  width: 22rem;
-  height: 25rem;
+  width: 18rem;
+  height: 20rem;
+  margin-top: -2rem;
   img.main-image {
-    width: 80%;
+    width: 85%;
     height: auto;
     top: 45%;
     left: 50%;
@@ -45,7 +46,7 @@ export default {
   }
 
   .obj-container {
-    width: 23rem;
+    width: 18rem;
     height: 1rem;
     position: absolute;
     left: 0;
@@ -54,7 +55,7 @@ export default {
   }
 
   .obj {
-    width: 3rem;
+    width: 2.5rem;
     height: auto;
     border-radius: 50%;
     animation: meditate 5s infinite;
@@ -73,10 +74,10 @@ export default {
 @for $i from 1 through 8 {
   @keyframes revolve-#{$i} {
     from {
-      transform: rotate(#{360 / (($i) + 1)}deg);
+      transform: rotate(#{(360 / 8) * $i}deg);
     }
     to {
-      transform: rotate(#{360 + (360 / (($i) + 1))}deg);
+      transform: rotate(#{360 + ((360 / 8) * $i)}deg);
     }
   }
 }
