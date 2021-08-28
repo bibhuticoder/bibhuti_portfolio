@@ -20,5 +20,20 @@ query Snip ($id: ID!) {
 
 <script>
 export default {
+    metaInfo() {
+    return this.$seo({
+      title: this.$page.snip.title,
+      description: this.$page.snip.excerpt,
+      keywords: this.$page.blog.tags,
+      openGraph: {
+        title: this.$page.snip.title,
+        type: "website",
+      },
+      twitter: {
+        title: this.$page.snip.title,
+        type: "summary",
+      },
+    });
+  },
 };
 </script>
