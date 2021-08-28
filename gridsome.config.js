@@ -1,6 +1,7 @@
 
 module.exports = {
   siteName: 'BibhutiPoudyal',
+  siteUrl: "https://bibhutipoudyal.com.np",
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",
@@ -14,7 +15,16 @@ module.exports = {
 
     {
       use: 'gridsome-plugin-seo'
-    }
+    },
+
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: {
+        // exclude: ['/']
+      }
+    },
+
+    'gridsome-plugin-robots-txt'
 
     // Add plugins here ^
   ]
