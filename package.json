@@ -14,11 +14,11 @@
     "@fortawesome/vue-fontawesome": "^2.0.2",
     "@gridsome/vue-remark": "^0.2.6",
     "@noxify/gridsome-plugin-remark-embed": "^1.3.1",
+    "dayjs": "^1.10.6",
     "gridsome": "^0.7.0",
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "gridsome-plugin-seo": "^1.0.2",
     "lodash": "^4.17.21",
-    "moment": "^2.29.1",
     "vue-disqus": "^4.0.1"
   },
   "devDependencies": {

@@ -411,11 +411,23 @@ import _ from "lodash";
 import AboutIllus from "@/components/AboutIllus";
 
 export default {
-  metaInfo: {
-    title: "About",
-  },
-
   components: { AboutIllus },
+
+  metaInfo() {
+    return this.$seo({
+      title: "About",
+      description: "About page of Bibhuti's website",
+      keywords: "Blog, Snippets, Portfolio",
+      openGraph: {
+        title: "About",
+        type: "website",
+      },
+      twitter: {
+        title: "About",
+        type: "summary",
+      },
+    });
+  },
 
   data() {
     return {
@@ -446,7 +458,7 @@ export default {
         },
         {
           title: "Samaya",
-          desc: "Samaya is a productivity focused chrome extension highly inspired by Momentum",
+          desc: "Samaya is a productivity focused chrome extension highly inspired by dayjsum",
           tryLink: "https://bibhuticoder.github.io/samaya/",
           codeLink: "https://github.com/bibhuticoder/samaya",
           showPhone: true,

@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import moment from "moment";
+import dayjs from "dayjs";
 
 export default {
   name: "BlogItem",
@@ -29,10 +29,10 @@ export default {
 
   computed: {
     createdAtTransformed() {
-      let year = moment(this.createdAt).year();
+      let year = dayjs(this.createdAt).year();
       if (year == new Date().getFullYear())
-        return moment(this.createdAt).format("MMM DD");
-      else return moment(this.createdAt).format("YYYY MMM DD");
+        return dayjs(this.createdAt).format("MMM DD");
+      else return dayjs(this.createdAt).format("YYYY MMM DD");
     },
   },
 };

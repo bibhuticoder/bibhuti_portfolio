@@ -37,7 +37,7 @@ query Blog ($id: ID!) {
 </page-query>
 
 <script>
-import moment from "moment";
+import dayjs from "dayjs";
 export default {
   metaInfo() {
     return this.$seo({
@@ -57,10 +57,10 @@ export default {
 
   computed: {
     createdAtTransformed() {
-      let year = moment(this.$page.blog.createdAt).year();
+      let year = dayjs(this.$page.blog.createdAt).year();
       if (year == new Date().getFullYear())
-        return moment(this.$page.blog.createdAt).format("MMM DD");
-      else return moment(this.$page.blog.createdAt).format("YYYY MMM DD");
+        return dayjs(this.$page.blog.createdAt).format("MMM DD");
+      else return dayjs(this.$page.blog.createdAt).format("YYYY MMM DD");
     },
   },
 };

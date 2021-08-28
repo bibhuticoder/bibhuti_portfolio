@@ -65,7 +65,9 @@
         </div>
 
         <div class="md:t-w-1/3 md:t-mt-32">
-          <p class="t-ml-2 t-mt-8 md:t-mt-0 t-mb-4 t-text-center md:t-text-left">
+          <p
+            class="t-ml-2 t-mt-8 md:t-mt-0 t-mb-4 t-text-center md:t-text-left"
+          >
             📃 Collection of snippets - instructions, code, commands etc. View
             <g-link to="/snip" class="highlight t-inline-block">more</g-link>.
           </p>
@@ -133,8 +135,21 @@ import BlogItemImage from "@/components/BlogItemImage";
 
 export default {
   components: { SnipItem, BlogItem, BlogItemImage },
-  metaInfo: {
-    title: "Home",
+  
+  metaInfo() {
+    return this.$seo({
+      title: "Home",
+      description: "Homepage of Bibhuti's website",
+      keywords: "Blog, Snippets, Portfolio",
+      openGraph: {
+        title: "Home",
+        type: "website",
+      },
+      twitter: {
+        title: "Home",
+        type: "summary",
+      },
+    });
   },
 
   computed: {

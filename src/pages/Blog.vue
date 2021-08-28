@@ -47,13 +47,26 @@ query Blog {
 </page-query>
 
 <script>
-import moment from "moment";
+import dayjs from "dayjs";
 import BlogItem from "@/components/BlogItem";
 
 export default {
   components: { BlogItem },
-  metaInfo: {
-    title: "Blog",
+
+  metaInfo() {
+    return this.$seo({
+      title: "Blog",
+      description: "Blog page of Bibhuti's website",
+      keywords: "Blog, Snippets, Portfolio",
+      openGraph: {
+        title: "Blog",
+        type: "website",
+      },
+      twitter: {
+        title: "Blog",
+        type: "summary",
+      },
+    });
   },
 
   computed: {
@@ -61,8 +74,8 @@ export default {
       let blogs = this.$page.blogs.edges.map((edge) => {
         return {
           ...edge.node,
-          createdAt: moment(edge.node.createdAt).format("YYYY-MM-DD"),
-          createdYear: parseInt(moment(edge.node.createdAt).format("YYYY")),
+          createdAt: dayjs(edge.node.createdAt).format("YYYY-MM-DD"),
+          createdYear: parseInt(dayjs(edge.node.createdAt).format("YYYY")),
         };
       });
 
