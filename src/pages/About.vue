@@ -416,7 +416,7 @@ export default {
   metaInfo() {
     return this.$seo({
       title: "About",
-      description: "About page of Bibhuti's website",
+      description: "I am a software developer from Kathmandu. I believe building successful software requires not only tech skills but also positive emotions & empathy",
       keywords: "Blog, Snippets, Portfolio",
       openGraph: {
         title: "About",

@@ -135,11 +135,11 @@ import BlogItemImage from "@/components/BlogItemImage";
 
 export default {
   components: { SnipItem, BlogItem, BlogItemImage },
-  
+
   metaInfo() {
     return this.$seo({
       title: "Home",
-      description: "Homepage of Bibhuti's website",
+      description: "This site is a journal; mostly related to work and open source projects; kept as a self reference for myself and other fellow developers interested.",
       keywords: "Blog, Snippets, Portfolio",
       openGraph: {
         title: "Home",

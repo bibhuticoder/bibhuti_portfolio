@@ -85,7 +85,7 @@ export default {
   metaInfo() {
     return this.$seo({
       title: "Snippets",
-      description: "Snippets page of Bibhuti's website",
+      description: "Frequently used stuffs which I have collected throughout my works.",
       keywords: "Blog, Snippets, Portfolio",
       openGraph: {
         title: "Snippets",
