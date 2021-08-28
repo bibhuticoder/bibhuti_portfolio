@@ -1,17 +1,20 @@
 <template>
   <Layout>
-        <div class="t-container t-pt-20 md:t-pt-32">
+    <div class="t-container t-pt-20 md:t-pt-32">
       <h1 class="t-text-center t-mb-5 md:t-text-left">Blog</h1>
 
-      <p class="t-mb-5">
-        It's easy to find getting-started tutorials; but once you go to production complexity
-        is at different level. Almost all the information found here are
-        battle tested; being used on live projects.
+      <p>
+        I write about the stuffs I have learnt and experienced over the years.
+        Almost all technical information found here are battle tested; being used on live projects.
       </p>
 
       <div class="blogs-list t-flex t-flex-col">
-        <div v-for="post in blogPosts" :key="post.id">
+        <div v-for="year in blogYears" :key="year">
+          <h2 class="t-mt-12">{{ year }}</h2>
+
           <BlogItem
+            v-for="post in blogPosts[year]"
+            :key="post.id"
             :title="post.title"
             :tags="post.tags"
             :excerpt="post.excerpt"
@@ -55,12 +58,27 @@ export default {
 
   computed: {
     blogPosts() {
-      return this.$page.blogs.edges.map((edge) => {
+      let blogs = this.$page.blogs.edges.map((edge) => {
         return {
           ...edge.node,
           createdAt: moment(edge.node.createdAt).format("YYYY-MM-DD"),
+          createdYear: parseInt(moment(edge.node.createdAt).format("YYYY")),
         };
       });
+
+      let blogsDict = {};
+      blogs.forEach((blog) => {
+        if (blogsDict[blog.createdYear]) blogsDict[blog.createdYear].push(blog);
+        else blogsDict[blog.createdYear] = [blog];
+      });
+
+      return blogsDict;
+    },
+
+    blogYears() {
+      return Object.keys(this.blogPosts)
+        .map((y) => parseInt(y))
+        .sort((a, b) => b - a);
     },
   },
 };

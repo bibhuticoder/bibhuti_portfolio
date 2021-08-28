@@ -1,6 +1,6 @@
 ---
 title: Copy text to clipboard
-excerpt: Copy data from webpahe to clipboard
+excerpt: Copy data from webpage to clipboard
 createdAt: 2021-08-26
 tags: JavaScript
 ---

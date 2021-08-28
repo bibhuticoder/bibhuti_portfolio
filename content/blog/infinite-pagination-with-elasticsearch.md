@@ -1,13 +1,13 @@
 ---
 title: Infinite pagination with ElasticSearch
-excerpt: Elastic Search always returns top 10 results by default. To get large volume of results, we need to user Search API. Sometimes that isn't enough..
+excerpt: Elastic Search always returns top 10 results by default. To get large volume of results, we need to use Search API. Sometimes that isn't enough..
 createdAt: 2021-06-25
 tags: ElasticSearch, JavaScript
 thumbnail: https://miro.medium.com/max/1400/1*eoZR94lBVHYUvFuhUcaX2Q.jpeg 
 time: 1
 ---
 
-Elastic Search always returns top 10 results by default. To get large volume of results, we need to user Search API.
+Elastic Search always returns top 10 results by default. To get large volume of results, we need to use Search API.
 
 The Search API provides `from` and `size` parameters that can be used to retrieve predefined amount of data. But using from and size should be avoided to request very large volume at once. Reason: Search request works with multiple shards storing its requested hits into memory which leads into high memory + CPU usage.
 

@@ -1,6 +1,6 @@
 ---
 title: Beware of dynamoDB TTL
-excerpt: This article demonstrates a straightforward approach to Continuous deployment using GitHub Actions..
+excerpt: Its a very basic requirement for applications to delete data item from the database after it has no use..
 createdAt: 2021-06-25
 tags: GithubAction, Vuejs, Nodejs
 thumbnail: https://miro.medium.com/max/1400/1*TM-OOipO0Dz7MMDt0bQ_AQ.jpeg
