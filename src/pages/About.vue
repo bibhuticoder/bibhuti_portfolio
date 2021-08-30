@@ -414,19 +414,62 @@ export default {
   components: { AboutIllus },
 
   metaInfo() {
-    return this.$seo({
-      title: "About",
-      description: "I am a software developer from Kathmandu. I believe building successful software requires not only tech skills but also positive emotions & empathy",
-      keywords: "Blog, Snippets, Portfolio",
-      openGraph: {
-        title: "About",
-        type: "website",
-      },
-      twitter: {
-        title: "About",
-        type: "summary",
-      },
-    });
+    let title = "About";
+    let description =
+      "I am a software developer from Kathmandu. I believe building successful software requires not only tech skills but also positive emotions & empathy";
+    let type = "website";
+    let keywords = "Blog, Snippets, Portfolio";
+
+    return {
+      title,
+      meta: [
+        {
+          name: "description",
+          content: description,
+        },
+
+        {
+          name: "keywords",
+          content: keywords,
+        },
+
+        {
+          key: "author",
+          name: "author",
+          content: "Bibhuti",
+        },
+
+        {
+          key: "og:title",
+          property: "og:title",
+          content: title,
+        },
+
+        {
+          key: "og:type",
+          property: "og:type",
+          content: type,
+        },
+
+        {
+          key: "og:description",
+          property: "og:description",
+          content: description,
+        },
+
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: description,
+        },
+
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: title,
+        },
+      ],
+    };
   },
 
   data() {

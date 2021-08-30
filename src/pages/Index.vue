@@ -137,19 +137,62 @@ export default {
   components: { SnipItem, BlogItem, BlogItemImage },
 
   metaInfo() {
-    return this.$seo({
-      title: "Home",
-      description: "This site is a journal; mostly related to work and open source projects; kept as a self reference for myself and other fellow developers interested.",
-      keywords: "Blog, Snippets, Portfolio",
-      openGraph: {
-        title: "Home",
-        type: "website",
-      },
-      twitter: {
-        title: "Home",
-        type: "summary",
-      },
-    });
+    let title = "Home";
+    let description =
+      "This site is a journal; mostly related to work and open source projects; kept as a self reference for myself and other fellow developers interested.";
+    let type = "website";
+    let keywords = "Blog, Snippets, Portfolio";
+
+    return {
+      title,
+      meta: [
+        {
+          name: "description",
+          content: description,
+        },
+
+        {
+          name: "keywords",
+          content: keywords,
+        },
+
+        {
+          key: "author",
+          name: "author",
+          content: "Bibhuti",
+        },
+
+        {
+          key: "og:title",
+          property: "og:title",
+          content: title,
+        },
+
+        {
+          key: "og:type",
+          property: "og:type",
+          content: type,
+        },
+        
+        {
+          key: "og:description",
+          property: "og:description",
+          content: description,
+        },
+
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: description,
+        },
+
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: title,
+        },
+      ],
+    };
   },
 
   computed: {

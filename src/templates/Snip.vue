@@ -20,20 +20,61 @@ query Snip ($id: ID!) {
 
 <script>
 export default {
-    metaInfo() {
-    return this.$seo({
-      title: this.$page.snip.title,
-      description: this.$page.snip.excerpt,
-      keywords: this.$page.snip.tags,
-      openGraph: {
-        title: this.$page.snip.title,
-        type: "website",
-      },
-      twitter: {
-        title: this.$page.snip.title,
-        type: "summary",
-      },
-    });
+  metaInfo() {
+    let title = this.$page.snip.title;
+    let description = this.$page.snip.excerpt;
+    let type = "website";
+    let keywords = this.$page.snip.tags;
+
+    return {
+      title,
+      meta: [
+        {
+          name: "description",
+          content: description,
+        },
+
+        {
+          name: "keywords",
+          content: keywords,
+        },
+
+        {
+          key: "author",
+          name: "author",
+          content: "Bibhuti",
+        },
+
+        {
+          key: "og:title",
+          property: "og:title",
+          content: title,
+        },
+
+        {
+          key: "og:type",
+          property: "og:type",
+          content: type,
+        },
+
+        {
+          key: "og:description",
+          property: "og:description",
+          content: description,
+        },
+
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: title,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: description,
+        },
+      ],
+    };
   },
 };
 </script>

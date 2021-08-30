@@ -2,6 +2,7 @@
 module.exports = {
   siteName: 'BibhutiPoudyal',
   siteUrl: "https://bibhutipoudyal.com.np",
+  siteDescription: "This site is a journal; mostly related to work and open source projects; kept as a self reference for myself and other fellow developers interested.",
   plugins: [
     {
       use: "gridsome-plugin-tailwindcss",
@@ -11,10 +12,6 @@ module.exports = {
         shouldImport: false,
         shouldTimeTravel: false
       }
-    },
-
-    {
-      use: 'gridsome-plugin-seo'
     },
 
     {

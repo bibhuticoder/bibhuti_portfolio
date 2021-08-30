@@ -5,7 +5,8 @@
 
       <p>
         I write about the stuffs I have learnt and experienced over the years.
-        Almost all technical information found here are battle tested; being used on live projects.
+        Almost all technical information found here are battle tested; being
+        used on live projects.
       </p>
 
       <div class="blogs-list t-flex t-flex-col">
@@ -54,19 +55,62 @@ export default {
   components: { BlogItem },
 
   metaInfo() {
-    return this.$seo({
-      title: "Blog",
-      description: "I write about the stuffs I have learnt and experienced over the years.",
-      keywords: "Blog, Snippets, Portfolio",
-      openGraph: {
-        title: "Blog",
-        type: "website",
-      },
-      twitter: {
-        title: "Blog",
-        type: "summary",
-      },
-    });
+    let title = "Blog";
+    let description =
+      "I write about the stuffs I have learnt and experienced over the years.";
+    let type = "website";
+    let keywords = "Blog, Snippets, Portfolio";
+
+    return {
+      title,
+      meta: [
+        {
+          name: "description",
+          content: description,
+        },
+
+        {
+          name: "keywords",
+          content: keywords,
+        },
+
+        {
+          key: "author",
+          name: "author",
+          content: "Bibhuti",
+        },
+
+        {
+          key: "og:title",
+          property: "og:title",
+          content: title,
+        },
+
+        {
+          key: "og:type",
+          property: "og:type",
+          content: type,
+        },
+
+        {
+          key: "og:description",
+          property: "og:description",
+          content: description,
+        },
+
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: description,
+        },
+
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: title,
+        },
+      ],
+    };
   },
 
   computed: {

@@ -7,7 +7,10 @@
       </p>
       <g-image :src="$page.blog.thumbnail" class="t-my-4" />
       <div
-        class="t-pb-8 t-text-gray-500 t-italic t-text-sm t-text-center image-caption"
+        class="
+          t-pb-8 t-text-gray-500 t-italic t-text-sm t-text-center
+          image-caption
+        "
         v-html="$page.blog.caption"
       ></div>
 
@@ -39,20 +42,75 @@ query Blog ($id: ID!) {
 <script>
 import dayjs from "dayjs";
 export default {
+
   metaInfo() {
-    return this.$seo({
-      title: this.$page.blog.title,
-      description: this.$page.blog.excerpt,
-      keywords: this.$page.blog.tags,
-      openGraph: {
-        title: this.$page.blog.title,
-        type: "website",
-      },
-      twitter: {
-        title: this.$page.blog.title,
-        type: "summary",
-      },
-    });
+    let title = this.$page.blog.title;
+    let description = this.$page.blog.excerpt;
+    let type = "website";
+    let keywords = this.$page.blog.tags;
+    let imagePath = this.$page.blog.thumbnail;
+
+    return {
+      title,
+      meta: [
+        {
+          name: "description",
+          content: description,
+        },
+
+        {
+          name: "keywords",
+          content: keywords,
+        },
+
+        {
+          key: "author",
+          name: "author",
+          content: "Bibhuti",
+        },
+
+        {
+          key: "og:title",
+          property: "og:title",
+          content: title,
+        },
+
+        {
+          key: "og:type",
+          property: "og:type",
+          content: type,
+        },
+
+        {
+          key: "og:description",
+          property: "og:description",
+          content: description,
+        },
+
+        {
+          key: "og:image",
+          property: "og:image",
+          content: imagePath,
+        },
+
+        {
+          key: "twitter:title",
+          property: "twitter:title",
+          content: title,
+        },
+        {
+          key: "twitter:description",
+          name: "twitter:description",
+          content: description,
+        },
+
+        {
+          key: "twitter:image",
+          property: "twitter:image",
+          content: imagePath,
+        },
+      ],
+    };
   },
 
   computed: {

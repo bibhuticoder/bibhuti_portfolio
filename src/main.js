@@ -10,10 +10,10 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://github.githubassets.com/assets/gist-embed-d89dc96f3ab6372bb73ee45cafdd0711.css'
   })
+  Vue.use(Ga, { isClient, head, router })
 
   // Set default layout as a global component
   Vue.component('Layout', DefaultLayout)
-  Vue.use(Ga, { trackingId: 'UA-97437577-6', isClient, head, router })
   Vue.use(VueDisqus);
   Vue.use(CopyPlugin);
   Vue.use(FwPlugin);
