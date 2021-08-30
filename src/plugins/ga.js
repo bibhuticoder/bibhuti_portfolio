@@ -11,12 +11,12 @@ const Ga = {
       function gtag() { dataLayer.push(arguments); }
       gtag('js', new Date());
       gtag('config', options.trackingId);
-      options.router.beforeEach((to, from, next) => {
+      options.router.afterEach((to, from) => {
         gtag("event", "page_view", {
           page_path: location.pathname,
           send_to: options.trackingId,
         });
-        next();
+        console.info("GA: pageview", location.pathname);
       })
     }
   }

@@ -24,7 +24,7 @@ export default {
     return this.$seo({
       title: this.$page.snip.title,
       description: this.$page.snip.excerpt,
-      keywords: this.$page.blog.tags,
+      keywords: this.$page.snip.tags,
       openGraph: {
         title: this.$page.snip.title,
         type: "website",
