@@ -1,6 +1,6 @@
 ---
 title: Split string with multiple seperators
-excerpt:
+excerpt: eg. "1,2-3+4/5|6" => [1,2,3,4,5,6]
 createdAt: 2021-09-05
 tags: JavaScript
 ---

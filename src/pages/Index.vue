@@ -1,13 +1,16 @@
 <template>
   <Layout>
     <div class="t-container t-pt-20 md:t-pt-32">
-      <div class="t-flex t-flex-wrap">
-        <div class="md:t-w-2/3">
-          <!-- Site Intro -->
-          <div class="md:t-w-3/4">
-            <h2 class="t-mb-4 t-text-center md:t-text-left">Hi 👋</h2>
-            <p class="t-mb-5 t-text-center md:t-text-left t-text-black">
-              I am Bibhuti. I build softwares for a living.
+      <!-- Site Intro -->
+      <div class="md:t-w-3/4 t-mb-10">
+        <div class="t-flex">
+          <h2 class="t-mr-4">👋</h2>
+          <div class="t-flex t-flex-col">
+            <h2 class="t-mb-4 t-text-center md:t-text-left">
+              Hey, I'm Bibhuti Poudyal.
+            </h2>
+            <p class="t-text-center md:t-text-left t-text-black t-text-lg">
+              I build softwares for a living.
               <br />
               This site is a journal; mostly related to
               <a
@@ -22,6 +25,22 @@
               other fellow developers interested.
             </p>
           </div>
+        </div>
+      </div>
+
+      <div class="t-flex t-flex-wrap">
+
+        <!-- Blogs -->
+        <div class="md:t-w-2/3">
+
+        <p
+            class="t-ml-2 t-mt-8 md:t-mt-0 t-mb-4 t-text-center md:t-text-left"
+          >
+            ✍🏻  I frequently write about technical stuffs, mostly work related &amp; sometimes on side projects/experiments. View
+            <g-link to="/blog" class="highlight t-inline-block">more</g-link>.
+          </p>
+
+       
 
           <div
             class="
@@ -64,7 +83,8 @@
           </div>
         </div>
 
-        <div class="md:t-w-1/3 md:t-mt-32">
+        <!-- Snippets -->
+        <div class="md:t-w-1/3">
           <p
             class="t-ml-2 t-mt-8 md:t-mt-0 t-mb-4 t-text-center md:t-text-left"
           >
@@ -173,7 +193,7 @@ export default {
           property: "og:type",
           content: type,
         },
-        
+
         {
           key: "og:description",
           property: "og:description",
