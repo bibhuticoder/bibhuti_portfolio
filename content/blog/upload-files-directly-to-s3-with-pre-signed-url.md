@@ -3,9 +3,8 @@ title: Upload files directly to S3 with pre-signed URL
 excerpt: This post will describe an approach to upload files directly to AWS S3 using presigned URL. The pre-signed URL will be generated ...
 createdAt: 2021-10-12
 tags: S3, NodeJs, AWS
-thumbnail: https://images.unsplash.com/photo-1595872018818-97555653a011?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=682&q=80
-caption: Photo by <a href="https://unsplash.com/@markusspiske>Markus Spiske</a> on Unsplash
-  
+thumbnail: https://images.unsplash.com/photo-1488229297570-58520851e868?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1169&q=80
+caption: Photo by <a href="https://unsplash.com/@sortino">Joshua Sortino</a> on Unsplash
 time: 4
 ---
 
