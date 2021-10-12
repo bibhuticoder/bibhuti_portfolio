@@ -17,7 +17,7 @@ sls offline start --stage <dev> #eg
 sls deploy --stage <STAGE_NAME>
 sls deploy --stage prod #eg
 
-## deploy with spefied profile
-export AWS_PROFILE=jetship && sls offline start --stage <STAGE_NAME>
-export AWS_PROFILE=jetship && sls offline start --stage prod #eg
+XXXX## deploy with spefied profile
+export AWS_PROFILE=XXXXX && sls offline start --stage <STAGE_NAME>
+export AWS_PROFILE=XXXXX && sls offline start --stage prod #eg
 ```
