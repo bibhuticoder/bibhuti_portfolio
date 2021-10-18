@@ -21,7 +21,7 @@ Example Modifications:
 
 ## Yaml Script
 
-```yml
+```bash
 name: Deploy to AWS
 
 on:
