@@ -6,11 +6,21 @@ tags: JavaScript,Sequelize
 ---
 
 ## Migration
-```bash 
-# Create Migration
-npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
 
-# Run
+### Generate normal migration file
+```bash
+sequelize migration:create --name addColumnNameToTablename
+```
+
+### Generate Migration + Model
+
+```bash
+npx sequelize-cli model:generate --name User --attributes firstName:string,age:number,verified:boolean
+```
+
+### Run Migration
+
+```bash
 npx sequelize-cli db:migrate
 
 #Undo
@@ -20,7 +30,7 @@ npx sequelize-cli db:migrate:undo
 npx sequelize-cli db:migrate:undo:all --to XXXXXXXXXXXXXX-create-posts.js
 ```
 
-## Seed
+### Seed
 
 ```bash
 
