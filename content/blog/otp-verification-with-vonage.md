@@ -13,7 +13,21 @@ In this article, I will explain Vonage’s Verification API integrated with Node
 
 Let’s begin with a very basic express server.
 
-https://gist.github.com/bibhuticoder/b4545523112427692880719c04492e19#server.js
+```javascript
+const express = require('express')
+const app = express()
+const port = 3000
+const { requestCode, verifyOtp, cancelOtp } = require("./vonage.service.js");
+app.post('/api/request-token', (req, res) => {
+    //...
+})
+app.post('/api/verify-token', (req, res) => {
+    //...
+})
+app.listen(port, () => {
+    console.log(`Example app listening at http://localhost:${port}`)
+})
+```
 
 The **server.js** file contains a very basic web server with 2 routes.
 - /api/request-token
@@ -23,7 +37,22 @@ Business logic for each endpoint are inside `vonage.service.js`. The service fil
 
 Service file has 3 methods: for requesting, verifying and cancelling token.
 
-https://gist.github.com/bibhuticoder/67e9855f39d1711875741a0015ff81bd#vonage.service.js
+```javascript
+constVonage = require('@vonage/server-sdk');
+constvonage = newVonage({
+    apiKey: process.env.VONAGE_KEY,
+    apiSecret: process.env.VONAGE_SECRET
+});
+export const requestCode = (phoneNo, callback) => {
+    //...
+};
+export const verifyOtp = (request_id, code, callback) => {
+    //...
+};
+export const cancelOtp = (request_id, callback) => {
+    //...
+};
+```
 
 At first the `vonage` object is initialed with apiKey and secret obtained from Vonage. Then there are two pieces for this entire workflow: request code & verify. Lets dive into each of them.
 
@@ -36,7 +65,27 @@ The one job of this method is to send OTP token to the given phone number. Vonag
 
 Considering these points, let's move forward with code. First of all, let’s complete the `requestCode` method in `vonage.service.js` file.
 
-https://gist.github.com/bibhuticoder/49943f6d2410c5ad896d5e2dc8d4f82a#vonage.service.js
+```javascript
+export const requestCode = (phoneNo, callback) => {
+    vonage.verify.request({
+        number: phoneNo,
+        brand: "Your App/Website Name"
+    }, (err, result) => {
+        if (err) {
+            console.error(err);
+            callback(false);
+        } else {
+            if (result.request_id) {
+                console.log('====request success====', result);
+                callback(result);
+            } else {
+                console.log("====request err====", result);
+                callback(false);
+            }
+        }
+    });
+}
+```
 
 The method takes a phone number and returns the most important thing `request_id`.
 
@@ -48,13 +97,69 @@ Another piece of this mechanism is the cancel token request. There may be cases 
 
 So you may need to cancel the pending request and re-send another OTP. The code to cancel the request looks something like this.
 
-https://gist.github.com/bibhuticoder/073772217006b95c7419c5cc441901e9#vonage.service.js
+```javascript
+export const cancelOtp = (request_id, callback) => {
+    vonage.verify.control({
+        request_id: request_id,
+        cmd: 'cancel'
+    }, (err, result) => {
+        if (err) {
+            console.error("====cancel err", err);
+            callback(false);
+        } else {
+            console.log(result);
+            console.log("====cancel success", result);
+            callback(result);
+        }
+    });
+}
+```
 
 It’s a pretty straightforward code that requires the OTP’s `request_id` to cancel it. As you may have seen, `request_id` is the only way to track your OTP. So, store it safely.
 
 These 2 methods would be sufficient to request an OTP. Now let's move onto `server.js` to implement these methods.
 
-https://gist.github.com/bibhuticoder/64940743c3a9a6b0e9b8b64228e980de#server.js
+```javascript
+app.post('/api/request-token', (req, res) => {
+    let { phoneNo } = req.body;
+    if (!phoneNo) return res.status(400).send({ message: "Phone no. is required" });
+    phoneNo = phoneNo.replace(/\s/g, "");
+    console.log("Sending code to ", phoneNo);
+    requestCode(phoneNo, (result) => {
+        if (result) {
+            // success at 1st attempt
+            if (result.status == '0') onOtpSuccess(res, result);
+            // concurrent OTP error
+            else if (result.status == '10') {
+                // cancel & try again once
+                cancelOtp(result.request_id, (cancelData) => {
+                    // cancel success
+                    if (cancelData && cancelData.status == '0') requestCode(phoneNo, (result2) => {
+                        // success at 2nd attempt
+                        if (result2 && result2.status == '0') await onOtpSuccess(res, result2);
+                        // fail again at 2nd attempt
+                        else onOtpError(res);
+                    });
+                    // fail at cancel
+                    else onOtpError(res);
+                })
+            }
+        }
+        // fail at 1st attempt
+        else onOtpError(res);
+    })
+});
+
+function onOtpSuccess(res, result) {
+    // ...
+    // store result.request_id on DB oe sent it to user
+    res.send({ message: "Success", request_id: result.request_id });
+}
+function onOtpError(res) {
+    //...
+    res.status(500).send({ message: 'Error sending OTP. Please try again.' });
+}
+```
 
 First of all, check for the presence of phone number. Then remove all the present whitespaces. Sometimes phone numbers are in a weird format (+12 345 678 890). It may cause issues for services like Vonage. It requires the country code though.
 
@@ -68,7 +173,24 @@ To recall: we have 2 files `server.js`, `vonage.service.js` and ``request_id`` i
 
 The logic for verification is quite straightforward unlike OTP request mechanism. First, let's look at vonage.service.js for its implementation.
 
-https://gist.github.com/bibhuticoder/d4d93e513e229cafd095c156a5d15b71#vonage-service.js
+```javascript
+export const verifyOtp = (request_id, code, callback) => {
+    vonage.verify.check({ request_id, code }, (err, result) => {
+        if (err) {
+            console.error(err);
+            callback(false);
+        } else {
+            if (result.status != '0') {
+                console.log("====verify err====", result);
+                callback(false);
+            } else {
+                callback(result);
+                console.log("====verify success====", result);
+            }
+        }
+    });
+}
+```
 
 Verification is done via
 
@@ -79,7 +201,22 @@ Successful verification will return the result with status 0.
 
 Moving onto `server.js` file, the `verifyOtp` method is used like this.
 
-https://gist.github.com/bibhuticoder/1717d43ec1a3235cc149340a1c232e3e#server.js
+```javascript
+app.post('/api/verify-token', (req, res) => {
+    const { otp, request_id } = req.body;
+    if (!otp) returnres.status(400).send({ message: "Otp is required" });
+    if (!request_id) returnres.status(400).send({ message: "Invalid request" });
+    verifyOtp(request_id, otp, async (result) => {
+        if (result) {
+            // ...
+            return res.send({ message: "Success" });
+        } else {
+            // ...
+            return res.status(400).send({ message: `Error verifying OTP` });
+        }
+    })
+})
+```
 
 Here, both OTP and request_id is being retrieved from API request. It may depend on your implementation.
 
