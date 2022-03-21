@@ -9,7 +9,7 @@ tags: JavaScript,Sequelize
 
 ### Generate normal migration file
 ```bash
-sequelize migration:create --name addColumnNameToTablename
+sequelize migration:create --name create_users_table
 ```
 
 ### Generate Migration + Model
@@ -26,7 +26,8 @@ npx sequelize-cli db:migrate
 #Undo
 npx sequelize-cli db:migrate:undo
 
-# You can revert back to initial state by undoing all migrations with db:migrate:undo:all command. You can also revert back to a specific migration by passing its name in --to option.
+# You can revert back to initial state by undoing all migrations with db:migrate:undo:all command. 
+# You can also revert back to a specific migration by passing its name in --to option.
 npx sequelize-cli db:migrate:undo:all --to XXXXXXXXXXXXXX-create-posts.js
 ```
 
@@ -50,6 +51,13 @@ npx sequelize-cli db:seed:undo --seed name-of-seed-as-in-data
 
 # If you wish to undo all seeds:
 npx sequelize-cli db:seed:undo:all
+```
+
+### Create/delete DB
+
+```bash
+npx sequelize-cli db:drop
+npx sequelize-cli db:create
 ```
 
 Reference: https://sequelize.org/master/manual/migrations.html
