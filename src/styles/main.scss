@@ -73,14 +73,15 @@ a.active {
 // blog post
 .blogPost {
     p {
-        @apply t-my-4;
+        @apply t-mb-8;
         @apply t-whitespace-pre-wrap;
         @apply t-break-words;
+        @apply t-text-xl;
     }
 
     img {
         @apply t-mx-auto;
-        @apply t-my-4;
+        @apply t-mb-8;
     }
 
     h2 {
@@ -89,17 +90,18 @@ a.active {
     h3 {
         @apply t-my-4;
         @apply t-font-bold;
-        @apply t-text-xl;
+        @apply t-text-2xl;
     }
     h4 {
         @apply t-my-2;
         @apply t-font-bold;
-        @apply t-text-lg;
+        @apply t-text-xl;
     }
 
     ul {
         list-style-type: disc;
         @apply t-pl-8;
+        @apply t-text-xl;
     }
 
     blockquote {
@@ -127,6 +129,7 @@ a.active {
             background-color: inherit;
         }
         overflow: auto;
+        @apply t-mb-8;
     }
 }
 
