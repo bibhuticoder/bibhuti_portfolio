@@ -3,7 +3,7 @@
     <div class="t-container t-pt-20 md:t-pt-32">
       <h1 class="t-text-center t-mb-5 md:t-text-left">Life hacks</h1>
       <p class="t-mb-5">
-        Life hacks that I have been using and improving by my experiences 🛠️
+        Practical life hacks that I have been using and improving with my experiences 🛠️
       </p>
 
       <div class="toolbar t-flex t-mt-2 t-mb-4">
