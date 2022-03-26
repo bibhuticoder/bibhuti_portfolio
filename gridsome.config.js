@@ -25,7 +25,7 @@ module.exports = {
 
     // Add plugins here ^
   ]
-    .concat(['Blog', 'Snip'].map(item => {
+    .concat(['Blog', 'Snip', 'Hack'].map(item => {
       return {
         use: '@gridsome/vue-remark',
         options: {
