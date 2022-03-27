@@ -22,10 +22,10 @@ query Hack ($id: ID!) {
 <script>
 export default {
   metaInfo() {
-    let title = this.$page.snip.title;
-    let description = this.$page.snip.excerpt;
+    let title = this.$page.hack.title;
+    let description = this.$page.hack.excerpt;
     let type = "website";
-    let keywords = this.$page.snip.tags;
+    let keywords = this.$page.hack.tags;
 
     return {
       title,
