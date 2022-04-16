@@ -1,10 +1,20 @@
 ---
-title: Split string with multiple seperators
-excerpt: eg. "1,2-3+4/5|6" => [1,2,3,4,5,6]
-createdAt: 2021-09-05
+title: Throttle function call
+excerpt: Control rate/speed of multiple function call
+createdAt: 2022-04-16
 tags: JavaScript
 ---
-```javascript 
-"chunk-1=chunk-2,chunk-3:chunk-4".split('=').join(',').split(':').join(',').split(',')
-// ['chunk-1', 'chunk-2', 'chunk-3', 'chunk-4']
+```javascript
+    let timer = null;
+
+    handleFunctionCall() {
+      clearTimeout(timer);
+      timer = setTimeout(async () => {
+        await someAsyncMethod();
+        clearTimeout(timer);
+      }, 500); // change timeout as per the need
+    }
+
+    // when yu need to call someAsyncMethod()
+    handleFunctionCall();
 ```
