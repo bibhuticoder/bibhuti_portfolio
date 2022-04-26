@@ -61,6 +61,7 @@ export default {
       navLinks: [
         { name: "Blog", path: "/blog" },
         { name: "Snippets", path: "/snip" },
+        { name: "Scribbles", path: "/scribbles", icon: "scribble.png" },
         { name: "About Me", path: "/about" },
       ],
     };
