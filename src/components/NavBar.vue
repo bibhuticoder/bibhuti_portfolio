@@ -1,23 +1,23 @@
 <template>
   <div>
-    <nav class="nav t-fixed t-w-full t-bg-white t-shadow-sm t-z-50">
-      <div class="t-container t-my-4 t-mx-auto t-flex t-justify-between">
-        <div class="logo t-text-lg">
-          <g-link to="/" class="t-font-bold --no-highlight t-select-none">
+    <nav class="nav fixed w-full bg-white shadow-sm z-50">
+      <div class="container my-4 mx-auto flex justify-between">
+        <div class="logo text-lg">
+          <g-link to="/" class="font-bold --no-highlight select-none">
             &lt;bibhutiPoudyal/&gt;
           </g-link>
         </div>
-        <div class="t-hidden md:t-flex">
+        <div class="hidden md:flex">
           <g-link
             v-for="navLink in navLinks"
             :key="navLink.path"
-            class="nav__link t-mx-4 t-select-none"
+            class="nav__link mx-4 select-none"
             :to="navLink.path"
             >{{ navLink.name }}</g-link
           >
         </div>
         <span
-          class="t-text-black t-cursor-pointer md:t-hidden"
+          class="text-black cursor-pointer md:hidden"
           @click="toggleNav()"
         >
           <font-awesome-icon v-if="sidenav" :icon="['fas', 'times']" />
@@ -27,20 +27,20 @@
     </nav>
 
     <nav
-      class="sidenav t-flex t-flex-col"
+      class="sidenav flex flex-col"
       :class="{ '--hidden': !sidenav }"
       @click="toggleNav"
     >
-      <div class="t-flex t-flex-col t-flex-grow t-mt-48">
+      <div class="flex flex-col flex-grow mt-48">
         <h2
-          class="t-mb-8 t-text-center"
+          class="mb-8 text-center"
           v-for="navLink in navLinks"
           :key="navLink.path"
           @click="toggleNav"
         >
           <g-link
             :to="navLink.path"
-            class="t-inline-block"
+            class="inline-block"
             @click="toggleNav"
             >{{ navLink.name }}</g-link
           >
@@ -82,7 +82,7 @@ export default {
   background-color: white;
   width: 100%;
   height: 100vh;
-  @apply t-shadow;
+  @apply shadow;
   transition: all 0.25s ease-in-out;
   z-index: 1000;
 

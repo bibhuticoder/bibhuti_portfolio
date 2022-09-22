@@ -3,29 +3,29 @@
     <div
       class="
         snip
-        t-bg-white
-        t-shadow-md
-        t-rounded
-        t-px-3
-        t-py-3
-        t-m-2
-        t-mb-3
-        t-pb-6
-        t-w-36
-        md:t-w-40
+        bg-white
+        shadow-md
+        rounded
+        px-3
+        py-3
+        m-2
+        mb-3
+        pb-6
+        w-36
+        md:w-40
       "
       :class="{ 'left-tilt': index % 2 == 0, 'right-tilt': index % 2 != 0 }"
     >
-      <p class="t-font-Poppins t-font-medium t-text-center t-text-sm md:t-text-left leading-4 t-mb-2">
+      <p class="font-Poppins font-medium text-center text-sm md:text-left leading-4 mb-2">
         {{ title }}
       </p>
 
       <div class="ribbon-bottom">
-        <span class="tag t-mx-2">{{ tags }}</span>
+        <span class="tag mx-2">{{ tags }}</span>
       </div>
       <div class="hole"></div>
 
-      <p class="t-text-sm t-text-center t-text-gray-500 t-mt-3 md:t-text-left">
+      <p class="text-sm text-center text-gray-500 mt-3 md:text-left">
         {{ excerpt }}
       </p>
     </div>
@@ -133,9 +133,9 @@ export default {
   }
 
   .hole {
-    @apply t-absolute;
-    @apply t-bg-white;
-    @apply t-shadow-inner;
+    @apply absolute;
+    @apply bg-white;
+    @apply shadow-inner;
     position: absolute;
     top: 0.25rem;
     right: 0.25rem;
@@ -150,11 +150,11 @@ export default {
 
     width: auto;
     height: 1rem;
-    @apply t-bg-green;
+    @apply bg-green;
     left: -8px;
-    @apply t-text-white;
-    // @apply t-text-sm;
-    @apply t-text-xs;
+    @apply text-white;
+    // @apply text-sm;
+    @apply text-xs;
     &:before {
       @include triangle(0.5rem, darken(#82b540, 15%), down-right);
       top: -0.5rem;
@@ -171,7 +171,7 @@ export default {
 
   &:hover {
     span.tag {
-      @apply t-mr-4;
+      @apply mr-4;
     }
   }
 

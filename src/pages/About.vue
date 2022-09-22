@@ -1,11 +1,11 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-28 md:t-pt-32">
+    <div class="container pt-28 md:pt-32">
       <!-- Intro -->
-      <div class="t-flex t-justify-center md:t-justify-between" id="intro">
-        <div class="md:t-w-11/12">
-          <h1 class="t-text-center md:t-text-left t-mb-5">Bibhuti Poudyal</h1>
-          <p class="t-text-center md:t-text-left md:t-mr-20 t-mb-10">
+      <div class="flex justify-center md:justify-between" id="intro">
+        <div class="md:w-11/12">
+          <h1 class="text-center md:text-left mb-5">Bibhuti Poudyal</h1>
+          <p class="text-center md:text-left md:mr-20 mb-10">
             I am a software developer from Kathmandu. I believe building
             successful software requires not only tech skills but also positive
             emotions &amp; empathy. That's what we do at
@@ -13,31 +13,31 @@
               href="https://thevaluecrew.com/works/"
               target="_blank"
               rel="noopener noreferrer"
-              class="highlight t-inline-block"
+              class="highlight inline-block"
               >work</a
             >.
             <br />
             I spend my free time on open source, reading &amp; cycling.
           </p>
 
-          <p class="t-text-center md:t-text-left">
+          <p class="text-center md:text-left">
             Co-Founder @
             <a
               href="https://thevaluecrew.com/"
               target="_blank"
-              class="highlight t-inline-block"
+              class="highlight inline-block"
               >TheValueCrew</a
             >
             <br />
             MSc CS Graduate @ Pokhara University
           </p>
 
-          <div class="t-flex t-justify-center md:t-justify-start t-mt-3">
+          <div class="flex justify-center md:justify-start mt-3">
             <a
               href="https://github.com/bibhuticoder"
               target="_blank"
               rel="noopener noreferrer"
-              class="t-mr-4 t-text-xl"
+              class="mr-4 text-xl"
               title="Github"
             >
               <font-awesome-icon :icon="['fab', 'github']" />
@@ -46,7 +46,7 @@
               href="https://www.linkedin.com/in/bibhuti-poudyal-4883aa116/"
               target="_blank"
               rel="noopener noreferrer"
-              class="t-mr-4 t-text-xl"
+              class="mr-4 text-xl"
               title="LinkedIn"
             >
               <font-awesome-icon :icon="['fab', 'linkedin']" />
@@ -55,7 +55,7 @@
               href="https://bibhuticoder.medium.com/"
               target="_blank"
               rel="noopener noreferrer"
-              class="t-mr-4 t-text-xl"
+              class="mr-4 text-xl"
               title="Medium"
             >
               <font-awesome-icon :icon="['fab', 'medium-m']" />
@@ -64,7 +64,7 @@
               href="mailto:bibhutipd@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="t-mr-4 t-text-xl"
+              class="mr-4 text-xl"
               title="Medium"
             >
               <font-awesome-icon :icon="['fas', 'envelope']" />
@@ -72,56 +72,56 @@
           </div>
         </div>
 
-        <div class="t-hidden md:t-block">
+        <div class="hidden md:block">
           <AboutIllus />
           <!-- <g-image alt="Bibhuti" src="/illustration.png" /> -->
         </div>
       </div>
 
       <!-- Open Source -->
-      <div id="open-source" class="t-mt-24 md:t-mt-36">
-        <div class="t-flex t-flex-wrap md:t-flex-nowrap">
-          <div class="md:t-w-4/12">
-            <h1 class="t-text-center md:t-text-left t-mb-5">
+      <div id="open-source" class="mt-24 md:mt-36">
+        <div class="flex flex-wrap md:flex-nowrap">
+          <div class="md:w-4/12">
+            <h1 class="text-center md:text-left mb-5">
               I
-              <span class="t-text-heart">
+              <span class="text-heart">
                 <font-awesome-icon :icon="['fas', 'heart']"
               /></span>
               OPEN SOURCE
             </h1>
 
-            <p class="t-mt-8 t-text-center md:t-mt-16 md:t-text-left">
+            <p class="mt-8 text-center md:mt-16 md:text-left">
               I strongly believe
               <span class="font-bold">sharing what you have in abundance </span>
               is a way to make life meaningful.
             </p>
 
-            <p class="t-mt-3 t-mb-12 t-text-center md:t-mt-6 md:t-text-left">
+            <p class="mt-3 mb-12 text-center md:mt-6 md:text-left">
               In my free time I maintain few open source projects &amp; tools.
               These are my favourites
-              <span class="t-hidden md:t-inline"> 👉🏻 </span>
+              <span class="hidden md:inline"> 👉🏻 </span>
             </p>
 
             <a
               href="https://github.com/bibhuticoder"
               target="_blank"
               class="
-                t-hidden
-                t-bg-green
-                t-text-white
-                t-px-4
-                t-py-2
-                t-rounded
-                t-relative
-                t-w-28
-                md:t-block
+                hidden
+                bg-green
+                text-white
+                px-4
+                py-2
+                rounded
+                relative
+                w-28
+                md:block
               "
             >
               View More
               <g-image
                 alt="Bibhuti"
                 src="/oss_hand.png"
-                class="t-w-20 t-h-auto t-absolute"
+                class="w-20 h-auto absolute"
                 style="right: 0; top: 50%; transform: translate(100%, -80%)"
               />
             </a>
@@ -130,37 +130,37 @@
           <div
             class="
               projects-list
-              t-flex-grow t-flex t-flex-wrap
-              md:t-max-w-2xl
-              t-justify-evenly
+              flex-grow flex flex-wrap
+              md:max-w-2xl
+              justify-evenly
             "
           >
             <div
               class="
                 project
-                t-flex
-                t-flex-col
-                t-bg-white
-                t-w-40
-                t-p-3
-                t-pb-2
-                t-shadow-md
-                t-rounded
-                t-text-center
-                t-mb-4
-                md:t-w-48 md:t-p-4 md:t-flex
+                flex
+                flex-col
+                bg-white
+                w-40
+                p-3
+                pb-2
+                shadow-md
+                rounded
+                text-center
+                mb-4
+                md:w-48 md:p-4 md:flex
               "
-              :class="{ 't-hidden': !oss.showPhone }"
+              :class="{ 'hidden': !oss.showPhone }"
               v-for="(oss, index2) in ossList"
               :key="index2"
             >
-              <p class="title t-font-medium t-font-Poppins t-text-sm t-mb-5">
+              <p class="title font-medium font-Poppins text-sm mb-5">
                 {{ oss.title }}
               </p>
-              <div class="description t-text-sm t-flex-grow">
+              <div class="description text-sm flex-grow">
                 {{ oss.desc }}
               </div>
-              <p class="t-text-xs t-mt-4 t-flex t-justify-between">
+              <p class="text-xs mt-4 flex justify-between">
                 <a :href="oss.tryLink" target="_blank">
                   <font-awesome-icon :icon="['fas', 'rocket']" /> Try</a
                 >
@@ -172,11 +172,11 @@
           </div>
         </div>
 
-        <div class="t-flex t-justify-center t-my-5">
+        <div class="flex justify-center my-5">
           <a
             href="https://github.com/bibhuticoder"
             target="_blank"
-            class="md:t-hidden t-bg-green t-text-white t-px-4 t-py-2 t-rounded"
+            class="md:hidden bg-green text-white px-4 py-2 rounded"
           >
             View More
           </a>
@@ -184,30 +184,30 @@
       </div>
 
       <!-- Blogs -->
-      <div id="blogs" class="t-mt-24 md:t-mt-36 t-mb-20">
-        <h1 class="t-text-center md:t-text-left t-mb-5">Blogs</h1>
+      <div id="blogs" class="mt-24 md:mt-36 mb-20">
+        <h1 class="text-center md:text-left mb-5">Blogs</h1>
 
-        <div class="t-flex t-flex-wrap">
-          <div class="md:t-w-1/2">
-            <div class="blogs-list t-flex t-flex-col">
+        <div class="flex flex-wrap">
+          <div class="md:w-1/2">
+            <div class="blogs-list flex flex-col">
               <div v-for="edge in $page.blogs.edges" :key="edge.node.id">
                 <g-link :to="edge.node.path">
                   <div
                     class="
                       blogs-list-item
-                      t-bg-white t-shadow-md t-rounded t-px-4 t-py-3 t-my-2
+                      bg-white shadow-md rounded px-4 py-3 my-2
                     "
                   >
                     <p
                       class="
-                        t-font-medium t-font-Poppins t-mb-2 t-text-center
-                        md:t-text-left
+                        font-medium font-Poppins mb-2 text-center
+                        md:text-left
                       "
                     >
                       {{ edge.node.title }}
                     </p>
 
-                    <p class="t-text-sm t-text-center md:t-text-left">
+                    <p class="text-sm text-center md:text-left">
                       {{ edge.node.excerpt }}
                     </p>
                   </div>
@@ -216,25 +216,25 @@
             </div>
           </div>
 
-          <div class="t-hidden t-w-1/2 md:t-block">
-            <div class="t-flex t-flex-col t-justify-center t-px-10">
-              <div class="t-flex t-justify-center">
+          <div class="hidden w-1/2 md:block">
+            <div class="flex flex-col justify-center px-10">
+              <div class="flex justify-center">
                 <g-image
                   alt="Example image"
                   src="/blogs_illustration.png"
-                  class="t-w-64 t-h-auto"
+                  class="w-64 h-auto"
                 />
               </div>
 
-              <p class="t-text-center t-mt-5">
+              <p class="text-center mt-5">
                 I frequently write about technical stuffs, most probably work
                 related, sometimes on side projects/experiments.
               </p>
 
-              <div class="t-flex t-justify-center t-my-5">
+              <div class="flex justify-center my-5">
                 <g-link
                   to="/blog"
-                  class="t-bg-green t-text-white t-px-4 t-py-2 t-rounded"
+                  class="bg-green text-white px-4 py-2 rounded"
                 >
                   Read More
                 </g-link>
@@ -249,7 +249,7 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
-      class="t-hidden md:t-block t--mt-32"
+      class="hidden md:block -mt-32"
     >
       <path
         fill="#ffffff"
@@ -259,66 +259,66 @@
     </svg>
 
     <!-- Contact -->
-    <div id="contact" class="md:t-bg-white md:t-relative">
-      <div class="t-container">
-        <h1 class="t-text-center md:t-text-left t-mb-5">Contact Me</h1>
+    <div id="contact" class="md:bg-white md:relative">
+      <div class="container">
+        <h1 class="text-center md:text-left mb-5">Contact Me</h1>
 
-        <div class="t-flex">
-          <div class="t-text-center md:t-w-1/2 md:t-text-left">
-            <p class="t-mb-2">
+        <div class="flex">
+          <div class="text-center md:w-1/2 md:text-left">
+            <p class="mb-2">
               I am Co-founder at
               <a
                 href="https://thevaluecrew.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="highlight t-w-28 t-inline-block"
+                class="highlight w-28 inline-block"
                 >TheValueCrew</a
               >
             </p>
 
-            <p class="t-mb-2">
+            <p class="mb-2">
               Connect me on
               <a
                 href="https://www.linkedin.com/in/bibhuti-poudyal-4883aa116/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="highlight t-w-16 t-inline-block"
+                class="highlight w-16 inline-block"
                 >LinkedIn</a
               >
             </p>
 
-            <p class="t-mb-2">
+            <p class="mb-2">
               Star my Open Source works at
 
               <a
                 href="https://github.com/bibhuticoder"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="highlight t-w-12 t-inline-block"
+                class="highlight w-12 inline-block"
                 >Github</a
               >
             </p>
 
-            <p class="t-mb-2">
+            <p class="mb-2">
               Send me an email at
 
               <a
                 href="mailto:bibhutipd@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="highlight t-w-40 t-inline-block"
+                class="highlight w-40 inline-block"
                 >bibhutipd@gmail.com</a
               >
             </p>
 
             <div
-              class="t-flex t-justify-center md:t-justify-start t-mt-3 t-mb-4"
+              class="flex justify-center md:justify-start mt-3 mb-4"
             >
               <a
                 href="https://github.com/bibhuticoder"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="t-mr-2 t-ml-2 t-text-xl"
+                class="mr-2 ml-2 text-xl"
                 title="Github"
               >
                 <font-awesome-icon :icon="['fab', 'github']" />
@@ -327,7 +327,7 @@
                 href="https://www.linkedin.com/in/bibhuti-poudyal-4883aa116/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="t-mr-2 t-ml-2 t-text-xl"
+                class="mr-2 ml-2 text-xl"
                 title="LinkedIn"
               >
                 <font-awesome-icon :icon="['fab', 'linkedin']" />
@@ -336,7 +336,7 @@
                 href="https://bibhuticoder.medium.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="t-mr-2 t-ml-2 t-text-xl"
+                class="mr-2 ml-2 text-xl"
                 title="Medium"
               >
                 <font-awesome-icon :icon="['fab', 'medium-m']" />
@@ -345,7 +345,7 @@
                 href="mailto:bibhutipd@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="t-mr-2 t-ml-2 t-text-xl"
+                class="mr-2 ml-2 text-xl"
                 title="Medium"
               >
                 <font-awesome-icon :icon="['fas', 'envelope']" />
@@ -353,21 +353,21 @@
             </div>
           </div>
 
-          <div class="t-w-1/2 t-justify-end t-hidden md:t-flex">
-            <div class="t-flex t-flex-col t-w-96">
-              <div class="t-flex t-justify-center">
+          <div class="w-1/2 justify-end hidden md:flex">
+            <div class="flex flex-col w-96">
+              <div class="flex justify-center">
                 <g-image
-                  class="t-w-36 t-mr-4 t-rounded"
+                  class="w-36 mr-4 rounded"
                   src="https://lh3.googleusercontent.com/YFIuxWZPFDZRFXDZioC8Lz7b_HIZmve_m9sjGRhpbFhsT-jdKSK2dkeU8WCzO-ykjRHOY_7CfjFVg13VVGoUzfWBLmU=w640-h400-e365-rj-sc0x00ffffff"
                 ></g-image>
 
                 <g-image
-                  class="t-w-36 t-rounded"
+                  class="w-36 rounded"
                   src="https://lh3.googleusercontent.com/gPxAbWbNrQyDZ7cZ2pyQlMYAB2NnIr4JEsZMrF11w_YQUxmzEBSGUSDMxNICUstx2dyI0_yCIrRgfqRz1VJ33evpVe0=w640-h400-e365-rj-sc0x00ffffff"
                 ></g-image>
               </div>
 
-              <p class="t-text-sm t-mt-2 t-text-center">
+              <p class="text-sm mt-2 text-center">
                 Friendly personal dashboard featuring Nepali calendar, daily
                 Nepali quotes & Nepali wallpapers.
                 <br />
@@ -376,7 +376,7 @@
                   href="https://bibhuticoder.github.io/samaya/"
                   target="_blank"
                   to="/blog"
-                  class="t-inline-block highlight"
+                  class="inline-block highlight"
                 >
                   Get Extension
                 </a>

@@ -1,15 +1,15 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-20 md:t-pt-32">
+    <div class="container pt-20 md:pt-32">
       <!-- Site Intro -->
-      <div class="md:t-w-3/4 t-mb-10">
-        <div class="t-flex">
-          <h2 class="t-mr-4">👋</h2>
-          <div class="t-flex t-flex-col">
-            <h2 class="t-mb-4 t-text-center md:t-text-left">
+      <div class="md:w-3/4 mb-10">
+        <div class="flex">
+          <h2 class="mr-4">👋</h2>
+          <div class="flex flex-col">
+            <h2 class="mb-4 text-center md:text-left">
               Hey, I'm Bibhuti Poudyal.
             </h2>
-            <p class="t-text-center md:t-text-left t-text-black t-text-lg">
+            <p class="text-center md:text-left text-black text-lg">
               I build softwares for a living.
               <br />
               This site is a journal; mostly related to
@@ -17,7 +17,7 @@
                 href="https://thevaluecrew.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="t-inline-block highlight"
+                class="inline-block highlight"
                 >work</a
               >
 
@@ -28,35 +28,35 @@
         </div>
       </div>
 
-      <div class="t-flex t-flex-wrap">
+      <div class="flex flex-wrap">
 
         <!-- Blogs -->
-        <div class="md:t-w-2/3">
+        <div class="md:w-2/3">
 
         <p
-            class="t-ml-2 t-mt-8 md:t-mt-0 t-mb-4 t-text-center md:t-text-left"
+            class="ml-2 mt-8 md:mt-0 mb-4 text-center md:text-left"
           >
             ✍🏻  I frequently write about technical stuffs, mostly work related &amp; sometimes on side projects/experiments. View
-            <g-link to="/blog" class="highlight t-inline-block">more</g-link>.
+            <g-link to="/blog" class="highlight inline-block">more</g-link>.
           </p>
 
        
 
           <div
             class="
-              t-flex t-justify-between
-              md:t-justify-between
-              t-mb-4
-              md:t-mr-4
+              flex justify-between
+              md:justify-between
+              mb-4
+              md:mr-4
             "
           >
             <div
               v-for="(post, index) in featuredPosts"
               :key="post.id"
-              class="md:t-block t-w-1/2 md:t-w-auto"
+              class="md:block w-1/2 md:w-auto"
               :class="{
-                't-hidden': index == 2,
-                't-mr-2 md:t-mr-0': index == 0,
+                'hidden': index == 2,
+                'mr-2 md:mr-0': index == 0,
               }"
             >
               <BlogItemImage
@@ -69,7 +69,7 @@
             </div>
           </div>
 
-          <div class="blogs-list t-flex t-flex-col md:t-mr-4">
+          <div class="blogs-list flex flex-col md:mr-4">
             <div v-for="post in otherPosts" :key="post.id">
               <BlogItem
                 :title="post.title"
@@ -84,24 +84,24 @@
         </div>
 
         <!-- Snippets -->
-        <div class="md:t-w-1/3">
+        <div class="md:w-1/3">
           <p
-            class="t-ml-2 t-mt-8 md:t-mt-0 t-mb-4 t-text-center md:t-text-left"
+            class="ml-2 mt-8 md:mt-0 mb-4 text-center md:text-left"
           >
             📃 Collection of snippets - instructions, code, commands etc. View
-            <g-link to="/snip" class="highlight t-inline-block">more</g-link>.
+            <g-link to="/snip" class="highlight inline-block">more</g-link>.
           </p>
           <div
             class="
               snips-list
-              t-flex t-flex-wrap t-justify-between
-              md:t-justify-start
+              flex flex-wrap justify-between
+              md:justify-start
             "
           >
             <div
               v-for="(snip, index) in snips"
               :key="snip.id"
-              class="t-self-center"
+              class="self-center"
             >
               <SnipItem
                 :index="index"

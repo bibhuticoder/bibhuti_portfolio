@@ -3,21 +3,21 @@
                 <div
                   class="
                     blogs-list-item
-                    t-bg-white t-shadow-md t-rounded t-h-full
-                    md:t-w-56
+                    bg-white shadow-md rounded h-full
+                    md:w-56
                   "
                 >
                   <g-image
                     :src="thumbnail"
-                    class="t-rounded-tr t-rounded-tl t-h-32 t-w-full"
+                    class="rounded-tr rounded-tl h-32 w-full"
                   />
 
-                  <div class="content t-p-2">
-                    <p class="t-font-Poppins t-font-medium t-mb-3 t-text-center md:t-text-left">
+                  <div class="content p-2">
+                    <p class="font-Poppins font-medium mb-3 text-center md:text-left">
                       {{ title }}
                     </p>
 
-                    <p class="t-text-sm t-text-gray-500 t-hidden md:t-block">
+                    <p class="text-sm text-gray-500 hidden md:block">
                       {{ excerpt.substr(0, 50) + "..." }}
                     </p>
                   </div>

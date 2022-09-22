@@ -1,15 +1,15 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-20 md:t-pt-32">
-      <h1 class="t-text-center t-mb-5 md:t-text-left">Scribbles</h1>
+    <div class="container pt-20 md:pt-32">
+      <h1 class="text-center mb-5 md:text-left">Scribbles</h1>
 
       <p>
         Positive thoughts i remind to myself time to time.
       </p>
 
-      <div class="blogs-list t-flex t-flex-col">
+      <div class="blogs-list flex flex-col">
         <div v-for="year in blogYears" :key="year">
-          <h2 class="t-mt-12">{{ year }}</h2>
+          <h2 class="mt-12">{{ year }}</h2>
 
           <BlogItem
             v-for="post in blogPosts[year]"

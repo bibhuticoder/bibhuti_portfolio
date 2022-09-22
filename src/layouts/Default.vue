@@ -1,9 +1,9 @@
 <template>
-  <div class="t-flex t-flex-col t-h-screen">
+  <div class="flex flex-col h-screen">
     <NavBar />
 
     <!-- conttnt -->
-    <div class="t-flex-grow t-pb-12">
+    <div class="flex-grow pb-12">
       <slot />
     </div>
     

@@ -1,15 +1,15 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-20 md:t-pt-32">
-      <h1 class="t-text-center t-mb-5 md:t-text-left">Life hacks</h1>
-      <p class="t-mb-5">
+    <div class="container pt-20 md:pt-32">
+      <h1 class="text-center mb-5 md:text-left">Life hacks</h1>
+      <p class="mb-5">
         Practical life hacks that I have been using and improving with my experiences 🛠️
       </p>
 
-      <div class="toolbar t-flex t-mt-2 t-mb-4">
+      <div class="toolbar flex mt-2 mb-4">
         <select
           class="
-            t-text-black t-outline-none t-p-2 t-rounded-l t-shadow-sm t-min-w-0
+            text-black outline-none p-2 rounded-l shadow-sm min-w-0
           "
           v-model="selectedTag"
         >
@@ -20,7 +20,7 @@
         <input
           type="text"
           class="
-            t-flex-grow t-p-2 t-outline-none t-shadow-sm t-rounded-r t-min-w-0
+            flex-grow p-2 outline-none shadow-sm rounded-r min-w-0
           "
           placeholder="Search for hacks"
           v-model="searchKeyword"
@@ -30,15 +30,15 @@
       <div
         class="
           hacks-list
-          t-flex t-flex-wrap t-justify-between
-          md:t-justify-center
-          t-mb-64
+          flex flex-wrap justify-between
+          md:justify-center
+          mb-64
         "
       >
         <div
           v-for="(hack, index) in hacks"
           :key="hack.id"
-          class="t-self-center"
+          class="self-center"
         >
           <SnipItem
             :index="index"

@@ -4,22 +4,22 @@
 @layer base {
     body {
         /* font-family: "Nunito", sans-serif; */
-        @apply t-font-Nunito;
-        @apply t-text-black;
-        @apply t-bg-app-white;
+        @apply font-Nunito;
+        @apply text-black;
+        @apply bg-app-white;
     }
 
     h1 {
-        @apply t-text-3xl;
-        @apply t-font-medium;
-        @apply t-font-Poppins;
-        @apply t-text-black;
+        @apply text-3xl;
+        @apply font-medium;
+        @apply font-Poppins;
+        @apply text-black;
     }
     h2 {
-        @apply t-text-2xl;
-        @apply t-font-medium;
-        @apply t-font-Poppins;
-        @apply t-text-black;
+        @apply text-2xl;
+        @apply font-medium;
+        @apply font-Poppins;
+        @apply text-black;
     }
 }
 
@@ -33,7 +33,7 @@ a.active {
         width: 100%;
         // margin-left: -5%;
         height: 0.2rem;
-        @apply t-bg-green;
+        @apply bg-green;
     }
 
     &.--no-highlight {
@@ -47,12 +47,12 @@ a.active {
 .shiki {
     padding: 1rem;
     border-radius: 0.25rem;
-    @apply t-relative;
+    @apply relative;
 
     code {
-        @apply t-block;
-        @apply t-w-full;
-        @apply t-overflow-auto;
+        @apply block;
+        @apply w-full;
+        @apply overflow-auto;
     }
 
     span {
@@ -60,11 +60,11 @@ a.active {
     }
 
     span.copy {
-        @apply t-text-app-white;
-        @apply t-text-xs;
-        @apply t-absolute;
-        @apply t-cursor-pointer;
-        @apply t-select-none;
+        @apply text-app-white;
+        @apply text-xs;
+        @apply absolute;
+        @apply cursor-pointer;
+        @apply select-none;
         top: 0.5rem;
         right: 0.5rem;
     }
@@ -73,53 +73,53 @@ a.active {
 // blog post
 .blogPost {
     p {
-        @apply t-mb-8;
-        @apply t-whitespace-pre-wrap;
-        @apply t-break-words;
-        @apply t-text-xl;
+        @apply mb-8;
+        @apply whitespace-pre-wrap;
+        @apply break-words;
+        @apply text-xl;
     }
 
     img {
-        @apply t-mx-auto;
-        @apply t-mb-8;
+        @apply mx-auto;
+        @apply mb-8;
     }
 
     h2 {
-        @apply t-my-8;
+        @apply my-8;
     }
     h3 {
-        @apply t-my-4;
-        @apply t-font-bold;
-        @apply t-text-2xl;
+        @apply my-4;
+        @apply font-bold;
+        @apply text-2xl;
     }
     h4 {
-        @apply t-my-2;
-        @apply t-font-bold;
-        @apply t-text-xl;
+        @apply my-2;
+        @apply font-bold;
+        @apply text-xl;
     }
 
     ul {
         list-style-type: disc;
-        @apply t-pl-8;
-        @apply t-text-xl;
+        @apply pl-8;
+        @apply text-xl;
     }
 
     blockquote {
-        @apply t-border-l-4;
-        @apply t-border-green;
-        @apply t-pl-4;
-        @apply t-italic;
+        @apply border-l-4;
+        @apply border-green;
+        @apply pl-4;
+        @apply italic;
     }
 
     code {
-        @apply t-bg-gray-200;
-        @apply t-px-2;
-        @apply t-rounded;
+        @apply bg-gray-200;
+        @apply px-2;
+        @apply rounded;
     }
 
     a {
-        @apply t-underline;
-        @apply t-italic;
+        @apply underline;
+        @apply italic;
     }
 
     .shiki {
@@ -129,12 +129,12 @@ a.active {
             background-color: inherit;
         }
         overflow: auto;
-        @apply t-mb-8;
+        @apply mb-8;
     }
 }
 
 .image-caption {
     a {
-        @apply t-underline;
+        @apply underline;
     }
 }

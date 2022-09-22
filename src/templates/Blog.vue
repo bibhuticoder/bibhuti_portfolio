@@ -1,14 +1,14 @@
 <template>
   <Layout>
-    <div class="t-container t-pt-20 md:t-pt-32 t-max-w-4xl">
-      <h1 class="t-mb-4">{{ $page.blog.title }}</h1>
-      <p class="t-text-xs t-text-gray-500 t-mb-4">
+    <div class="container pt-20 md:pt-32 max-w-4xl">
+      <h1 class="mb-4">{{ $page.blog.title }}</h1>
+      <p class="text-xs text-gray-500 mb-4">
         {{ createdAtTransformed }} - {{ $page.blog.time }} min read
       </p>
-      <g-image :src="$page.blog.thumbnail" class="t-my-4" />
+      <g-image :src="$page.blog.thumbnail" class="my-4" />
       <div
         class="
-          t-pb-8 t-text-gray-500 t-italic t-text-sm t-text-center
+          pb-8 text-gray-500 italic text-sm text-center
           image-caption
         "
         v-html="$page.blog.caption"
@@ -18,7 +18,7 @@
         <VueRemarkContent />
       </div>
 
-      <hr class="t-my-10" />
+      <hr class="my-10" />
       <Disqus shortname="bibhutipoudyal-com-np" :identifier="$page.blog.path" />
     </div>
   </Layout>
