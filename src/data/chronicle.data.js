@@ -27,7 +27,7 @@ const $ = (item) => {
     if (item.self) {
         html += `
             <div class="person --${isMarried ? 'married' : 'unmarried'}" id="${item.self.id}">
-                <img class="image" src="${item.self.image}" />
+                <img class="image" src="chronicle/nepali-${item.self.gender}.png" />
                 <p class="name">${item.self.name}</p>
                 <p class="age">${item.self.dob}</p>
             </div>
@@ -38,7 +38,7 @@ const $ = (item) => {
     if (item.spouse) {
         html += `
             <div class="person" id="${item.self.id}">
-                <img class="image w-12 h-12 rounded-full mx-auto" src="${item.spouse.image}" />
+            <img class="image" src="chronicle/nepali-${item.spouse.gender}.png" />
                 <p class="name">${item.spouse.name}</p>
                 <p class="age">${item.spouse.dob}</p>
             </div>
@@ -97,6 +97,146 @@ export default {
             }),
 
             children: [
+
+                {
+                    innerHTML: $({
+                        self: {
+                            id: "ram-chandra-poudyal",
+                            name: "राम चन्द्र पौड्याल",
+                            dob: "1990-4-23",
+                            dod: null,
+                            image: "chronicle/nepali-male.png",
+                            gender: 'male',
+                            bio: "He was a very good man.",
+                        },
+                        spouse: {
+                            id: "thuloaama",
+                            name: "Thulo-aama",
+                            dob: "1990-4-23",
+                            dod: null,
+                            image: "chronicle/nepali-female.png",
+                            gender: 'female',
+                            bio: "He was a very good man.",
+                        },
+                    }),
+                    children: [
+
+                        {
+                            innerHTML: $({
+                                self: {
+                                    id: "lava-poudyal",
+                                    name: "लभ पौड्याल",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-male.png",
+                                    gender: 'male',
+                                    bio: "He was a very good man.",
+                                },
+                                spouse: {
+                                    id: "tara-poudyal",
+                                    name: "तारा पौड्याल",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-female.png",
+                                    gender: 'female',
+                                    bio: "He was a very good man.",
+                                },
+                            }),
+                            children: [
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "santosh-poudyal",
+                                            name: "सन्तोष पौड्याल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: {
+                                            id: "nirmala-phuyal",
+                                            name: "निर्मला फुयाल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                    }),
+                                    children: [
+                                        {
+                                            innerHTML: $({
+                                                self: {
+                                                    id: "aarush-poudyal",
+                                                    name: "आरुष पौड्याल",
+                                                    dob: "1990-4-23",
+                                                    dod: null,
+                                                    image: "chronicle/nepali-male.png",
+                                                    gender: 'male',
+                                                    bio: "He was a very good man.",
+                                                }
+                                            })
+                                        },
+
+                                        {
+                                            innerHTML: $({
+                                                self: {
+                                                    id: "aayam-poudyal",
+                                                    name: "आयाम पौड्याल",
+                                                    dob: "1990-4-23",
+                                                    dod: null,
+                                                    image: "chronicle/nepali-male.png",
+                                                    gender: 'male',
+                                                    bio: "He was a very good man.",
+                                                }
+                                            })
+                                        }
+                                    ]
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "sanjaya-poudyal",
+                                            name: "संजय पौड्याल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: {
+                                            id: "shraddha-phuyal",
+                                            name: "श्रद्धा फुयाल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                    }),
+                                    children: [
+                                        {
+                                            innerHTML: $({
+                                                self: {
+                                                    id: "sanjaya-chori-poudyal",
+                                                    name: "संजय chori पौड्याल",
+                                                    dob: "1990-4-23",
+                                                    dod: null,
+                                                    image: "chronicle/nepali-male.png",
+                                                    gender: 'female',
+                                                    bio: "He was a very good man.",
+                                                },
+                                            })
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+
+                    ]
+                },
 
                 {
                     innerHTML: $({
@@ -189,7 +329,7 @@ export default {
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
-                                            gender: 'male',
+                                            gender: 'female',
                                             bio: "He was a very good man.",
                                         },
                                         spouse: {
@@ -283,6 +423,34 @@ export default {
                                 },
                             }),
                             children: [
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "sabal-poudyal",
+                                            name: "सबल पौड्याल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: null,
+                                    })
+                                },
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "salina-poudyal",
+                                            name: "सलिना पौड्याल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: null,
+                                    })
+                                }
                             ]
                         },
 
@@ -308,6 +476,47 @@ export default {
                                 },
                             }),
                             children: [
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "shraddha-poudyal",
+                                            name: "श्रद्धा पौड्याल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        }
+                                    })
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "shreeya-poudyal",
+                                            name: "श्रीया पौड्याल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        }
+                                    })
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "shreeya-ko-vai",
+                                            name: "श्रीया पौड्याल ko vai",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        }
+                                    })
+                                },
                             ]
                         }
                     ]
@@ -485,6 +694,22 @@ export default {
                             ],
                         },
                     ],
+                },
+
+                {
+                    innerHTML: $({
+                        self: {
+                            id: "narayan-poudyal",
+                            name: "नारायण प्रसाद पौड्याल",
+                            dob: "1990-4-23",
+                            dod: null,
+                            image: "chronicle/nepali-male.png",
+                            gender: 'male',
+                            bio: "He was a very good man.",
+                        },
+                        spouse: null,
+                    }),
+                    children: null
                 }
             ],
         },

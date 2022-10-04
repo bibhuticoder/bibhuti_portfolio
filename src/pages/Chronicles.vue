@@ -149,30 +149,32 @@ export default {
 </script>
 
 <style lang="scss">
-.person-group {
-  @apply flex flex-row p-2 bg-gray-200 rounded-md;
+#family-tree {
+  .person-group {
+    @apply flex flex-row p-2 bg-gray-200 rounded-md;
 
-  .person {
-    @apply w-48 flex flex-col p-2 rounded-md cursor-pointer bg-gray-100 hover:bg-gray-50;
+    .person {
+      @apply w-40 h-44 flex flex-col py-2 rounded-md cursor-pointer bg-gray-100 hover:bg-gray-50;
 
-    &:nth-child(odd) {
-      @apply mr-2;
-    }
+      &:nth-child(odd) {
+        @apply mr-2;
+      }
 
-    &:nth-child(even) {
-      @apply ml-2;
-    }
+      &:nth-child(even) {
+        @apply ml-2;
+      }
 
-    .image {
-      @apply w-12 h-12 rounded-full mx-auto mb-4;
-    }
+      .image {
+        @apply w-12 h-12 rounded-full mx-auto mb-4;
+      }
 
-    .name {
-      @apply text-lg font-bold;
-    }
+      .name {
+        @apply font-bold;
+      }
 
-    &.--unmarried {
-      @apply mr-0;
+      &.--unmarried {
+        @apply mr-0;
+      }
     }
   }
 }
