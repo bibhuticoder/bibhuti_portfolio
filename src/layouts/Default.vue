@@ -1,12 +1,12 @@
 <template>
   <div class="flex flex-col h-screen">
-    <NavBar />
+    <NavBar v-if="showNavbar" />
 
     <!-- conttnt -->
     <div class="flex-grow pb-12">
       <slot />
     </div>
-    
+
     <Footer />
   </div>
 </template>
@@ -17,6 +17,11 @@ import Footer from "@/components/Footer";
 
 export default {
   components: { NavBar, Footer },
+  props: {
+    showNavbar: {
+      default: true,
+    },
+  },
 };
 </script>
 
