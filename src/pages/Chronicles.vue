@@ -9,29 +9,36 @@
         incidunt, repudiandae mollitia?
       </p>
 
-      <div class="overflow-auto">
-        <VueFamilyTree
-          :tree="tree"
-          :enable-drag="false"
-          @card-click="cardClick"
-        >
-          <template v-slot:card="{ item }">
-            <div class="p-2 border-2 border-red rounded-md w-20 h-20">
-              {{ item.name }}
-            </div>
-          </template>
-        </VueFamilyTree>
-      </div>
+      <client-only>
+        <div class="overflow-auto">
+          <VueFamilyTree
+            :tree="tree"
+            :enable-drag="false"
+            @card-click="cardClick"
+          >
+            <template v-slot:card="{ item }">
+              <div class="p-2 border-2 border-red rounded-md w-20 h-20">
+                {{ item.name }}
+              </div>
+            </template>
+          </VueFamilyTree>
+        </div>
+      </client-only>
     </div>
   </Layout>
 </template>
 
 <script>
 import _ from "lodash";
-import VueFamilyTree from "vue-family-tree";
+// import VueFamilyTree from "vue-family-tree";
 
 export default {
-  components: { VueFamilyTree },
+  components: {
+    VueFamilyTree: () =>
+      import("vue-family-tree")
+        .then((m) => m.VueFamilyTree)
+        .catch(),
+  },
 
   metaInfo() {
     let title = "Chronicles";
