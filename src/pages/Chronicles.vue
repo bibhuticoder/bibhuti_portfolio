@@ -2,7 +2,7 @@
   <Layout :showNavbar="false">
     <div class="font-Nunito text-center pt-8">
       <div class="container">
-        <h1 class="text-4xl mb-8">पौडेल परिवारको वंशावली</h1>
+        <h1 class="text-4xl mb-8">पौडेल परिवार</h1>
         <p class="text-lg mb-8">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
           dignissimos eveniet quibusdam ipsam sed dicta illo obcaecati
