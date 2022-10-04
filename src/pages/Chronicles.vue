@@ -9,36 +9,15 @@
         incidunt, repudiandae mollitia?
       </p>
 
-      <client-only>
-        <div class="overflow-auto">
-          <VueFamilyTree
-            :tree="tree"
-            :enable-drag="false"
-            @card-click="cardClick"
-          >
-            <template v-slot:card="{ item }">
-              <div class="p-2 border-2 border-red rounded-md w-20 h-20">
-                {{ item.name }}
-              </div>
-            </template>
-          </VueFamilyTree>
-        </div>
-      </client-only>
+      <div id="basic-example"></div>
     </div>
   </Layout>
 </template>
 
 <script>
 import _ from "lodash";
-// import VueFamilyTree from "vue-family-tree";
 
 export default {
-  components: {
-    VueFamilyTree: () =>
-      import("vue-family-tree")
-        .then((m) => m.VueFamilyTree)
-        .catch(),
-  },
 
   metaInfo() {
     let title = "Chronicles";
@@ -101,101 +80,167 @@ export default {
 
   data() {
     return {
-      tree: [
-        {
-          firstPerson: {
-            name: "Kalidas Poudyal",
-            image: "https://picsum.photos/300/300?random=1",
+      counter: 0,
+    };
+  },
+
+  mounted() {
+    let raphaeljs = document.createElement("script");
+    raphaeljs.setAttribute(
+      "src",
+      "https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"
+    );
+    document.head.appendChild(raphaeljs);
+
+    let treantjs = document.createElement("script");
+    treantjs.setAttribute(
+      "src",
+      "https://cdnjs.cloudflare.com/ajax/libs/treant-js/1.0/Treant.min.js"
+    );
+    document.head.appendChild(treantjs);
+
+    let treantCss = document.createElement("link");
+    treantCss.setAttribute("rel", "stylesheet");
+    treantCss.setAttribute(
+      "href",
+      "https://cdnjs.cloudflare.com/ajax/libs/treant-js/1.0/Treant.css"
+    );
+    document.head.appendChild(treantCss);
+
+    raphaeljs.addEventListener("load", this.initTreant);
+    treantjs.addEventListener("load", this.initTreant);
+    treantCss.addEventListener("load", this.initTreant);
+
+    // setTimeout(() => {
+    //   this.initTreant();
+    // }, 3000);
+  },
+
+  methods: {
+    initTreant() {
+      console.log(this.counter);
+      this.counter++;
+      if (this.counter < 3) return;
+
+
+      var ceo = {
+        text: {
+          name: "Mark Hill",
+          title: "Chief executive officer",
+          contact: "Tel: 01 213 123 134",
+        },
+        image: "../headshots/2.jpg",
+      };
+
+      var cbo = {
+        parent: ceo,
+        stackChildren: true,
+        text: {
+          name: "Linda May",
+          title: "Chief Business Officer",
+        },
+        image: "../headshots/5.jpg",
+      };
+
+      new Treant({
+        chart: {
+          container: "#basic-example",
+
+          connectors: {
+            type: "step",
           },
-          secondPerson: {
-            name: "ABC Poudyal",
-            image: "https://picsum.photos/300/300?random=2",
+          node: {
+            HTMLclass: "nodeExample1",
           },
+        },
+        nodeStructure: {
+          text: {
+            name: "Mark Hill",
+            title: "Chief executive officer",
+            contact: "Tel: 01 213 123 134",
+          },
+          image: "../headshots/2.jpg",
           children: [
             {
-              firstPerson: {
-                name: "Katia",
+              text: {
+                name: "Joe Linux",
+                title: "Chief Technology Officer",
               },
-              secondPerson: {
-                name: "Oleg",
-              },
+              stackChildren: true,
+              image: "../headshots/1.jpg",
               children: [
                 {
-                  firstPerson: {
-                    name: "Gleb",
+                  text: {
+                    name: "Ron Blomquist",
+                    title: "Chief Information Security Officer",
                   },
-                  secondPerson: {
-                    name: "Viktoriya",
-                  },
-                  children: [
-                    {
-                      firstPerson: {
-                        name: "Rim",
-                      },
-                      secondPerson: {
-                        name: "Natasha",
-                      },
-                    },
-                    {
-                      firstPerson: {
-                        name: "Leonid",
-                      },
-                    },
-                  ],
+                  image: "../headshots/8.jpg",
                 },
                 {
-                  firstPerson: {
-                    name: "Olga",
+                  text: {
+                    name: "Michael Rubin",
+                    title: "Chief Innovation Officer",
+                    contact: "we@aregreat.com",
                   },
-                  secondPerson: {
-                    name: "Nikita",
-                  },
+                  image: "../headshots/9.jpg",
                 },
               ],
             },
             {
-              firstPerson: {
-                name: "Vitia",
+              stackChildren: true,
+              text: {
+                name: "Linda May",
+                title: "Chief Business Officer",
               },
-              secondPerson: {
-                name: "Dasha",
-              },
-            },
-            {
-              firstPerson: {
-                name: "Antonio Wild",
-                image: "https://picsum.photos/300/300?random=3",
-              },
-              secondPerson: {
-                name: "Olivia Olson",
-              },
+              image: "../headshots/5.jpg",
               children: [
                 {
-                  firstPerson: {
-                    name: "Kristina Wild",
+                  parent: cbo,
+                  text: {
+                    name: "Alice Lopez",
+                    title: "Chief Communications Officer",
                   },
+                  image: "../headshots/7.jpg",
                 },
                 {
-                  firstPerson: {
-                    name: "Alexey Wild",
+                  text: {
+                    name: "Mary Johnson",
+                    title: "Chief Brand Officer",
                   },
+                  image: "../headshots/4.jpg",
                 },
                 {
-                  firstPerson: {
-                    name: "Viktor Wild",
+                  text: {
+                    name: "Kirk Douglas",
+                    title: "Chief Business Development Officer",
                   },
+                  image: "../headshots/11.jpg",
+                },
+              ],
+            },
+            {
+              text: {
+                name: "John Green",
+                title: "Chief accounting officer",
+                contact: "Tel: 01 213 123 134",
+              },
+              image: "../headshots/6.jpg",
+              children: [
+                {
+                  text: {
+                    name: "Erica Reel",
+                    title: "Chief Customer Officer",
+                  },
+                  link: {
+                    href: "http://www.google.com",
+                  },
+                  image: "../headshots/10.jpg",
                 },
               ],
             },
           ],
         },
-      ],
-    };
-  },
-
-  methods: {
-    cardClick(item) {
-      console.log(item);
+      });
     },
   },
 };
