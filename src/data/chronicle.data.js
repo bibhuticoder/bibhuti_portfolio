@@ -27,7 +27,7 @@ const $ = (item) => {
     if (item.self) {
         html += `
             <div class="person --${isMarried ? 'married' : 'unmarried'}" id="${item.self.id}">
-                <img class="image" src="chronicle/nepali-${item.self.gender}.png" />
+                <img class="image" src="/chronicle/nepali-${item.self.gender}.png" />
                 <p class="name">${item.self.name}</p>
                 <p class="age">${item.self.dob}</p>
             </div>
@@ -38,7 +38,7 @@ const $ = (item) => {
     if (item.spouse) {
         html += `
             <div class="person" id="${item.self.id}">
-            <img class="image" src="chronicle/nepali-${item.spouse.gender}.png" />
+            <img class="image" src="/chronicle/nepali-${item.spouse.gender}.png" />
                 <p class="name">${item.spouse.name}</p>
                 <p class="age">${item.spouse.dob}</p>
             </div>
