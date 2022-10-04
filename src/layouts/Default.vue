@@ -2,7 +2,7 @@
   <div class="flex flex-col h-screen">
     <NavBar v-if="showNavbar" />
 
-    <!-- conttnt -->
+    <!-- content -->
     <div class="flex-grow pb-12">
       <slot />
     </div>

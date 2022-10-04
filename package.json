@@ -20,10 +20,7 @@
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "gridsome-plugin-robots-txt": "^1.0.2",
     "lodash": "^4.17.21",
-    "raphael": "^2.3.0",
-    "treant-js": "^1.0.1",
-    "vue-disqus": "^4.0.1",
-    "vue-family-tree": "^0.1.8"
+    "moment": "^2.29.4"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
