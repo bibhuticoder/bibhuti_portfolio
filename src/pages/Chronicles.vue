@@ -1,7 +1,7 @@
 <template>
   <Layout :showNavbar="false">
     <div class="container font-Nunito text-center pt-8">
-      <h1 class="text-4xl mb-8">Family Tree</h1>
+      <h1 class="text-4xl mb-8">पौडेल परिवारको वंशावली</h1>
       <p class="text-lg mb-8">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
         dignissimos eveniet quibusdam ipsam sed dicta illo obcaecati cupiditate,
@@ -9,13 +9,19 @@
         incidunt, repudiandae mollitia?
       </p>
 
-      <VueFamilyTree :tree="tree" :enable-drag="false" @card-click="cardClick">
-        <template v-slot:card="{ item }">
-          <div class="p-2 border-2 border-red rounded-md w-20 h-20">
-            {{ item.name }}
-          </div>
-        </template>
-      </VueFamilyTree>
+      <div class="overflow-auto">
+        <VueFamilyTree
+          :tree="tree"
+          :enable-drag="false"
+          @card-click="cardClick"
+        >
+          <template v-slot:card="{ item }">
+            <div class="p-2 border-2 border-red rounded-md w-20 h-20">
+              {{ item.name }}
+            </div>
+          </template>
+        </VueFamilyTree>
+      </div>
     </div>
   </Layout>
 </template>
@@ -28,7 +34,7 @@ export default {
   components: { VueFamilyTree },
 
   metaInfo() {
-    let title = "Fitness";
+    let title = "Chronicles";
     let description =
       "I am a software developer from Kathmandu. I believe building successful software requires not only tech skills but also positive emotions & empathy";
     let type = "website";
