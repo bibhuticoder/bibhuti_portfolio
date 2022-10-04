@@ -20,7 +20,8 @@
     "gridsome-plugin-remark-shiki": "^0.6.0",
     "gridsome-plugin-robots-txt": "^1.0.2",
     "lodash": "^4.17.21",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "vue-disqus": "^4.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",

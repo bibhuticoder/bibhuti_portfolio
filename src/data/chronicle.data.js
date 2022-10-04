@@ -54,7 +54,7 @@ export default {
     innerHTML: $({
         self: {
             id: 'kalidas-poudyal',
-            name: "कालीदास पौड्याल",
+            name: "कालीदास पौडेल",
             dob: "1990-4-23",
             dod: null,
             image: "chronicle/nepali-male.png",
@@ -78,7 +78,7 @@ export default {
             innerHTML: $({
                 self: {
                     id: 'govinda-prasad-poudyal',
-                    name: "गोविन्द प्रसाद पौड्याल",
+                    name: "गोविन्द प्रसाद पौडेल",
                     dob: "1990-4-23",
                     dod: null,
                     image: "chronicle/nepali-male.png",
@@ -87,7 +87,7 @@ export default {
                 },
                 spouse: {
                     id: 'hajuraama-poudyal',
-                    name: "Hajuraama पौड्याल",
+                    name: "Hajuraama पौडेल",
                     dob: "1990-4-23",
                     dod: null,
                     image: "chronicle/nepali-female.png",
@@ -102,7 +102,7 @@ export default {
                     innerHTML: $({
                         self: {
                             id: "ram-chandra-poudyal",
-                            name: "राम चन्द्र पौड्याल",
+                            name: "राम चन्द्र पौडेल",
                             dob: "1990-4-23",
                             dod: null,
                             image: "chronicle/nepali-male.png",
@@ -125,7 +125,7 @@ export default {
                             innerHTML: $({
                                 self: {
                                     id: "lava-poudyal",
-                                    name: "लभ पौड्याल",
+                                    name: "लभ पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-male.png",
@@ -134,7 +134,7 @@ export default {
                                 },
                                 spouse: {
                                     id: "tara-poudyal",
-                                    name: "तारा पौड्याल",
+                                    name: "तारा पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-female.png",
@@ -147,7 +147,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "santosh-poudyal",
-                                            name: "सन्तोष पौड्याल",
+                                            name: "सन्तोष पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -169,7 +169,7 @@ export default {
                                             innerHTML: $({
                                                 self: {
                                                     id: "aarush-poudyal",
-                                                    name: "आरुष पौड्याल",
+                                                    name: "आरुष पौडेल",
                                                     dob: "1990-4-23",
                                                     dod: null,
                                                     image: "chronicle/nepali-male.png",
@@ -183,7 +183,7 @@ export default {
                                             innerHTML: $({
                                                 self: {
                                                     id: "aayam-poudyal",
-                                                    name: "आयाम पौड्याल",
+                                                    name: "आयाम पौडेल",
                                                     dob: "1990-4-23",
                                                     dod: null,
                                                     image: "chronicle/nepali-male.png",
@@ -199,7 +199,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "sanjaya-poudyal",
-                                            name: "संजय पौड्याल",
+                                            name: "संजय पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -221,7 +221,7 @@ export default {
                                             innerHTML: $({
                                                 self: {
                                                     id: "sanjaya-chori-poudyal",
-                                                    name: "संजय chori पौड्याल",
+                                                    name: "संजय chori पौडेल",
                                                     dob: "1990-4-23",
                                                     dod: null,
                                                     image: "chronicle/nepali-male.png",
@@ -242,7 +242,7 @@ export default {
                     innerHTML: $({
                         self: {
                             id: "lakshman-poudyal",
-                            name: "लक्ष्मण पौड्याल",
+                            name: "लक्ष्मण पौडेल",
                             dob: "1990-4-23",
                             dod: null,
                             image: "chronicle/nepali-male.png",
@@ -264,7 +264,7 @@ export default {
                             innerHTML: $({
                                 self: {
                                     id: "puskar-poudyal",
-                                    name: "पुष्कर पौड्याल",
+                                    name: "पुष्कर पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-male.png",
@@ -273,7 +273,7 @@ export default {
                                 },
                                 spouse: {
                                     id: "kamala-poudyal",
-                                    name: "कमला पौड्याल",
+                                    name: "कमला पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-female.png",
@@ -286,7 +286,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "purusottam-poudyal",
-                                            name: "पुरुसोत्तम पौड्याल",
+                                            name: "पुरुसोत्तम पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -295,7 +295,7 @@ export default {
                                         },
                                         spouse: {
                                             id: "lila-poudyal",
-                                            name: "लिला पौड्याल",
+                                            name: "लिला पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-female.png",
@@ -308,7 +308,7 @@ export default {
                                             innerHTML: $({
                                                 self: {
                                                     id: "priyal-poudyal",
-                                                    name: "प्रियल पौड्याल",
+                                                    name: "प्रियल पौडेल",
                                                     dob: "1990-4-23",
                                                     dod: null,
                                                     image: "chronicle/nepali-male.png",
@@ -325,7 +325,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "jaya-poudyal",
-                                            name: "जया पौड्याल",
+                                            name: "जया पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -379,7 +379,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "bijaya-poudyal",
-                                            name: "बिजया पौड्याल",
+                                            name: "बिजया पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -405,7 +405,7 @@ export default {
                             innerHTML: $({
                                 self: {
                                     id: "shankar-poudyal",
-                                    name: "शंकर पौड्याल",
+                                    name: "शंकर पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-male.png",
@@ -414,7 +414,7 @@ export default {
                                 },
                                 spouse: {
                                     id: "sabitri-poudyal",
-                                    name: "सावित्री पौड्याल",
+                                    name: "सावित्री पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-female.png",
@@ -427,7 +427,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "sabal-poudyal",
-                                            name: "सबल पौड्याल",
+                                            name: "सबल पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -441,7 +441,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "salina-poudyal",
-                                            name: "सलिना पौड्याल",
+                                            name: "सलिना पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -458,7 +458,7 @@ export default {
                             innerHTML: $({
                                 self: {
                                     id: "pravakar-poudyal",
-                                    name: "प्रभाकर पौड्याल",
+                                    name: "प्रभाकर पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-male.png",
@@ -467,7 +467,7 @@ export default {
                                 },
                                 spouse: {
                                     id: "dhana-poudyal",
-                                    name: "धन पौड्याल",
+                                    name: "धन पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-female.png",
@@ -480,7 +480,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "shraddha-poudyal",
-                                            name: "श्रद्धा पौड्याल",
+                                            name: "श्रद्धा पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -494,7 +494,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "shreeya-poudyal",
-                                            name: "श्रीया पौड्याल",
+                                            name: "श्रीया पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -508,7 +508,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "shreeya-ko-vai",
-                                            name: "श्रीया पौड्याल ko vai",
+                                            name: "श्रीया पौडेल ko vai",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -526,7 +526,7 @@ export default {
                     innerHTML: $({
                         self: {
                             id: "damodar-poudyal",
-                            name: "दामोदर प्रसाद पौड्याल",
+                            name: "दामोदर प्रसाद पौडेल",
                             dob: "1990-4-23",
                             dod: null,
                             image: "chronicle/nepali-male.png",
@@ -535,7 +535,7 @@ export default {
                         },
                         spouse: {
                             id: "bhawani-poudyal",
-                            name: "भवानी पौड्याल",
+                            name: "भवानी पौडेल",
                             dob: "1990-4-23",
                             dod: null,
                             image: "chronicle/nepali-female.png",
@@ -549,7 +549,7 @@ export default {
                             innerHTML: $({
                                 self: {
                                     id: "basu-dev-poudyal",
-                                    name: "बासु देव पौड्याल",
+                                    name: "बासु देव पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-male.png",
@@ -558,7 +558,7 @@ export default {
                                 },
                                 spouse: {
                                     id: "binu-gautam-poudyal",
-                                    name: " बिनु पौड्याल",
+                                    name: " बिनु पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-female.png",
@@ -575,7 +575,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "bibhuti-poudyal",
-                                            name: "विभूति पौड्याल",
+                                            name: "विभूति पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -591,7 +591,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "biranchi-poudyal",
-                                            name: " बिरन्ची पौड्याल",
+                                            name: " बिरन्ची पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -617,7 +617,7 @@ export default {
                             innerHTML: $({
                                 self: {
                                     id: "diwakar-poudyal",
-                                    name: "दिवाकर पौड्याल",
+                                    name: "दिवाकर पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-male.png",
@@ -626,7 +626,7 @@ export default {
                                 },
                                 spouse: {
                                     id: "bhawani-dawadi-poudyal",
-                                    name: "भवानी(दीपा) पौड्याल",
+                                    name: "भवानी(दीपा) पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-female.png",
@@ -640,7 +640,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "dikshya-poudyal",
-                                            name: "दिक्ष्या पौड्याल",
+                                            name: "दिक्ष्या पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-female.png",
@@ -664,7 +664,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "dristi-poudyal",
-                                            name: "द्रिश्टी पौड्याल",
+                                            name: "द्रिश्टी पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-female.png",
@@ -680,7 +680,7 @@ export default {
                                     innerHTML: $({
                                         self: {
                                             id: "dikshyant-poudyal",
-                                            name: "दिक्ष्यंत पौड्याल",
+                                            name: "दिक्ष्यंत पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
@@ -700,7 +700,7 @@ export default {
                     innerHTML: $({
                         self: {
                             id: "narayan-poudyal",
-                            name: "नारायण प्रसाद पौड्याल",
+                            name: "नारायण प्रसाद पौडेल",
                             dob: "1990-4-23",
                             dod: null,
                             image: "chronicle/nepali-male.png",
