@@ -11,7 +11,14 @@
         </p>
       </div>
 
-      <div id="family-tree" class="overflow-auto mx-auto"></div>
+      <div class="overflow-auto mx-auto">
+        <select v-model="view" @change="handleViewChange()">
+          <option value="normal" :selected="view == 'normal'">Normal</option>
+          <option value="min" :selected="view == 'min'">Minimized</option>
+        </select>
+
+        <div id="family-tree" ref="familyTree" :class="'--' + view"></div>
+      </div>
     </div>
   </Layout>
 </template>
@@ -19,6 +26,11 @@
 <script>
 import _ from "lodash";
 import CHRONICLE_DATA from "../data/chronicle.data";
+
+const TREE_VIEW = {
+  NORMAL: "normal",
+  MIN: "min",
+};
 
 export default {
   metaInfo() {
@@ -83,6 +95,7 @@ export default {
   data() {
     return {
       counter: 0,
+      view: TREE_VIEW.MIN,
     };
   },
 
@@ -112,15 +125,10 @@ export default {
     raphaeljs.addEventListener("load", this.initTreant);
     treantjs.addEventListener("load", this.initTreant);
     treantCss.addEventListener("load", this.initTreant);
-
-    // setTimeout(() => {
-    //   this.initTreant();
-    // }, 3000);
   },
 
   methods: {
     initTreant() {
-      console.log(CHRONICLE_DATA);
       this.counter++;
       if (this.counter < 3) return;
 
@@ -129,12 +137,12 @@ export default {
           container: "#family-tree",
 
           connectors: {
-            type: "curve",
+            type: "step",
 
             style: {
-              "arrow-end": "classic",
-              height: 100,
-              width: 100,
+              "arrow-end": "classic-wide-medium",
+              stroke: "dimgray",
+              "stroke-width": "2.5",
             },
           },
           node: {
@@ -143,6 +151,13 @@ export default {
         },
         nodeStructure: CHRONICLE_DATA,
       });
+      this.counter = 3;
+    },
+
+    handleViewChange() {
+      this.$refs.familyTree.innerHTML = "";
+      setTimeout(() => this.initTreant(), 500);
+      // this.initTreant();
     },
   },
 };
@@ -150,6 +165,7 @@ export default {
 
 <style lang="scss">
 #family-tree {
+
   .person-group {
     @apply flex flex-row p-2 bg-gray-200 rounded-md;
 
@@ -174,6 +190,16 @@ export default {
 
       &.--unmarried {
         @apply mr-0;
+      }
+    }
+  }
+
+  &.--min {
+    .person-group .person {
+      @apply h-10;
+      .image,
+      .age {
+        @apply hidden;
       }
     }
   }

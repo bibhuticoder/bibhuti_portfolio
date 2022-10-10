@@ -75,6 +75,33 @@ export default {
 
     children: [
         {
+
+            innerHTML: $({
+                self: {
+                    id: 'mokshyanath-poudyal',
+                    name: "मोक्ष्यानाथ पौडेल",
+                    dob: "1990-4-23",
+                    dod: null,
+                    image: "chronicle/nepali-male.png",
+                    gender: 'male',
+                    bio: "He was a very good man.",
+                },
+                spouse: {
+                    id: 'mokshyanath-poudyal-wife',
+                    name: "thuloaama पौडेल",
+                    dob: "1990-4-23",
+                    dod: null,
+                    image: "chronicle/nepali-female.png",
+                    gender: 'female',
+                    bio: "He was a very good man.",
+                },
+            }),
+
+            children: [
+            ],
+        },
+
+        {
             innerHTML: $({
                 self: {
                     id: 'govinda-prasad-poudyal',
@@ -86,8 +113,8 @@ export default {
                     bio: "He was a very good man.",
                 },
                 spouse: {
-                    id: 'hajuraama-poudyal',
-                    name: "Hajuraama पौडेल",
+                    id: 'shiva-maya-poudyal',
+                    name: "शिवमाया पौडेल",
                     dob: "1990-4-23",
                     dod: null,
                     image: "chronicle/nepali-female.png",
@@ -102,7 +129,7 @@ export default {
                     innerHTML: $({
                         self: {
                             id: "ram-chandra-poudyal",
-                            name: "राम चन्द्र पौडेल",
+                            name: "रामचन्द्र पौडेल",
                             dob: "1990-4-23",
                             dod: null,
                             image: "chronicle/nepali-male.png",
@@ -110,8 +137,8 @@ export default {
                             bio: "He was a very good man.",
                         },
                         spouse: {
-                            id: "thuloaama",
-                            name: "Thulo-aama",
+                            id: "ganga-devi-poudyal",
+                            name: "गंगादेवी पौडेल",
                             dob: "1990-4-23",
                             dod: null,
                             image: "chronicle/nepali-female.png",
@@ -220,8 +247,8 @@ export default {
                                         {
                                             innerHTML: $({
                                                 self: {
-                                                    id: "sanjaya-chori-poudyal",
-                                                    name: "संजय chori पौडेल",
+                                                    id: "siwanshi-poudyal",
+                                                    name: "शिवान्शी पौडेल",
                                                     dob: "1990-4-23",
                                                     dod: null,
                                                     image: "chronicle/nepali-male.png",
@@ -250,8 +277,8 @@ export default {
                             bio: "He was a very good man.",
                         },
                         spouse: {
-                            id: "lakshman-poudyal-wife",
-                            name: "Unknown",
+                            id: "kanchhi-poudyal",
+                            name: "कान्छी पौडेल",
                             dob: "1990-4-23",
                             dod: null,
                             image: "chronicle/nepali-female.png",
@@ -507,8 +534,8 @@ export default {
                                 {
                                     innerHTML: $({
                                         self: {
-                                            id: "shreeya-ko-vai",
-                                            name: "श्रीया पौडेल ko vai",
+                                            id: "aditya-poudyal",
+                                            name: "आदित्य पौडेल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
