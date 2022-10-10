@@ -18,7 +18,8 @@ module.exports = {
     },
     fontFamily: {
       Nunito: ['Nunito', 'sans-serif'],
-      Poppins: ['Poppins', 'sans-serif']
+      Poppins: ['Poppins', 'sans-serif'],
+      Mukta: ['Mukta', 'sans-serif']
     },
     container: {
       center: true,

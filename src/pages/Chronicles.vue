@@ -1,24 +1,37 @@
 <template>
   <Layout :showNavbar="false">
-    <div class="font-Nunito text-center pt-8">
+    <div class="font-Mukta text-center pt-8">
       <div class="container">
-        <h1 class="text-4xl mb-8">पौडेल परिवार</h1>
+        <h1 class="text-7xl mb-8 font-Mukta">पौडेल परिवार</h1>
+
         <p class="text-lg mb-8">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil
-          dignissimos eveniet quibusdam ipsam sed dicta illo obcaecati
-          cupiditate, error quisquam aliquam doloribus esse assumenda blanditiis
-          adipisci quis incidunt, repudiandae mollitia?
+          Welcome to Poudel family.
+          <br />
+          This page contains all the general information on Poudel family. It
+          serves as a reference to newer generations to know more about their
+          family history, family memebers.
         </p>
       </div>
 
-      <div class="overflow-auto mx-auto">
-        <select v-model="view" @change="handleViewChange()">
-          <option value="normal" :selected="view == 'normal'">Normal</option>
-          <option value="min" :selected="view == 'min'">Minimized</option>
-        </select>
+      <section id="chronicles">
+        <div class="overflow-auto mx-auto px-4">
+          <div class="toolbar flex justify-end">
+            <select v-model="view" @change="handleViewChange()">
+              <option value="normal" :selected="view == 'normal'">
+                Normal
+              </option>
+              <option value="min" :selected="view == 'min'">Minimized</option>
+            </select>
+          </div>
 
-        <div id="family-tree" ref="familyTree" :class="'--' + view"></div>
-      </div>
+          <div id="family-tree" ref="familyTree" :class="'--' + view"></div>
+        </div>
+      </section>
+
+      <section id="demographics">
+        <!-- gender -->
+        <!-- Age group -->
+      </section>
     </div>
   </Layout>
 </template>
@@ -141,7 +154,7 @@ export default {
 
             style: {
               "arrow-end": "classic-wide-medium",
-              stroke: "dimgray",
+              stroke: "#9CA3AF",
               "stroke-width": "2.5",
             },
           },
@@ -165,19 +178,14 @@ export default {
 
 <style lang="scss">
 #family-tree {
-
   .person-group {
-    @apply flex flex-row p-2 bg-gray-200 rounded-md;
+    @apply flex flex-row p-1 bg-gray-400 rounded-md;
 
     .person {
-      @apply w-40 h-44 flex flex-col py-2 rounded-md cursor-pointer bg-gray-100 hover:bg-gray-50;
+      @apply w-28 h-36 flex flex-col py-2 rounded-md cursor-pointer bg-gray-100 hover:bg-gray-50;
 
       &:nth-child(odd) {
-        @apply mr-2;
-      }
-
-      &:nth-child(even) {
-        @apply ml-2;
+        @apply mr-1;
       }
 
       .image {
@@ -185,7 +193,7 @@ export default {
       }
 
       .name {
-        @apply font-bold;
+        @apply font-normal text-gray-800 font-Mukta;
       }
 
       &.--unmarried {
@@ -196,7 +204,8 @@ export default {
 
   &.--min {
     .person-group .person {
-      @apply h-10;
+      @apply grid place-content-center;
+      @apply h-auto w-20 px-2 break-words;
       .image,
       .age {
         @apply hidden;

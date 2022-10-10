@@ -97,8 +97,7 @@ export default {
                 },
             }),
 
-            children: [
-            ],
+            children: [],
         },
 
         {
@@ -147,7 +146,6 @@ export default {
                         },
                     }),
                     children: [
-
                         {
                             innerHTML: $({
                                 self: {
@@ -260,8 +258,88 @@ export default {
                                     ]
                                 }
                             ]
-                        }
+                        },
 
+                        {
+                            innerHTML: $({
+                                self: {
+                                    id: "gauri-wagle",
+                                    name: "गौरी वाग्ले",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-male.png",
+                                    gender: 'female',
+                                    bio: "He was a very good man.",
+                                },
+                                spouse: {
+                                    id: "rupak-ko-dad",
+                                    name: "rupak ko dad",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-female.png",
+                                    gender: 'male',
+                                    bio: "He was a very good man.",
+                                },
+                            }),
+                            children: [
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "rupak-ko-didi",
+                                            name: "रुपक ko didi",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: null,
+                                    }),
+                                    children: []
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "rupa-wagle",
+                                            name: "रुपा वाग्ले",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: {
+                                            id: "vinaju",
+                                            name: "Vinaju",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                    }),
+                                    children: []
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "rupak-wagle",
+                                            name: "रुपक वाग्ले",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: null,
+                                    }),
+                                    children: []
+                                }
+                            ]
+                        }
                     ]
                 },
 
@@ -360,8 +438,8 @@ export default {
                                             bio: "He was a very good man.",
                                         },
                                         spouse: {
-                                            id: "vinaju-1-khanal",
-                                            name: "vinaju-1 खनाल",
+                                            id: "dipak-prasad-khanal",
+                                            name: "दीपक प्रसाद खनाल",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-female.png",
@@ -414,8 +492,8 @@ export default {
                                             bio: "He was a very good man.",
                                         },
                                         spouse: {
-                                            id: "vinaju-2",
-                                            name: "vinaju-2",
+                                            id: "kumar-bhandari",
+                                            name: "कुमार भण्डारी",
                                             dob: "1990-4-23",
                                             dod: null,
                                             image: "chronicle/nepali-female.png",
@@ -425,6 +503,266 @@ export default {
                                     }),
                                     children: []
                                 }
+                            ]
+                        },
+
+                        {
+                            innerHTML: $({
+                                self: {
+                                    id: "rama-bhandari",
+                                    name: "रमा भण्डारी",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-male.png",
+                                    gender: 'female',
+                                    bio: "He was a very good man.",
+                                },
+                                spouse: {
+                                    id: "dilli-ram-bhandari",
+                                    name: "दिल्ली राम भण्डारी ",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-female.png",
+                                    gender: 'male',
+                                    bio: "He was a very good man.",
+                                },
+                            }),
+                            children: [
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "shobha-bhandari",
+                                            name: "शोभा भण्डारी",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+
+                                        spouse: {
+                                            id: "pradeep-chalise",
+                                            name: "प्रदीप चालिसे",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                    }),
+                                    children: [
+                                        {
+                                            innerHTML: $({
+                                                self: {
+                                                    id: "shobha-son-1",
+                                                    name: "son-1",
+                                                    dob: "1990-4-23",
+                                                    dod: null,
+                                                    image: "chronicle/nepali-male.png",
+                                                    gender: 'male',
+                                                    bio: "He was a very good man.",
+                                                }
+                                            })
+                                        },
+
+                                        {
+                                            innerHTML: $({
+                                                self: {
+                                                    id: "shobha-son-2",
+                                                    name: "son-2",
+                                                    dob: "1990-4-23",
+                                                    dod: null,
+                                                    image: "chronicle/nepali-male.png",
+                                                    gender: 'male',
+                                                    bio: "He was a very good man.",
+                                                }
+                                            })
+                                        }
+                                    ]
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "prabha-bhandari",
+                                            name: "प्रभा भण्डारी",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+
+                                        spouse: {
+                                            id: "anil-baral",
+                                            name: "अनिल बराल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                    }),
+                                    children: [
+
+                                    ]
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "prativa-bhandari",
+                                            name: "प्रतिभा भण्डारी",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+
+                                        spouse: {
+                                            id: "bhinaju",
+                                            name: "Vinaju ",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                    })
+                                },
+                            ]
+                        },
+
+                        {
+                            innerHTML: $({
+                                self: {
+                                    id: "durga-dhakal",
+                                    name: "दुर्गा ढकाल",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-male.png",
+                                    gender: 'female',
+                                    bio: "He was a very good man.",
+                                },
+                                spouse: {
+                                    id: "vinaju-dhakal",
+                                    name: "vinaju ढकाल",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-female.png",
+                                    gender: 'male',
+                                    bio: "He was a very good man.",
+                                },
+                            }),
+                            children: [
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "dipeen-dhakal",
+                                            name: "दिपीन ढकाल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+
+                                        spouse: {
+                                            id: "shreya-dhakal",
+                                            name: "श्रेया ढकाल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                    }),
+                                    children: [
+                                        {
+                                            innerHTML: $({
+                                                self: {
+                                                    id: "son-1",
+                                                    name: "son-1",
+                                                    dob: "1990-4-23",
+                                                    dod: null,
+                                                    image: "chronicle/nepali-male.png",
+                                                    gender: 'male',
+                                                    bio: "He was a very good man.",
+                                                }
+                                            }),
+                                        },
+
+                                        {
+
+                                            innerHTML: $({
+                                                self: {
+                                                    id: "son-2",
+                                                    name: "son-2",
+                                                    dob: "1990-4-23",
+                                                    dod: null,
+                                                    image: "chronicle/nepali-male.png",
+                                                    gender: 'male',
+                                                    bio: "He was a very good man.",
+                                                }
+                                            })
+                                        }
+                                    ]
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "dileep-dhakal",
+                                            name: "दिलीप ढकाल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+
+                                        spouse: {
+                                            id: "rashmi-dhakal",
+                                            name: "रश्मि ढकाल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                    }),
+                                    children: [
+                                        {
+                                            innerHTML: $({
+                                                self: {
+                                                    id: "son-1",
+                                                    name: "son-1",
+                                                    dob: "1990-4-23",
+                                                    dod: null,
+                                                    image: "chronicle/nepali-male.png",
+                                                    gender: 'male',
+                                                    bio: "He was a very good man.",
+                                                }
+                                            }),
+                                        },
+
+                                        {
+
+                                            innerHTML: $({
+                                                self: {
+                                                    id: "daughter-2",
+                                                    name: "daughter-2",
+                                                    dob: "1990-4-23",
+                                                    dod: null,
+                                                    image: "chronicle/nepali-male.png",
+                                                    gender: 'female',
+                                                    bio: "He was a very good man.",
+                                                }
+                                            })
+                                        }
+                                    ]
+                                },
                             ]
                         },
 
@@ -575,6 +913,105 @@ export default {
 
                             innerHTML: $({
                                 self: {
+                                    id: "laxmi-bhattrai",
+                                    name: "लक्ष्मी भट्टराई",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-male.png",
+                                    gender: 'female',
+                                    bio: "He was a very good man.",
+                                },
+                                spouse: {
+                                    id: "shardul-bhattrai",
+                                    name: "शार्दुल भट्टराई",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-female.png",
+                                    gender: 'female',
+                                    bio: "He was a very good man.",
+                                }
+                            }),
+
+                            children: [
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "gaurav-bhattrai",
+                                            name: "गौरव भट्टराई",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: {
+                                            id: "nilam-shahi",
+                                            name: "निलम शाही",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        }
+                                        ,
+                                        children: null,
+                                    })
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "saurav-bhattrai",
+                                            name: "सौरब भट्टराई",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: {
+                                            id: "manisha-silwal",
+                                            name: "मनीषा सिलवाल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        }
+                                        ,
+                                        children: null,
+                                    })
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "biranchi-poudyal",
+                                            name: " बिरन्ची पौडेल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: {
+                                            id: "pratima-luitel",
+                                            name: "प्रतिमा लुइँटेल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                    }),
+                                    children: null,
+                                },
+                            ],
+                        },
+
+                        {
+                            innerHTML: $({
+                                self: {
                                     id: "basu-dev-poudyal",
                                     name: "बासु देव पौडेल",
                                     dob: "1990-4-23",
@@ -595,8 +1032,6 @@ export default {
                             }),
 
                             children: [
-
-
                                 {
 
                                     innerHTML: $({
@@ -641,6 +1076,72 @@ export default {
                         },
 
                         {
+
+                            innerHTML: $({
+                                self: {
+                                    id: "binu-khanal",
+                                    name: "बिनु खनाल",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-male.png",
+                                    gender: 'female',
+                                    bio: "He was a very good man.",
+                                },
+                                spouse: {
+                                    id: "umesh-khanal",
+                                    name: "उमेश खनाल",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-female.png",
+                                    gender: 'male',
+                                    bio: "He was a very good man.",
+                                }
+                            }),
+
+                            children: [
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "subina-khanal",
+                                            name: "सुबिना खनाल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: {
+                                            id: "sashi-raj-pandey",
+                                            name: "सशी राज पाण्डे",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        children: null,
+                                    })
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "rubina-khanal",
+                                            name: "रुबिना खनाल",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-male.png",
+                                            gender: 'female',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: null,
+                                        children: null,
+                                    })
+                                }
+                            ],
+                        },
+
+                        {
                             innerHTML: $({
                                 self: {
                                     id: "diwakar-poudyal",
@@ -653,7 +1154,7 @@ export default {
                                 },
                                 spouse: {
                                     id: "bhawani-dawadi-poudyal",
-                                    name: "भवानी(दीपा) पौडेल",
+                                    name: "भवानी (दीपा) पौडेल",
                                     dob: "1990-4-23",
                                     dod: null,
                                     image: "chronicle/nepali-female.png",
@@ -712,6 +1213,63 @@ export default {
                                             dod: null,
                                             image: "chronicle/nepali-male.png",
                                             gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: null,
+                                    }),
+                                    children: null,
+                                },
+                            ],
+                        },
+
+                        {
+                            innerHTML: $({
+                                self: {
+                                    id: "sarala-poudyal-subedi",
+                                    name: "सरला पौडेल सुवेदी",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-male.png",
+                                    gender: 'male',
+                                    bio: "He was a very good man.",
+                                },
+                                spouse: {
+                                    id: "chandra-subedi",
+                                    name: "चन्द्र सुवेदी",
+                                    dob: "1990-4-23",
+                                    dod: null,
+                                    image: "chronicle/nepali-female.png",
+                                    gender: 'male',
+                                    bio: "He was a very good man.",
+                                },
+                            }),
+
+                            children: [
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "sarthak-subedi",
+                                            name: "सार्थक सुवेदी",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'male',
+                                            bio: "He was a very good man.",
+                                        },
+                                        spouse: null,
+                                    }),
+                                    children: null,
+                                },
+
+                                {
+                                    innerHTML: $({
+                                        self: {
+                                            id: "sara-subedi",
+                                            name: "सारा सुवेदी",
+                                            dob: "1990-4-23",
+                                            dod: null,
+                                            image: "chronicle/nepali-female.png",
+                                            gender: 'female',
                                             bio: "He was a very good man.",
                                         },
                                         spouse: null,
