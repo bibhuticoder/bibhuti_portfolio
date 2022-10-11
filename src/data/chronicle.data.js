@@ -603,9 +603,7 @@ export default {
                                             bio: "He was a very good man.",
                                         },
                                     }),
-                                    children: [
-
-                                    ]
+                                    children: []
                                 },
 
                                 {
@@ -981,31 +979,7 @@ export default {
                                         ,
                                         children: null,
                                     })
-                                },
-
-                                {
-                                    innerHTML: $({
-                                        self: {
-                                            id: "biranchi-poudyal",
-                                            name: " बिरन्ची पौडेल",
-                                            dob: "1990-4-23",
-                                            dod: null,
-                                            image: "chronicle/nepali-male.png",
-                                            gender: 'male',
-                                            bio: "He was a very good man.",
-                                        },
-                                        spouse: {
-                                            id: "pratima-luitel",
-                                            name: "प्रतिमा लुइँटेल",
-                                            dob: "1990-4-23",
-                                            dod: null,
-                                            image: "chronicle/nepali-female.png",
-                                            gender: 'female',
-                                            bio: "He was a very good man.",
-                                        },
-                                    }),
-                                    children: null,
-                                },
+                                }
                             ],
                         },
 
