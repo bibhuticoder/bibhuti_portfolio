@@ -7,7 +7,7 @@
           <h2 class="mr-4">👋</h2>
           <div class="flex flex-col">
             <h2 class="mb-4 text-center md:text-left">
-              Hey, I'm Bibhuti Poudyal.
+              Hey, I'm Bibhuti Poudyal
             </h2>
             <p class="text-center md:text-left text-black text-lg">
               I build softwares for a living.
