@@ -18,8 +18,8 @@ serverless create --template aws-nodejs --path my-service
 ## config credentials
 ```bash 
 
-serverless config credentials --provider <PROVIDER> --key <KEY> --secret <SECRET>
-serverless config credentials --provider aws --key AKIAIOSFODNN7EXAMPLE --secret wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY #eg
+serverless config credentials --provider <PROVIDER> --key <KEY> --secret <SECRET> --profile <PROFILE>
+serverless config credentials --provider aws --key AKIAIOSFODNN7EXAMPLE --secret wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY --profile your-name #eg
 ```
 
 ## dev server(serverless-offline)
